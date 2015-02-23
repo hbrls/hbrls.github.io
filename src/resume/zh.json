@@ -1,0 +1,78 @@
+{
+  "name": "徐帅哲",
+  "email": "shuaizhexu@gmail.com",
+  "education": [
+    {
+      "name": "复旦大学",
+      "program": "生物科学/心理学，理科学士",
+      "start_date": "2004-09",
+      "end_date": "2008-06"
+    },
+    {
+      "name": "华东师范大学",
+      "program": "应用心理学与人类行为，硕士",
+      "start_date": "2008-09",
+      "end_date": "2011-06"
+    }
+  ],
+  "work_experience": [
+    {
+      "employer": "Waterville Inc.",
+      "position": "创业",
+      "start_date": "2009-05",
+      "end_date": "2012-06",
+      "descriptions": [
+        "1. 基于人格测量模型的人才招聘及管理解决方案",
+        "2. 领导4名工程师的开发小组",
+        "3. 某500强企业校园招聘项目落地；能同时容纳3000人在线",
+        "4. Windows/IIS/SQLServer/ASP.NET开发和运维"
+      ]
+    },
+    {
+      "employer": "Magic Point",
+      "position": "js 工程师",
+      "start_date": "2012-07",
+      "end_date": "2014-11",
+      "descriptions": [
+        "1. 定制化的K-12测量/成绩统计数据报告. http://www.emetric.net",
+        "2. 单页webapp应用. http://www.nevadareportcard.com/di/",
+        "3. web/mobile, front/back, js/node/python/C#"
+      ]
+    },
+    {
+      "employer": "NextTao",
+      "position": "f2e",
+      "start_date": "2014-11",
+      "end_date": "至今",
+      "descriptions": [
+        "1. 待完善",
+        "2. 待完善",
+        "3. 待完善"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "概述",
+      "descriptions": [
+        "1. 高级前端开发工程师",
+        "2. 对代码力求整洁、细致",
+        "3. 追求结果，快速学习，丰富的实战技能"
+      ]
+    },
+    {
+      "name": "技能",
+      "descriptions": [
+        "1. Web/Mobile, Front/Back, JS/Python/Haskell",
+        "2. C#, .NET, PDF",
+        "3. Docker/Debian/Nginx/Mysql"
+      ]
+    },
+    {
+      "name": "兴趣",
+      "descriptions": [
+        "教育，医疗，体育"
+      ]
+    }
+  ]
+}

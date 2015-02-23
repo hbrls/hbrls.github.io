@@ -1,0 +1,27 @@
+{
+  "name": "hbrls.github.io",
+  "version": "0.0.1",
+  "description": "GitHub Pages Custom Domain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbrls/hbrls.github.io.git"
+  },
+  "author": "shuaizhexu@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbrls/hbrls.github.io/issues"
+  },
+  "homepage": "https://github.com/hbrls/hbrls.github.io",
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.1",
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.5.3"
+  }
+}

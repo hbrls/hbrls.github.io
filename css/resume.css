@@ -1,0 +1,124 @@
+ /* Theme modified from Jeremy Roman
+* http://www.jeremyroman.com/resume/resume.html
+*/
+@media screen {
+  html {
+    background: #888;
+    font-size: 62.5%;
+  }
+
+  body {
+    background: #fff;
+    margin: 1em auto;
+    width: 70rem;
+    padding: 8rem;
+    border: 1px solid #333;
+    box-shadow: 6px 6px 12px #555;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
+@media print {
+  body {
+    padding-top: 0.25in;
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.info-header {
+  text-align: center
+}
+
+h1 {
+  font: 2.4rem Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.info-header p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font: 1.6rem Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  border-bottom: 1px solid #333;
+}
+
+section > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section > ul > li {
+  padding-left: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #bbb;
+}
+
+section > ul > li:last-child {
+  border-bottom: 0;
+}
+
+section > ul .info {
+  margin-bottom: 1rem;
+  position: absolute;
+  left: 0;
+  max-width: 18rem;
+}
+
+section > ul li {
+  list-style-type: none;
+}
+
+section > ul ul {
+  padding-left: 0;
+}
+
+/* .section li ul { list-style-type: disc }
+.section li ul ul { list-style-type: square } */
+
+section > ul > li ul li {
+  margin-left: 18rem;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  line-height: 150%;
+  text-align: center;
+}
+
+footer p a {
+  color: #666;
+  cursor: pointer;
+}
+
+.education > ul > li {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.skills {
+  page-break-before: always;
+}
+
+/* hack because JobMine sends IE into quirks mode */
+* html .section .info {
+  position: static;
+  margin-top: 1rem;
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Albert Xu",
+  "email": "shuaizhexu@gmail.com",
+  "education": [
+    {
+      "name": "Fudan University",
+      "program": "BS, Biology/Psychology",
+      "start_date": "2004-09",
+      "end_date": "2008-06"
+    },
+    {
+      "name": "East China Normal University",
+      "program": "Master, Psychology Science & Human Behavior",
+      "start_date": "2008-09",
+      "end_date": "2011-06"
+    }
+  ],
+  "work_experience": [
+    {
+      "employer": "Waterville Inc.",
+      "position": "a startup company",
+      "start_date": "2009-05",
+      "end_date": "2012-06",
+      "descriptions": [
+        "1. assessment and model based consulting/solution for talent hiring and management",
+        "2. led a team of 4 engineers",
+        "3. carried out on-campus recruiting for fortune global 500 companies; 3,000 online users in an hour",
+        "4. Windows/IIS/SQLServer/ASP.NET dev and op"
+      ]
+    },
+    {
+      "employer": "Magic Point",
+      "position": "js engineer",
+      "start_date": "2012-07",
+      "end_date": "2014-11",
+      "descriptions": [
+        "1. data reports friendly and customizable for K-12 assessment statistics. http://www.emetric.net",
+        "2. single page web app. http://www.nevadareportcard.com/di/",
+        "3. web/mobile, front/back, js/node/python/C#"
+      ]
+    },
+    {
+      "employer": "NextTao",
+      "position": "f2e",
+      "start_date": "2014-11",
+      "end_date": "until now",
+      "descriptions": [
+        "1. to be elaborated",
+        "2. to be elaborated",
+        "3. to be elaborated"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Summary",
+      "descriptions": [
+        "1. a professional frontend engineer",
+        "2. thorough and detailed personality",
+        "3. highly accomplished, quick learner, impressive hands-on knowledge"
+      ]
+    },
+    {
+      "name": "IT Skills",
+      "descriptions": [
+        "1. Web/Mobile, Front/Back, JS/Python/Haskell",
+        "2. C#, .NET, PDF",
+        "3. Docker/Debian/Nginx/Mysql"
+      ]
+    },
+    {
+      "name": "Interests",
+      "descriptions": [
+        "Education, Medical, Sports"
+      ]
+    }
+  ]
+}
