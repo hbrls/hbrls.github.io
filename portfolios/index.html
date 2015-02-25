@@ -9,13 +9,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/blue.css" id="theme">
-
-    <link rel="stylesheet" href="../assets/themes/twitter/css/font-awesome.min.css">
-
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="/css/vendor/reveal.css">
+    <link rel="stylesheet" href="./css/reveal.theme.blue.css" id="theme">
+    <link rel="stylesheet" href="/css/vendor/font-awesome.min.css">
 
     <style>
     .skills-cloud {
@@ -24,11 +20,6 @@
       margin-top: 30px;
     }
     </style>
-
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -45,14 +36,14 @@
           <div class="avatar"></div>
           <div class="summary">
             <h1>Albert</h1>
-            <h3>front/back</h3>
             <h3>web/mobile</h3>
-            <h3>js/node/python<small>/go</small></h3>
+            <h3>front/back</h3>
+            <h3>js/python/haskell</h3>
             <div class="contact-info">
-              <a href="http://gplus.to/shuaizhexu" target="_blank"><i class="icon icon-google-plus"></i></a>
-              <a href="http://www.linkedin.com/in/shuaizhexu" target="_blank"><i class="icon icon-linkedin"></i></a>
-              <a href="http://github.com/shuaishuai" target="_blank"><i class="icon icon-github-alt"></i></a>
-              <a href="http://weibo.com/hbrls" target="_blank"><i class="icon icon-weibo"></i></a>
+              <a href="http://gplus.to/shuaizhexu" target="_blank"><i class="fa fa-google-plus"></i></a>
+              <a href="http://www.linkedin.com/in/shuaizhexu" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="http://github.com/hbrls" target="_blank"><i class="fa fa-github-alt"></i></a>
+              <a href="http://weibo.com/hbrls" target="_blank"><i class="fa fa-weibo"></i></a>
             </div>
           </div>
         </section>
@@ -65,13 +56,13 @@
               { text: 'jQuery', size: 9 },
               { text: 'lodash', size: 9 },
               { text: 'dust', size: 8 },
-              { text: 'RequireJS', size: 8 },
-              { text: 'Backbone', size: 6 },
-              { text: 'Grunt', size: 7 },
+              { text: 'Gulp/Browserify', size: 8 },
+              { text: 'React', size: 6 },
               { text: 'Karma/Mocha/Chai', size: 6 },
               { text: 'Angular', size: 6 },
               { text: 'Highcharts', size: 5 },
               { text: 'Hammer', size: 5 },
+              { text: '', size: 0 }
             ];
           </script>
         </section>
@@ -84,7 +75,7 @@
               { text: 'Flask', size: 8 },
               { text: 'SQLAlchemy', size: 6 },
               { text: 'django', size: 6 },
-              { text: 'Fabric', size: 6 },
+              { text: 'Fabric', size: 6 }
             ];
           </script>
         </section>
@@ -103,7 +94,6 @@
             </ul>
             <ul class="skills">
               <li><a class="image book book-in-progress" style="background-image: url(./img/book-1451622.jpg);" href="http://book.douban.com/subject/1451622/" target="_blank" title="in progress"></a></li>
-              <li><a class="image book" style="background-image: url(./img/book-26208470.jpg);" href="http://book.douban.com/subject/26208470/" target="_blank"></a></li>
             </ul>
             <ul class="skills">
               <li><a class="image book" style="background-image: url(./img/book-3567853.jpg);" href="http://book.douban.com/subject/3567853/" target="_blank"></a></li>
@@ -122,6 +112,14 @@
         </section>
 
         <section>
+          <h2>a translator</h2>
+          <ol class="projects">
+            <li><a href="https://github.com/progit/progit2-zh" target="_blank">Pro Git 2: <small>https://github.com/progit/progit2-zh</small></a></li>
+            <li><a href="https://github.com/huangz1990/real-world-haskell-cn" target="_blank">Real World Haskell: <small>https://github.com/huangz1990/real-world-haskell-cn</small></a></li>
+          </ol>
+        </section>
+
+        <section>
           <h2>can do graphic/design</h2>
           <p>
             will present my works here. still arraging them.
@@ -130,33 +128,29 @@
 
         <section>
           <h2>THE END</h2>
-          <h4><a href="./resume.html">traditional style resume</a></h4>
+          <h4><a href="../resume">traditional style resume</a></h4>
         </section>
 
         <nav>
-          <a href="#/0" title="Home"><i class="icon icon-fixed-width icon-home"></i></a>
-          <a href="#/4" title="Favorites"><i class="icon icon-fixed-width icon-heart"></i></a>
-          <a href="http://shuaishuai.github.io" title="Go to blog" target="_blank"><i class="icon icon-fixed-width icon-comments"></i></a>
+          <a href="#/0" title="Home"><i class="fa fa-fw fa-home"></i></a>
+          <a href="#/4" title="Favorites"><i class="fa fa-fw fa-heart"></i></a>
+          <a href="http://lisite.de/blog" title="Go to blog" target="_blank"><i class="fa fa-fw fa-comments"></i></a>
 
           <div class="controls">
-            <a href="#" class="navigate-left"><i class="icon icon-arrow-left"></i></a>
-            <a href="#" class="navigate-up"><i class="icon icon-arrow-up"></i></a>
-            <a href="#" class="navigate-down"><i class="icon icon-arrow-down"></i></a>
-            <a href="#" class="navigate-right"><i class="icon icon-arrow-right"></i></a>
+            <a href="#" class="navigate-left"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" class="navigate-up"><i class="fa fa-arrow-up"></i></a>
+            <a href="#" class="navigate-down"><i class="fa fa-arrow-down"></i></a>
+            <a href="#" class="navigate-right"><i class="fa fa-arrow-right"></i></a>
           </div>
         </nav>
       </div>
 
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-
-    <script src="../assets/scripts/vendor/d3.v3.min.js"></script>
-    <script src="../assets/scripts/vendor/d3.layout.cloud.js"></script>
-
-    <script src="../assets/scripts/vendor/jquery.min.js"></script>
-    <script src="js/app.min.js"></script>
-
+    <script src="/js/vendor/head.min.js"></script>
+    <script src="/js/vendor/reveal.js"></script>
+    <script src="/js/vendor/d3.min.js"></script>
+    <script src="/js/vendor/d3.layout.cloud.js"></script>
+    <script src="./js/portfolios.min.js"></script>
   </body>
 </html>
