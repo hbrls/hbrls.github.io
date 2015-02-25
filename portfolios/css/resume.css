@@ -1,0 +1,91 @@
+/* Theme modified from Jeremy Roman
+* http://www.jeremyroman.com/resume/resume.html
+*/
+
+    @media screen {
+      html { background: #888 }
+
+      body {
+        background: #fff;
+        margin: 1em auto;
+        width: 7in;
+        padding: 0.75in;
+        border: 1px solid #333;
+        box-shadow: 5px 5px 10px #555;
+        font: 10pt Helvetica, Arial, sans-serif;
+      }
+    }
+
+    @media print {
+      body { padding-top:0.25in; }
+    }
+
+    .info-header {
+      text-align: center
+    }
+
+    h1 {
+      font: 22pt Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    .info-header tt { font-size: 11pt }
+
+    .info-header p {
+      margin-top: 0;
+    }
+
+    h2 {
+      font: 16pt Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      border-bottom: 1px solid #333;
+    }
+
+    .section { list-style-type: none; margin:0; padding: 0 }
+
+    .section > li {
+      padding-left:17em; position: relative;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #bbb;
+    }
+
+    .section > li:last-child { border-bottom: 0 }
+
+    .section .info {
+      margin-bottom: 0.5em;
+      position: absolute;
+      left: 0;
+      max-width: 17em;
+    }
+
+    .section li { list-style-type: none; }
+    .section li ul { padding-left: 0; }
+    /* .section li ul { list-style-type: disc }
+.section li ul ul { list-style-type: square } */
+    .section li ul li { margin:0.3em 0;}
+
+    footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    footer p {
+      line-height: 150%;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer p a {
+      color: #666;
+    }
+
+    /* hack because JobMine sends IE into quirks mode */
+    * html .section .info {
+      position: static;
+      margin-top: 1em;
+    }
+
+    .education { list-style-type: none; font-size: 10pt; }
