@@ -23,6 +23,7 @@
     "react": "^0.12.2"
   },
   "devDependencies": {
+    "font-spider": "^0.1.1-beta4",
     "json-loader": "^0.5.1",
     "jsx-loader": "^0.12.2",
     "webpack": "^1.5.3"
