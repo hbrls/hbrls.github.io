@@ -22,10 +22,10 @@
       "start_date": "2009-05",
       "end_date": "2012-06",
       "descriptions": [
-        "1. assessment and model based consulting/solution for talent hiring and management",
+        "1. assessment and algorithm based solution for talent hiring and management",
         "2. led a team of 4 engineers",
-        "3. carried out on-campus recruiting for fortune global 500 companies; 3,000 online users in an hour",
-        "4. Windows/IIS/SQLServer/ASP.NET dev and op"
+        "3. carried out on-campus recruiting for fortune global 500 companies; 3,000 online users per hour",
+        "4. Windows/IIS/SQLServer/ASP.NET devops"
       ]
     },
     {
@@ -35,19 +35,19 @@
       "end_date": "2014-11",
       "descriptions": [
         "1. data reports friendly and customizable for K-12 assessment statistics. http://www.emetric.net",
-        "2. single page web app. http://www.nevadareportcard.com/di/",
-        "3. web/mobile, front/back, js/node/python/C#"
+        "2. single page web app, expert of backbone, http://www.nevadareportcard.com/di/",
+        "3. vanguard for tech obstacles: seperation of front-back dev tasks with mockups, speed up a script performance with least change and more"
       ]
     },
     {
       "employer": "NextTao",
-      "position": "f2e",
+      "position": "full stack",
       "start_date": "2014-11",
       "end_date": "until now",
       "descriptions": [
-        "1. to be elaborated",
-        "2. to be elaborated",
-        "3. to be elaborated"
+        "1. Omni channel O2O/ERP/CRM solution, https://nextsales.cn",
+        "2. Enhance the open source OpenERP project with React web components, flexible and friendly",
+        "3. Wechat account integration, micro e-commerce in wechat, marketing campaigns and admin of them with WYSIWYG h5"
       ]
     }
   ],
@@ -55,17 +55,17 @@
     {
       "name": "Summary",
       "descriptions": [
-        "1. a professional frontend engineer",
-        "2. thorough and detailed personality",
-        "3. highly accomplished, quick learner, impressive hands-on knowledge"
+        "1. 5 yrs web developer",
+        "2. Can start up from zero to deliver",
+        "3. Know what the customers want, how they feel"
       ]
     },
     {
       "name": "IT Skills",
       "descriptions": [
         "1. Web/Mobile, Front/Back, JS/Python/Haskell",
-        "2. C#, .NET, PDF",
-        "3. Docker/Debian/Nginx/Mysql"
+        "2. Debian, Docker, Full Stack",
+        "3. Practical experience of Wechat"
       ]
     },
     {
