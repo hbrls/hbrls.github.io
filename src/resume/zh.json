@@ -23,8 +23,8 @@
       "end_date": "2012-06",
       "descriptions": [
         "1. 基于人格测量模型的人才招聘及管理解决方案",
-        "2. 领导4名工程师的开发小组",
-        "3. 某500强企业校园招聘项目落地；能同时容纳3000人在线",
+        "2. 领导 4 名工程师的开发小组",
+        "3. 某 500 强企业校园招聘项目落地；能同时容纳3000人在线",
         "4. Windows/IIS/SQLServer/ASP.NET开发和运维"
       ]
     },
@@ -35,8 +35,8 @@
       "end_date": "2014-11",
       "descriptions": [
         "1. 定制化的K-12测量/成绩统计数据报告. http://www.emetric.net",
-        "2. 单页webapp应用. http://www.nevadareportcard.com/di/",
-        "3. web/mobile, front/back, js/node/python/C#"
+        "2. 单页webapp应用，熟悉 Backbone. http://www.nevadareportcard.com/di/",
+        "3. 负责技术难点攻关：前后端开发分离解耦，在保证系统整体稳定的前提下扣细节提高性能"
       ]
     },
     {
@@ -45,9 +45,9 @@
       "start_date": "2014-11",
       "end_date": "至今",
       "descriptions": [
-        "1. 待完善",
-        "2. 待完善",
-        "3. 待完善"
+        "1. 全渠道 O2O/ERP/CRM 解决方案, https://nextsales.cn",
+        "2. 增强开源项目 OpenERP，引入基于 React 的组件，提高组件的灵活性、可扩展性，有效地提升了开发者体验",
+        "3. 多渠道（如微信、电商）整合，所见即所得的 H5 营销活动制作及部署，降低普通行业从业者对互联网+的学习曲线"
       ]
     }
   ],
@@ -55,17 +55,17 @@
     {
       "name": "概述",
       "descriptions": [
-        "1. 高级前端开发工程师",
-        "2. 对代码力求整洁、细致",
-        "3. 追求结果，快速学习，丰富的实战技能"
+        "1. 5 年 web 开发经验，对代码力求质量、整洁",
+        "2. 能从零到交付完成一个项目，包括能力与实战经验",
+        "3. 能理解客户想要什么，能理解客户感受怎样"
       ]
     },
     {
       "name": "技能",
       "descriptions": [
         "1. Web/Mobile, Front/Back, JS/Python/Haskell",
-        "2. C#, .NET, PDF",
-        "3. Docker/Debian/Nginx/Mysql"
+        "2. Debian, Docker, Full Stack",
+        "3. 丰富的微信实战经验"
       ]
     },
     {
