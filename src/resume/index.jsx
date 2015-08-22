@@ -131,7 +131,7 @@ var Footer = React.createClass({
 
     return (
       <footer>
-        <p>&copy; 2012 - 2015 | <a onClick={this.props.toggleLang}>{lang}</a></p>
+        <p>&copy; 2012 - 2015 | <a href={'#' +  this.props.lang} onClick={this.props.toggleLang}>{lang}</a></p>
       </footer>
     );
   }
@@ -143,6 +143,10 @@ var Resume = React.createClass({
     return {
       lang: 'en'
     }
+  },
+
+  componentDidMount: function () {
+    this.setState({lang: window.location.hash.substring(1) || 'en'});
   },
 
   _toggleLang: function () {
