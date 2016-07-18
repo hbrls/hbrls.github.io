@@ -1,11 +1,14 @@
 module.exports = {
   entry: {
-    portfolios: './src/portfolios/index.js',
-    resume: './src/resume/index.jsx'
+    fe: './src/fe',
+    // portfolios: './src/portfolios',
+    // resume: './src/resume',
   },
+
   output: {
-    filename: './[name]/js/[name].min.js'
+    filename: './static/dist/[name].min.js'
   },
+
   module: {
     loaders: [
       { test: /\.json$/, loader: 'json-loader' },

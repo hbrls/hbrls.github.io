@@ -23,10 +23,10 @@ section.has-light-background h6 {
 body {
   color: #f00;
   background: #1e5496;
-  background: url(../img/noise.png) repeat 0 0, -webkit-linear-gradient(#519fd9, #1e5496);
-  background: url(../img/noise.png) repeat 0 0,    -moz-linear-gradient(#519fd9, #1e5496);
-  background: url(../img/noise.png) repeat 0 0,     -ms-linear-gradient(#519fd9, #1e5496);
-  background: url(../img/noise.png) repeat 0 0,         linear-gradient(#519fd9, #1e5496);
+  background: url(/static/img/noise.png) repeat 0 0, -webkit-linear-gradient(#519fd9, #1e5496);
+  background: url(/static/img/noise.png) repeat 0 0,    -moz-linear-gradient(#519fd9, #1e5496);
+  background: url(/static/img/noise.png) repeat 0 0,     -ms-linear-gradient(#519fd9, #1e5496);
+  background: url(/static/img/noise.png) repeat 0 0,         linear-gradient(#519fd9, #1e5496);
 }
 
 nav {
@@ -153,13 +153,6 @@ nav .controls i.fa {
 }
 
 /* mine */
-.avatar {
-  display: inline-block;
-  background-image: url(../img/avatar_0.png);
-  width: 219px;
-  height: 292px;
-  background-size: 100%;
-}
 .summary {
   display: inline-block;
   margin-left: 50px !important;
@@ -173,8 +166,7 @@ nav .controls i.fa {
 .contact-info { text-align: left; margin-top: 30px !important; }
 .contact-info > a { margin-left: 16px; }
 
-.skills,
-.projects {
+.skills {
   width: 100%;
   text-align: left;
 }
@@ -184,11 +176,11 @@ nav .controls i.fa {
   margin-left: 12px;
   margin-bottom: 12px;
 }
-.projects li {
+ol li {
   margin-left: 64px;
   margin-bottom: 12px;
 }
-.projects li small {
+ol li small {
   font-size: 75%;
   margin-left: 16px;
 }
@@ -233,6 +225,14 @@ nav .controls i.fa {
   display: none;
 }
 
+.reveal ol {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.reveal ol ol {
+  font-size: 75%;
+}
 
 /* debug */
 section:not(.stack)::before {
