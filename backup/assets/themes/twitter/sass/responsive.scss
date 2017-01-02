@@ -1,0 +1,14 @@
+@media screen and (max-width: 991px) {
+  .affix {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .index {
+    .post-content, .post-meta {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="col-md-3">
+  <div style="margin-bottom:20px;">
+    <img src='{{ ASSET_PATH }}img/avatar-hbrls.png' />
+  </div>
+  <div data-spy="affix" data-offset-top="332">
+  <p class="aboutme">I'm Albert</p>
+  <p class="aboutme">web/mobile</p>
+  <p class="aboutme">front/back</p>
+  <p class="aboutme">js/node/python</p>
+  <ul class="nav nav-stacked">
+    <li>
+      <a class="redirect-portfolios" href="/portfolios" title="see my portfolios"><span class="glyphicon glyphicon-flash"></span> redirect 'portfolios'</a>
+    </li>
+  </ul>
+  </div>
+</div>
