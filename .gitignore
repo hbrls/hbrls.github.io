@@ -1,4 +1,13 @@
+_site/*
+_theme_packages/*
+
+Thumbs.db
 .DS_Store
-_site/
 .sass-cache/
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
 node_modules/
