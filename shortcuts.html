@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="App"></div>
+
+  <script src="/static/dist/shortcuts.js"></script>
+  <script>
+    var node = document.querySelector('.App');
+    var app = Elm.Main.embed(node);
+  </script>
+</body>
+</html>
