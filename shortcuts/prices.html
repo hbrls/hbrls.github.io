@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortcuts - Prices</title>
+
+  <meta name="description" content="国际黄金价格、白银价格，实时黄金白银价格走势图、黄金白银实时行情，技术分析图，贵金属新闻、评论等资讯，主营投资类、收藏类实物黄金、白银产品。" />
+  <meta name="keywords" content="黄金、白银、黄金价格、白银价格、金价、黄金行情、黄金报价、黄金投资、白银投资、黄金交易、黄金价格走势、白银价格走势、贵金属投资" />
+
+  <link rel="stylesheet" href="./static/css/normalize.css">
+  <link rel="stylesheet" href="./static/css/foundation.min.css">
+  <link rel="stylesheet" href="./static/css/style.css" />
+  <style>
+    .grid img { width: 100%; }
+    hr.container { margin-bottom: 10px; }
+  </style>
+
+  <script src="./static/js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="columns medium-3">
+      <img src="http://www.kitco.cn/cn/live_charts/goldcny.gif" alt='gold_24hour' title='gold_24hour' />
+    </div>
+    <div class="columns medium-3">
+      <img src="http://www.kitco.cn/cn/live_charts/silvercny.gif" alt='silver_24hour' title='silver_24hour' />
+    </div>
+    <div class="columns medium-3">
+      <img src="http://image.cngold.org/chart/energy/crude_30day.gif" alt='crude_30day' title='crude_30day' />
+    </div>
+    <div class="columns medium-3">
+      <!-- http://bitcoincharts.com/charts -->
+      <img src="http://bitcoincharts.com/charts/chart.png?width=940&m=btcnCNY&SubmitButton=Draw&r=2&i=30-min&c=0&s=&e=&Prev=&Next=&t=S&b=&a1=&m1=10&a2=&m2=25&x=0&i1=&i2=&i3=&i4=&v=1&cv=0&ps=0&l=0&p=0&" alt="btc_2day_30min">
+    </div>
+  </div>
+
+  <br>
+  <hr class="row">
+
+  <div class="row">
+    <ul class="medium-block-grid-5">
+      <li>
+        <h2>Aluminum</h2>
+        <button class='button button-grey showimage' data-src="http://www.kitconet.com/charts/metals/base/spot-aluminum-30d.gif">show</button>
+      </li>
+      <li>
+        <h2>Cooper</h2>
+        <button class='button button-grey showimage' data-src="http://www.kitconet.com/charts/metals/base/spot-copper-30d.gif">show</button>
+      </li>
+      <li>
+        <h2>Lead</h2>
+        <button class='button button-grey showimage' data-src="http://www.kitconet.com/charts/metals/base/spot-lead-30d.gif">show</button>
+      </li>
+      <li>
+        <h2>Nickel</h2>
+        <button class='button button-grey showimage' data-src="http://www.kitconet.com/charts/metals/base/spot-nickel-30d.gif">show</button>
+      </li>
+      <li>
+        <h2>Zinc</h2>
+        <button class='button button-grey showimage' data-src="http://www.kitconet.com/charts/metals/base/spot-zinc-30d.gif">show</button>
+      </li>
+    </ul>
+  </div>
+
+<!--
+<h2>30 days</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag0030ldb_cny.gif">show</button>
+<h2>60 days</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag0060ldb_cny.gif">show</button>
+<h2>0.5 year</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag0182ldb_cny.gif">show</button>
+<h2>1 year</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag0365ldb_cny.gif">show</button>
+<h2>5 year</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag1825ldb_cny.gif">show</button>
+<h2>10 year</h2>
+<button data-src="http://www.kitco.cn/cn/past_charts/ag3650ldb_cny.gif">show</button>
+<h2>1 yr MACD</h2>
+<button data-src="http://www.kitco.cn/cn/tech_charts/ag0365lf_ma_cn.gif">show</button>
+<h2>2 yr MACD</h2>
+<button data-src="http://www.kitco.cn/cn/tech_charts/ag0730lf_ma_cn.gif">show</button>
+<h2>5 yr MACD</h2>
+<button data-src="http://www.kitco.cn/cn/tech_charts/ag1825lf_ma_cn.gif">show</button>
+<h2>10 yr MACD</h2>
+<button data-src="http://www.kitco.cn/cn/tech_charts/ag3650lf_ma_cn.gif">show</button>
+-->
+
+  <script src="./static/js/vendor/jquery.min.js"></script>
+  <script src="./static/js/vendor/foundation.min.js"></script>
+  <script src="./static/js/vendor/dust.full.min.js"></script>
+  <script src="./static/js/main.js"></script>
+
+  <script>
+    $(function () {
+      $('button.showimage').on('click', function () {
+        var $btn = $(this);
+        var $img = $('<img class="price" />').attr('src', $btn.data('src'));
+        $btn.parent().append($img);
+        $btn.remove();
+      });
+    });
+  </script>
+
+</body>
+</html>
