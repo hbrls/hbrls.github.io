@@ -1,0 +1,86 @@
+{
+  "docs": [
+    { "id": "bootstrap", "url": "http://getbootstrap.com/components/" },
+    { "id": "material-ui", "url": "http://www.material-ui.com/#/components/app-bar" },
+    { "id": "no-jquery", "url": "http://youmightnotneedjquery.com/" },
+    { "id": "no-underscore", "url": "https://www.reindex.io/blog/you-might-not-need-underscore/" },
+    { "id": "plainjs", "url": "https://plainjs.com/" },
+    { "id": "isjs", "url": "https://github.com/arasatasaygin/is.js/blob/master/is.js" },
+
+    { "id": "jquery", "url": "http://api.jquery.com/" },
+    { "id": "underscore", "url": "http://underscorejs.org/" },
+    { "id": "lodash", "url": "http://lodash.com/docs" },
+    { "id": "backbone", "url": "http://backbonejs.org/" },
+    { "id": "highcharts", "url": "http://www.highcharts.com/demo/line-basic" },
+    { "id": "validate-js", "url": "http://validatejs.org/" },
+
+    { "id": "immutable-js", "url": "http://facebook.github.io/immutable-js/docs/#/" },
+    { "id": "weixin-js-sdk", "url": "http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+
+    { "id": "Jasmine", "url": "http://jasmine.github.io/2.0/introduction.html", "nologo": true },
+    { "id": "Chai/BDD", "url": "http://chaijs.com/api/bdd/", "nologo": true },
+    { "id": "Html Dog", "url": "http://htmldog.com/reference/htmltags/", "nologo": true },
+    { "id": "character to code", "url": "http://www.character-code.com/", "nologo": true },
+    { "id": "Android Design", "url": "http://developer.android.com/design/index.html", "nologo": true },
+    { "id": "Unicode Characters", "url": "http://unicode-table.com/en/", "nologo": true },
+    { "id": "Screen Size", "url": "http://screensiz.es/phone/", "nologo": true },
+    { "id": "Sequelize", "url": "http://sequelizejs.com/docs/latest/usage", "nologo": true },
+    { "id": "moment", "url": "http://momentjs.com/docs/" },
+    { "id": "CSS3 Transitions", "url": "http://coding.smashingmagazine.com/2013/04/26/css3-transitions-thank-god-specification/", "nologo": true },
+    { "id": "Evil Icons", "url": "http://evil-icons.io/", "nologo": true },
+    { "id": "HTTP Status Codes", "url": "http://www.restapitutorial.com/httpstatuscodes.html", "nologo": true },
+
+    { "id": "HTTP Statuses", "url": "http://httpstatus.es/", "nologo": true },
+    { "id": "百度统计-浏览器", "url": "http://tongji.baidu.com/data/browser", "nologo": true }
+  ],
+
+  "tools": [
+    { "id": "regexper", "url": "http://www.regexper.com/" },
+    { "id": "regex101", "url": "http://regex101.com/" },
+    { "id": "crontab-guru", "url": "http://crontab.guru/" }
+  ],
+
+  "links": [
+    { "id": "微信公众平台", "url": "https://mp.weixin.qq.com/", "nologo": true },
+    { "id": "微信测试号", "url": "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index", "nologo": true },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+
+    { "id": "qq-mta", "url": "http://mta.qq.com/mta/" },
+    { "id": "baidu-tongji", "url": "http://tongji.baidu.com/web/welcome/login" },
+    { "id": "cnzz", "url": "https://tongji.cnzz.com/main.php?c=site&a=show" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+    { "id": "empty", "url": "#" },
+
+    { "id": "device-atlas", "url": "https://deviceatlas.com/device-data/explorer" },
+    { "id": "screen-sizes", "url": "http://screensiz.es/phone" },
+    { "id": "umindex", "url": "http://www.umindex.com/" }
+  ],
+
+  "resources": [
+    { "id": "404 Repo", "url": "http://404repo.com/", "nologo": true },
+    { "id": "FourZeroFour", "url": "http://four-zero-four.com/", "nologo": true }
+  ],
+
+  "short": [
+    { "id": "Angular API", "url": "http://www.ngnice.com/docs/api", "nologo": true },
+    { "id": "Dust", "url": "http://akdubya.github.com/dustjs/#guide", "nologo": true },
+    { "id": "Font-Awesome", "url": "http://fortawesome.github.io/Font-Awesome/icons/", "nologo": true },
+    { "id": "Foundation", "url": "http://foundation.zurb.com/", "nologo": true },
+    { "id": "Lawnchair", "url": "http://brian.io/lawnchair/", "nologo": true },
+    { "id": "Meteor", "url": "http://www.meteor.com/", "nologo": true },
+    { "id": "Semantic UI", "url": "http://semantic-ui.com/", "nologo": true },
+    { "id": "Sugar", "url": "http://sugarjs.com/", "nologo": true },
+    { "id": "SuperAgent", "url": "https://github.com/visionmedia/superagent", "nologo": true },
+    { "id": "Tornado", "url": "http://tornado.readthedocs.org/en/latest/index.html", "nologo": true }
+  ]
+}
