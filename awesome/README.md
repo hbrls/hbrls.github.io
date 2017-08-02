@@ -31,11 +31,13 @@ API
 6. [HTTP 接口设计指北](https://github.com/bolasblack/http-api-guide)
 7. [Call a Server-side Method on a Resource in a RESTful Way](http://stackoverflow.com/questions/16877968/call-a-server-side-method-on-a-resource-in-a-restful-way)
 8. [Google Cloud API Design Guide](https://cloud.google.com/apis/design/)
+9. [Facebook Graph API](https://developers.facebook.com/docs/graph-api)
 
 Http
 ==
 
 1. [HTTP 2.0的那些事](http://mrpeak.cn/blog/http2/)
+2. [An overview of realtime protocols](https://deepstreamhub.com/blog/an-overview-of-realtime-protocols/)
 
 HTML/CSS
 ==
