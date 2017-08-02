@@ -1,54 +1,67 @@
 Feedly
 ==
 
-    http://www.36kr.com/feed
-    http://next.36kr.com/
-    http://www.leiphone.com/
-    http://news.cnblogs.com/
-    http://www.infoq.com/cn/rss/
-    http://www.oschina.net/project
+```
+http://www.36kr.com/feed
+http://next.36kr.com/
+http://www.leiphone.com/
+http://news.cnblogs.com/
+http://www.infoq.com/cn/rss/
+http://www.oschina.net/project
+http://insights.thoughtworkers.org/
+http://www.alibuybuy.com/
+http://www.uisdc.com/
+http://www.qianduan.net/           前端观察
+http://www.smashingmagazine.com/
+http://shumeipai.nxez.com/
+https://davidwalsh.name/
+http://blog.codingplayboy.com/
+http://2014.54chen.com/
+```
 
-IT News
+知乎专栏
 ==
 
-    http://www.alibuybuy.com/
-    http://insights.thoughtworkers.org/
+*`https://zhihuzhuanlan.aws.lisite.de/rss/{id}/atom.xml`*
+
+```
+https://zhuanlan.zhihu.com/rendering-fantasy    漂亮得不像实力派的可视化
+https://zhuanlan.zhihu.com/FrontendMagazine     前端外刊评论
+https://zhuanlan.zhihu.com/ElemeFE              饿了么前端
+```
 
 IFTTT to Pocket
 ==
 
-    http://coolshell.cn/                酷壳
-    http://blog.zhaojie.me/             老赵
-    http://blog.csdn.net/lanphaday      赖勇浩
-    http://www.cnblogs.com/winter-cn    寒冬
-    http://www.ruanyifeng.com/blog/     阮一峰
-    http://beforweb.com/
-    http://www.labazhou.net/
+```
+http://coolshell.cn/                酷壳
+http://blog.zhaojie.me/             老赵
+http://blog.csdn.net/lanphaday      赖勇浩
+http://www.cnblogs.com/winter-cn    寒冬
+http://www.ruanyifeng.com/blog/     阮一峰
+http://beforweb.com/
+http://www.labazhou.net/
 
-    http://facebook.github.io/react/blog/
+http://facebook.github.io/react/blog/
 
-    http://ued.taobao.com/blog/     淘宝 UED
-    http://taobaofed.org/           淘宝 FED
-    http://cdc.tencent.com/         腾讯 CDC
-    http://ued.sina.com.cn/         新浪 UED
-    http://ued.ctrip.com/blog/      携程 UED
-    http://f2e.souche.com/blog/     大搜车前端
-    http://www.alloyteam.com/       AlloyTeam
-    http://fex.baidu.com/           百度 FEX
-    http://efe.baidu.com/           百度 EFE
-    https://isux.tencent.com/       腾讯 ISUX
-    http://www.w3cplus.com/rss.xml
-    http://www.uisdc.com/
-    http://ithare.com/
+http://ued.taobao.com/blog/     淘宝 UED
+http://taobaofed.org/           淘宝 FED
+http://cdc.tencent.com/         腾讯 CDC
+http://ued.sina.com.cn/         新浪 UED
+http://ued.ctrip.com/blog/      携程 UED
+http://f2e.souche.com/blog/     大搜车前端
+http://www.alloyteam.com/       AlloyTeam
+http://fex.baidu.com/           百度 FEX
+http://efe.baidu.com/           百度 EFE
+https://isux.tencent.com/       腾讯 ISUX
+http://www.w3cplus.com/rss.xml
+http://ithare.com/
+```
 
 Digg Reader
 ==
 
-    http://mxd.tencent.com             腾讯 MXD
-    http://uedc.163.com/               网易 UED
-    http://icojump.in/
-    http://mux.alimama.com/posts
-    http://blog.csdn.net/ccat          @刘鑫-MarsLiu
+```
     http://blogs.360.cn/               360安全卫士技术博客
     http://www.liaoxuefeng.com/        廖雪峰
     http:/noops.me                     小米运维
@@ -56,8 +69,7 @@ Digg Reader
     https://blog.coding.net            Coding.net
     http://www.qianduan.net/           前端观察
     http://ftqq.com/                   Easy
-    http://shumeipai.nxez.com/         树莓派实验室
-    http://jinlong.github.io/
+    http://jinlong.github.io/
     https://www.smashingmagazine.com/
     https://medium.com/@dan_abramov
     http://www.vpsee.com/
@@ -89,7 +101,6 @@ Digg Reader
     http://huangxuan.me/
     http://blog.sina.com.cn/kdeng
     http://haoluobo.com/
-    http://www.smashingmagazine.com/
     http://www.zlovezl.cn/
     http://typeof.net/index.html
     http://www.99css.com
@@ -129,11 +140,4 @@ Digg Reader
     http://lucida.me/
     http://www.gcore.me/
     http://www.g2w.me/
-    http://www.ghugo.com/
-    http://2014.54chen.com/
-    http://blog.codingplayboy.com/
-    http://akagi201.org/
-    http://icodeit.org/
-    http://www.raychase.net/
-    https://davidwalsh.name/
-    http://cizixs.com/
+```
