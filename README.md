@@ -15,3 +15,9 @@
 4. 在 GitHub 建立名为 `hbrls.github.io` 的静态网站项目，添加一个名为 `CNAME` 的文件，里面只有一行，`lisite.de`，参考 [Adding a CNAME file to your repository](https://help.github.com/articles/adding-a-cname-file-to-your-repository/)
 
 5. 等待一切生效，参考 [How GitHub Pages sites use custom domains](https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#how-github-pages-sites-use-custom-domains)
+
+# Jekyll
+
+```bash
+$ bundle exec jekyll server
+```
