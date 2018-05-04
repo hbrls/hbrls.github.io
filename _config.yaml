@@ -16,20 +16,11 @@
 title: 理斯特的
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Would you give up sadness at the expense of joy?
 baseurl:
 url: https://lisite.de
 twitter_username: hbrls
 github_username: hbrls
-
-JGB:
-  books:
-    prefix: '/blog'
-    t2:
-      title: 特二
-      description: 特車二課
 
 
 # Build settings
@@ -52,7 +43,7 @@ plugins:
   - jekyll-remote-theme
 
 author:
-  name   : "Michael Rose"
+  name   : "Albert"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
@@ -92,4 +83,3 @@ defaults:
       comments: true
       share: true
       related: true
-
