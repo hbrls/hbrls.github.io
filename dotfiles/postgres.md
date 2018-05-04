@@ -8,6 +8,13 @@ Debian 8
 
 $ sudo systemctl restart postgresql.service
 $ sudo service postgresql status
+
+$ sudo apt-get --purge remove postgresql\*
+$ sudo rm -r /etc/postgresql/
+$ rm -r /etc/postgresql-common/
+$ rm -r /var/lib/postgresql/
+$ userdel -r postgres
+$ groupdel postgres
 ```
 
 初次安装会默认生成
@@ -73,13 +80,16 @@ $ sudo vim /etc/postgresql/9.4/main/pg_hba.conf # 在末尾添加
     
 =# GRANT CONNECT ON DATABASE {database} TO {username};
 =# \c {database}  # 切换数据库
-=# ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO {username};
-=# GRANT USAGE ON SCHEMA public to {username}; 
-=# GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO {username};
-=# GRANT SELECT ON ALL TABLES IN SCHEMA public TO {username};
+=# ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO "{username}";
+=# GRANT USAGE ON SCHEMA public to "{username}"; 
+=# GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO "{username}";
+=# GRANT SELECT ON ALL TABLES IN SCHEMA public TO "{username}";
 =# REASSIGN OWNED BY {username} TO postgres;
 =# DROP OWNED BY {username};
 =# DROP ROLE {username};
+
+=# GRANT ALL PRIVILEGES ON TABLE {tablename} TO "{username}";
+=# GRANT ALL PRIVILEGES ON SEQUENCE {sequencename} TO "{username}";
 ```
 
     ＃ 备份数据库

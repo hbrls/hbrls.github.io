@@ -17,7 +17,6 @@ module.exports = {
   },
   externals: {
     'd3': 'd3',
-    'reveal': 'Reveal'
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.json']
