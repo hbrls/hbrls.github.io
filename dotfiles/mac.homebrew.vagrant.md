@@ -2,11 +2,9 @@ brew/cask
 ==
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  # http://brew.sh/
-    $ brew tap caskroom/cask
     $ brew tap homebrew/versions
-    $ brew tap caskroom/versions
     $ brew tap homebrew/x11
-    $ brew tap caskroom/fonts 
+    $ brew tap homebrew/cask-fonts
 
     $ brew install coreutils
     $ brew install wget
@@ -22,6 +20,7 @@ brew/cask
     $ brew cask install jadengeller-helium
     $ brew cask install karabiner
     $ brew cask install seil
+    $ brew cask install jd-gui
 
     $ brew install git
     $ brew install python

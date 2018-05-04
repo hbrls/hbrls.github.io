@@ -11,7 +11,7 @@ module.exports = (state, prev, send) => html`
 
     <menu>
       <ul class="${state.active}">
-        <li><a href="https://hbrls.gitbooks.io/bj/content/" target="_blank">不贱</a></li>
+        <li><a href="https://lisite.de/blog/bj" target="_blank">不贱</a></li>
         <li><a href="https://hbrls.gitbooks.io/t2/content/" target="_blank">特二</a></li>
         <li><a href="https://hbrls.gitbooks.io/xx/content/" target="_blank">小鲜</a></li>
       </ul>

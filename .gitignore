@@ -9,3 +9,5 @@ Thumbs.db
 .rvmrc
 
 node_modules/
+
+workspace/
