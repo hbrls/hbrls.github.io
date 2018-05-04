@@ -24,13 +24,6 @@ url: https://lisite.de
 twitter_username: hbrls
 github_username: hbrls
 
-JGB:
-  books:
-    prefix: '/blog'
-    t2:
-      title: 特二
-      description: 特車二課
-
 
 # Build settings
 markdown: kramdown
