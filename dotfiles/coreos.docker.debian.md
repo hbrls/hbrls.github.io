@@ -41,7 +41,17 @@ CoreOS
     
     $ sudo systemctl reset-failed
 
+Docker Compose
+==
+
 [Installing Docker Compose in CoreOS](http://www.ericluwj.com/2015/10/20/installing-docker-compose-in-coreos.html)
+
+```
+$ sudo mkdir -p /opt/bin
+$ sudo chown -R core:core /opt/bin
+$ curl -L https://github.com/docker/compose/releases/download/1.9.0/docker-compose-`uname -s`-`uname -m` > /opt/bin/docker-compose
+$ chmod +x /opt/bin/docker-compose
+```
 
 [Enabling Swap on CoreOS](https://www.matthowlett.com/notes/2015/08/01/coreos-swap.html)
 
