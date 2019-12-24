@@ -8,3 +8,4 @@
 8. [awesome-react-native](https://github.com/jondot/awesome-react-native)
 9. [awesome-redux](https://github.com/xgrommx/awesome-redux)
 10. [awesome-sqlalchemy](https://github.com/dahlia/awesome-sqlalchemy)
+11. [awesome-wpo](https://github.com/davidsonfellipe/awesome-wpo)
