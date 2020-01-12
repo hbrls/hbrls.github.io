@@ -156,3 +156,10 @@ $ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 > GRANT ALL PRIVILEGES ON {database}.* TO '{username}'@'%';
 > FLUSH PRIVILEGES;
 ```
+
+```mysql
+> show variables like '%char%';
+> set character_set_server=utf8;
+? set character_set_database=utf8;
+> ALTER TABLE {tableaname} CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
