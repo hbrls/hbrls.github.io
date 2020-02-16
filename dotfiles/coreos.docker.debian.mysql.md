@@ -57,6 +57,10 @@ $ chmod +x /opt/bin/docker-compose
 
 [Customizing docker](https://coreos.com/os/docs/latest/customizing-docker.html)
 
+```bash
+$ docker system prune
+```
+
 中国特色的 CoreOS 升级
 ==
 
