@@ -6,6 +6,7 @@ CoreOS
     $ cat /etc/os-release
 
     $ echo 'ssh-rsa AAAAB3Nza.......  key@host' | update-ssh-keys -a {name}
+    $ update-ssh-keys -d {name}
     
     $ sudo systemctl start docker.service
     $ sudo systemctl enable docker.service
