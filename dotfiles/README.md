@@ -34,7 +34,7 @@ API
 9. [Facebook Graph API](https://developers.facebook.com/docs/graph-api)
 10. [细说API – 认证、授权和凭证](https://insights.thoughtworks.cn/api-2/)
 11. [开放银行——你的API准备好了吗？](https://insights.thoughtworks.cn/open-banking-api/)
-12. [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md), [Headers](http://www.iana.org/assignments/message-headers/message-headers.xhtml), [Delta Query](https://docs.microsoft.com/en-us/graph/delta-query-overview)
+12. [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md), [MDN Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers), [Delta Query](https://docs.microsoft.com/en-us/graph/delta-query-overview)
 
 Http
 ==
