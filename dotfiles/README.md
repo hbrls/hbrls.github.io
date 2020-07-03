@@ -76,6 +76,7 @@ Security
 ==
 
 1. [Salted Password Hashing - Doing it Right](https://crackstation.net/hashing-security.htm)
+2. [浅谈微服务架构中的鉴权体系](https://insights.thoughtworks.cn/authentication-in-microservices-architecture/)
 
 Angular
 ==
