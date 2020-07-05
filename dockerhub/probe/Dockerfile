@@ -11,7 +11,7 @@ RUN \
   locale-gen && \
   dpkg-reconfigure locales && \
   /usr/sbin/update-locale LANG=en_US.UTF-8 && \
-  pip install mysqlclient==2.0.1 \
+  pip install mysqlclient==2.0.1 && \
   apt-get install -y supervisor && \
   mkdir -p /var/log/supervisor && \
   rm -rf /var/lib/apt/lists/* && \
