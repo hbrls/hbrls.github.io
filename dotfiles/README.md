@@ -145,6 +145,7 @@ Others
 5. [@fouber：前端工程](https://github.com/fouber/blog/issues)
 6. [深度解读当代前端架构进化史，下一个趋势在哪？](https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247492611&idx=1&sn=1cb8a1e8815bbc25710fef4a0959680f)
 7. [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+8. [REFRAGMENTATION](http://paulgraham.com/re.html)，[再分化](https://zhuanlan.zhihu.com/p/20891826)
 
 未分类
 ==
