@@ -11,12 +11,15 @@ RUN \
   locale-gen && \
   dpkg-reconfigure locales && \
   /usr/sbin/update-locale LANG=en_US.UTF-8 && \
-  pip install mysqlclient==1.4.6 pika==1.1.0 && \
+  pip install mysqlclient==2.0.1 \
   apt-get install -y supervisor && \
   mkdir -p /var/log/supervisor && \
   rm -rf /var/lib/apt/lists/* && \
   mkdir -p /var/app && chown -R www-data:www-data /var/app && \
   mkdir -p /data/log && chown -R www-data:www-data /data/log
+
+ADD requirements.txt /
+RUN pip install -r requirements.txt
 
 ENV \
  LC_ALL en_US.UTF-8 \
