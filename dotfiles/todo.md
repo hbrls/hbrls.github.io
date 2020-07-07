@@ -48,3 +48,4 @@ EGG
 1. [“子弹日记”：把空白笔记本变成效率机器](https://weibo.com/ttarticle/p/show?id=2309404523463510720658)
 2. [都2020年了，怎么还有人愿意签约MCN？| 超级观点](https://36kr.com/p/780530514271112)
 3. [Obsidian](https://obsidian.md/)
+4. [Collected Notes](https://collectednotes.com/)
