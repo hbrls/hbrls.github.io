@@ -41,3 +41,8 @@ EGG
 1. [Flink](https://www.zhihu.com/topic/20043072/hot)
 2. [TiDB](https://www.zhihu.com/topic/20062171/hot)
 3. [ESB](https://www.zhihu.com/topic/19659424/hot)
+
+物
+==
+
+1. [“子弹日记”：把空白笔记本变成效率机器](https://weibo.com/ttarticle/p/show?id=2309404523463510720658)
