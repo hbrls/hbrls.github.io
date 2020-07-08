@@ -49,3 +49,4 @@ EGG
 2. [都2020年了，怎么还有人愿意签约MCN？| 超级观点](https://36kr.com/p/780530514271112)
 3. [Obsidian](https://obsidian.md/)
 4. [Collected Notes](https://collectednotes.com/)
+5. [恕我直言，做好文件管理就能上知天文下知地理](https://mp.weixin.qq.com/s/JIXs-y-2wTRUTg3cg5r8Bg)
