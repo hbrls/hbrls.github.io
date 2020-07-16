@@ -50,3 +50,4 @@ EGG
 3. [Obsidian](https://obsidian.md/)
 4. [Collected Notes](https://collectednotes.com/)
 5. [恕我直言，做好文件管理就能上知天文下知地理](https://mp.weixin.qq.com/s/JIXs-y-2wTRUTg3cg5r8Bg)
+6. [基于 Airtable 实现小微企业的简单信息化](https://zhuanlan.zhihu.com/p/104322461)
