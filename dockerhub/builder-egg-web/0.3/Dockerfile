@@ -1,4 +1,4 @@
-FROM node:8.16.0-stretch-slim AS builder
+FROM node:10.21.0-stretch-slim AS builder
 
 EXPOSE 7001
 
@@ -18,7 +18,7 @@ COPY package-run.json /var/app-run/package.json
 RUN cd /var/app-run && npm install --no-package-lock --no-optional
 
 
-FROM node:8.16.0-stretch-slim
+FROM node:10.21.0-stretch-slim
 COPY --from=builder /var/app /var/app
 COPY --from=builder /var/app-run /var/app-run
 COPY --from=builder /var/app-build /var/app-build
