@@ -45,7 +45,6 @@ http://beforweb.com/
 
 http://facebook.github.io/react/blog/
 
-http://f2e.souche.com/blog/     大搜车前端
 http://www.alloyteam.com/       AlloyTeam
 http://fex.baidu.com/           百度 FEX
 http://efe.baidu.com/           百度 EFE

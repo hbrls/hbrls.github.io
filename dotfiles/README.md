@@ -34,12 +34,14 @@ API
 9. [Facebook Graph API](https://developers.facebook.com/docs/graph-api)
 10. [细说API – 认证、授权和凭证](https://insights.thoughtworks.cn/api-2/)
 11. [开放银行——你的API准备好了吗？](https://insights.thoughtworks.cn/open-banking-api/)
+12. [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md), [MDN Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers), [Delta Query](https://docs.microsoft.com/en-us/graph/delta-query-overview)
 
 Http
 ==
 
 1. [HTTP 2.0的那些事](http://mrpeak.cn/blog/http2/)
 2. [An overview of realtime protocols](https://deepstreamhub.com/blog/an-overview-of-realtime-protocols/)
+3. [STOMP Over WebSocket](http://jmesnil.net/stomp-websocket/doc/)
 
 HTML/CSS
 ==
@@ -52,6 +54,7 @@ HTML/CSS
 6. [CSS语言内部其实根本不存在复用机制](http://www.zhihu.com/question/20658520/answer/15770608)
 7. [CSS Bliss Walkthrough](http://gilbox.github.io/css-bliss/walkthrough/release/)
 8. [Semantic HTML](http://justineo.github.io/slideshows/semantic-html/#/)
+9. [\<head\>](https://github.com/joshbuchea/HEAD)
 
 JavaScript
 ==
@@ -73,6 +76,7 @@ Security
 ==
 
 1. [Salted Password Hashing - Doing it Right](https://crackstation.net/hashing-security.htm)
+2. [浅谈微服务架构中的鉴权体系](https://insights.thoughtworks.cn/authentication-in-microservices-architecture/)
 
 Angular
 ==
@@ -112,6 +116,22 @@ Design
 3. [7 Rules for Creating Gorgeous UI (Part I)](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda#.sizyu0gqs), [(Part II)](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-2-430de537ba96#.gbhkh41ps)
 4. [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
+设计规范
+==
+
+1. https://rizzo.lonelyplanet.com/styleguide/design-elements/colours
+2. https://guide.aotu.io/docs/html/code.html
+3. https://semantic-ui.com/collections/menu.html
+4. https://material.io/components/data-tables
+5. https://yyued.gitbooks.io/pattern/content/
+6. [微信小程序设计指南](https://developers.weixin.qq.com/miniprogram/design/#%E5%8F%8B%E5%A5%BD%E7%A4%BC%E8%B2%8C)
+7. [Salesforce Lightning](https://www.lightningdesignsystem.com/utilities/text/)
+8. [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+9. https://evergreen.segment.com/components/
+10. https://baseweb.design/
+11. https://l-ui.com/pure/about.design.html
+12. https://pro.iviewui.com/pro/introduce
+
 Animation
 ==
 
@@ -122,6 +142,11 @@ Stats
 ==
 
 1. [期望、方差、协方差及相关系数的基本运算](http://blog.codinglabs.org/articles/basic-statistics-calculate.html)
+
+雷达
+==
+
+1. [2019 前端技术发展回顾](https://zhuanlan.zhihu.com/p/101517039)
 
 创业
 ==
@@ -153,3 +178,4 @@ Others
 1. [平台级 SAAS 架构的基础：统一身份管理系统](https://www.jianshu.com/p/990d8acfdb69)
 2. [微服务架构下的统一身份认证和授权](https://www.jianshu.com/p/2571f6a4e192)
 3. [浅聊Kubernetes的各种认证策略以及适用场景](http://dockone.io/article/9561)
+4. [蚂蚁前端研发最佳实践](https://github.com/sorrycc/blog/issues/90)

@@ -1,3 +1,20 @@
+Fedora CoreOS
+==
+
+    $ brew install fcct
+    
+    # vultr.fcc
+    variant: fcos
+    version: 1.0.0
+    passwd:
+      users:
+        - name: core
+          ssh_authorized_keys:
+            - "ssh-rsa AAAAB..."
+      groups: [ sudo, docker ]
+    
+    $ fcct -o vultr.ign vultr.fcc
+
 CoreOS
 ==
 
@@ -105,7 +122,12 @@ Debian
 $ lsb_release -a
 $ ssh-keygen -t rsa -C "core@hostname.lisitede.com"
 
+$ sudo update-alternatives --config editor
 $ sudo apt list --upgradable
+
+# sudoedit /etc/sshd_config
+$ ClientAliveInterval 120
+$ ClientAliveCountMax 5
 
 # /etc/cloud/templates/hosts.debian.tmpl
 ```
