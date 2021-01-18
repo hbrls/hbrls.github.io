@@ -11,3 +11,4 @@
 11. [awesome-sqlalchemy](https://github.com/dahlia/awesome-sqlalchemy)
 12. [awesome-wpo](https://github.com/davidsonfellipe/awesome-wpo)
 13. [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+14. [awesome-handshake](https://github.com/namebasehq/awesome-handshake)
