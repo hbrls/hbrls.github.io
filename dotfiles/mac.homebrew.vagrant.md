@@ -2,27 +2,29 @@ brew/cask
 ==
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  # http://brew.sh/
-    $ brew tap homebrew/versions
-    $ brew tap homebrew/x11
-    $ brew tap homebrew/cask-fonts
+    # $ brew tap homebrew/versions
+    # $ brew tap homebrew/x11
+    # $ brew tap homebrew/cask-fonts
 
+    $ brew install --cask iterm2
     $ brew install coreutils
     $ brew install wget
     $ brew install ccat
     $ brew install trash
+    $ brew install git
+    $ brew install tig
+    $ brew install --cask squirrel
+    $ brew install --cask keka
+    $ brew install --cask jd-gui
+
     $ brew cask install xquartz
-    $ brew cask install iterm2
     $ brew cask install cmd-eikana
     $ brew cask install rightzoom
     $ brew cask install font-source-code-pro
-    $ brew cask install squirrel
-    $ brew cask install keka
     $ brew cask install jadengeller-helium
     $ brew cask install karabiner
     $ brew cask install seil
-    $ brew cask install jd-gui
-
-    $ brew install git
+    
     $ brew install python
     $ brew install python3
     $ brew install node@6
@@ -32,22 +34,15 @@ brew/cask
     $ brew install postgres
     $ brew install maven
     $ brew install tomcat
-    $ brew install tig
 
     $ brew install mpv
     $ brew cask install sublime-text
-    $ brew cask install google-chrome
-    $ brew cask install firefox
     $ brew cask install foxmail
     $ brew cask install virtualbox
     $ brew cask install vagrant
-    $ brew cask install pycharm-ce
-    $ brew cask install datagrip
     $ brew cask install atom
     $ brew cask install nally
-    $ brew cask install smartgit
-    $ brew cask install thunder
-
+    
     $ brew outdated
     $ brew cleanup
 
