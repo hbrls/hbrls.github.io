@@ -107,6 +107,7 @@ MySQL
 ==
 
 1. [一文讲透微服务架构下如何保证事务的一致性](https://www.infoq.cn/article/THMgMFVQvpWp9yrrxpMW)
+2. [Never use the word “User” in your code](https://codewithoutrules.com/2018/09/21/users-considered-harmful/)
 
 Design
 ==

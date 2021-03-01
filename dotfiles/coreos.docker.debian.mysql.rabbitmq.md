@@ -196,6 +196,10 @@ MySQL
 $ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
+```bash
+$ echo $(export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+```
+
 ```mysql
 > CREATE DATABASE {database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 >
