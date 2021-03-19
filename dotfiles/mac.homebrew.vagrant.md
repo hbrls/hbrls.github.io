@@ -9,6 +9,7 @@ $ brew tap homebrew/cask-fonts
 
 $ brew install --cask iterm2
 $ brew install coreutils
+$ brew install gnu-sed
 $ brew install wget
 $ brew install ccat
 $ brew install trash
