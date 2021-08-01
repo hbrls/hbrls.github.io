@@ -1,42 +1,9 @@
-1. [Basis](#basis)
-2. [CSS](#css)
 3. [Go](#go)
 4. [Haskell](#haskell)
 5. [JavaScript](#javascript)
 6. [Problems](#problems)
 7. [Python](#python)
 7. [Courses](#courses)
-
-Basis
-==
-
-1. [The Art of Unix Programming](http://catb.org/esr/writings/taoup/html/)
-2. [Clever Algorithms: Nature-Inspired Programming Recipes](http://www.cleveralgorithms.com/nature-inspired/index.html)
-3. [Foundations of Computer Science](http://infolab.stanford.edu/~ullman/focs.html)
-4. [How to Design Programs: An Introduction to Computing and Programming](http://www.htdp.org/2003-09-26/Book/)
-5. [Introduction to Functional Programming](http://www.cl.cam.ac.uk/teaching/Lectures/funprog-jrh/)
-6. [A Field Guide to Genetic Programming](http://dces.essex.ac.uk/staff/rpoli/gp-field-guide/toc.html)
-7. [An Introduction to the Theory of Computation](http://www.cse.ohio-state.edu/~gurari/theory-bk/theory-bk.html)
-8. [Security Engineering](http://www.cl.cam.ac.uk/~rja14/book.html)
-9. [Programming Languages: Application and Interpretation by Shriram Krishnamurthi](http://cs.brown.edu/~sk/Publications/Books/ProgLangs/)
-10. [SICP](http://mitpress.mit.edu/sicp/full-text/book/book.html)
-11. [UFLDL教程(Deep Learning)](http://deeplearning.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B)
-12. [Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/)
-13. [Think Complexity](http://greenteapress.com/complexity/html/index.html)
-14. [Natural Language Processing with Python](http://nltk.org/book/)
-15. [Machine Learning Resources](http://m.sciencemag.org/site/feature/data/compsci/machine_learning.xhtml)
-16. [High-Performance Browser Networking](http://chimera.labs.oreilly.com/books/1230000000545/index.html)
-17. [程序员编程艺术](https://github.com/julycoding/The-Art-Of-Programming-By-July)
-18. [Computer Science from the Bottom Up](http://bottomupcs.com/)
-19. [NLP资料](http://www.52nlp.cn/resources)
-20. [程序员编程艺术 — 面试和算法心得](https://github.com/julycoding/The-Art-Of-Programming-By-July)
-21. [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/)
-22. [Basics of the Unix Philosophy](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
-
-CSS
-==
-
-1. [Learn CSS Layout the pedantic way](http://book.mixu.net/css/)
 
 Go
 ==
