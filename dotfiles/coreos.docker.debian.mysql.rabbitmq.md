@@ -130,6 +130,8 @@ $ ClientAliveInterval 120
 $ ClientAliveCountMax 5
 
 # /etc/cloud/templates/hosts.debian.tmpl
+
+$ sudo apt-get update --allow-releaseinfo-change
 ```
 
 [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -168,6 +170,11 @@ $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/de
 $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 $ sudo usermod -aG docker core
+```
+
+```bash
+$ curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/debian/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/debian $(lsb_release -cs) stable"
 ```
 
 [Install Docker Compose](https://docs.docker.com/compose/install/)
