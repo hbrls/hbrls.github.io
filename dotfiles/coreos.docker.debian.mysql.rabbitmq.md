@@ -243,6 +243,8 @@ $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo ap
 $ sudo apt-get install postgresql-client-12
 ```
 
+[CREATE DATABASE](https://www.postgresqltutorial.com/postgresql-create-database/)
+
 ```bash
 $ psql -h 127.0.0.1 -U postgres
 
