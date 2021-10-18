@@ -260,6 +260,8 @@ postgres=#\c {database}     # 切换数据库
 =# \dt                      # 列举表
 =# \d {table}               # 查看表结构
 =# \di                      # 查看索引
+
+=# \q                       # 退出 psql
 ```
 
 RabbitMQ
