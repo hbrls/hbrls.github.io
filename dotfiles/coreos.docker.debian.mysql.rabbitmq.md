@@ -1,63 +1,67 @@
 Fedora CoreOS
 ==
 
-    $ brew install fcct
+```bash
+$ brew install fcct
     
-    # vultr.fcc
-    variant: fcos
-    version: 1.0.0
-    passwd:
-      users:
-        - name: core
-          ssh_authorized_keys:
-            - "ssh-rsa AAAAB..."
-      groups: [ sudo, docker ]
-    
-    $ fcct -o vultr.ign vultr.fcc
+# vultr.fcc
+variant: fcos
+version: 1.0.0
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - "ssh-rsa AAAAB..."
+  groups: [ sudo, docker ]
+
+$ fcct -o vultr.ign vultr.fcc
+```
 
 CoreOS
 ==
 
-    $ sudo hostnamectl set-hostname {hostname}
-    $ cat /etc/coreos/update.conf
-    $ cat /etc/os-release
+```bash
+$ sudo hostnamectl set-hostname {hostname}
+$ cat /etc/coreos/update.conf
+$ cat /etc/os-release
 
-    $ echo 'ssh-rsa AAAAB3Nza.......  key@host' | update-ssh-keys -a {name}
-    $ update-ssh-keys -d {name}
+$ echo 'ssh-rsa AAAAB3Nza.......  key@host' | update-ssh-keys -a {name}
+$ update-ssh-keys -d {name}
+
+$ sudo systemctl start docker.service
+$ sudo systemctl enable docker.service
+
+# https://github.com/coreos/coreos-vagrant/issues/36
+$ sudo systemctl restart ntpd
+
+# /etc/systemd/system/backup_postgres.service
+[Unit]
+Description=Backup of Postgres
+
+[Service]
+ExecStart=/usr/bin/docker exec postgres /var/backups/scripts/dump_db.sh
+
+[Install]
+WantedBy=local.target
+
+# /etc/systemd/system/backup_postgres.timer
+[Unit]
+Description=Runs Postgres backup every 1 hour
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=true
+
+[Install]
+WantedBy=local.target
     
-    $ sudo systemctl start docker.service
-    $ sudo systemctl enable docker.service
-
-    # https://github.com/coreos/coreos-vagrant/issues/36
-    $ sudo systemctl restart ntpd
-    
-    # /etc/systemd/system/backup_postgres.service
-    [Unit]
-    Description=Backup of Postgres
-
-    [Service]
-    ExecStart=/usr/bin/docker exec postgres /var/backups/scripts/dump_db.sh
-
-    [Install]
-    WantedBy=local.target
-
-    # /etc/systemd/system/backup_postgres.timer
-    [Unit]
-    Description=Runs Postgres backup every 1 hour
-
-    [Timer]
-    OnCalendar=*-*-* *:00:00
-    Persistent=true
-
-    [Install]
-    WantedBy=local.target
-    
-    $ sudo systemctl enable backup_postgres.service
-    $ sudo systemctl enable backup_postgres.timer
-    $ sudo systemctl start backup_postgres.timer
-    $ journalctl -f -u backup_postgres.service
-    
-    $ sudo systemctl reset-failed
+$ sudo systemctl enable backup_postgres.service
+$ sudo systemctl enable backup_postgres.timer
+$ sudo systemctl start backup_postgres.timer
+$ journalctl -f -u backup_postgres.service
+   
+$ sudo systemctl reset-failed
+```
 
 Docker Compose
 ==
@@ -237,6 +241,25 @@ PostgreSQL
 $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 $ sudo apt-get install postgresql-client-12
+```
+
+```bash
+$ psql -h 127.0.0.1 -U postgres
+
+=# \l                       # 列表所有数据库，不管你当前在哪个数据库
+=# \du                      # 列表所有用户
+=# select * from pg_roles;  # 列表所有角色，不管你当前在哪
+
+postgres=#\c {database}     # 切换数据库
+{database}=#
+
+=# select current_database();
+=# select current_user;
+=# \conninfo                # 当前链接信息
+
+=# \dt                      # 列举表
+=# \d {table}               # 查看表结构
+=# \di                      # 查看索引
 ```
 
 RabbitMQ
