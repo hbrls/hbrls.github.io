@@ -227,6 +227,18 @@ $ echo $(export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 |
 > set character_set_database=utf8;
 > ALTER TABLE {tableaname} CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
+
+PostgreSQL
+==
+
+[PostgreSQL Apt Repository](https://www.postgresql.org/download/linux/debian/)
+
+```bash
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+$ sudo apt-get install postgresql-client-12
+```
+
 RabbitMQ
 ==
 
