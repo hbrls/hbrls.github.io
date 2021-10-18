@@ -264,6 +264,8 @@ postgres=#\c {database}     # 切换数据库
 =# \di                      # 查看索引
 
 =# \q                       # 退出 psql
+
+=# grant all privileges on database {database} to {username};
 ```
 
 RabbitMQ
