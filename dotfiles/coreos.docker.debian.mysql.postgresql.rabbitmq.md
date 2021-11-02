@@ -138,7 +138,7 @@ $ ClientAliveCountMax 5
 $ sudo apt-get update --allow-releaseinfo-change
 ```
 
-[Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+[Oh-My-Zsh](https://ohmyz.sh/#install)
 
 ```bash
 $ vim ~/.oh-my-zsh/themes/robbyrussell.withhost.zsh-theme
