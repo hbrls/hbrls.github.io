@@ -221,6 +221,7 @@ $ echo $(export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 |
 
 ```
 > SET PASSWORD FOR '{username}'@'localhost' = PASSWORD("{newpassword}");
+> ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password BY '{newpassword}';
 ```
 
 ```mysql
