@@ -107,6 +107,7 @@ MySQL
 ==
 
 1. [一文讲透微服务架构下如何保证事务的一致性](https://www.infoq.cn/article/THMgMFVQvpWp9yrrxpMW)
+2. [Never use the word “User” in your code](https://codewithoutrules.com/2018/09/21/users-considered-harmful/)
 
 Design
 ==
@@ -152,7 +153,6 @@ Stats
 ==
 
 1. [How To Create A Minimum Viable Product](http://techcrunch.com/2012/07/13/how-to-create-a-minimum-viable-product)
-2. [一个小老板的日常管理手册](http://hugo.wutongshu.org/post/421.html)
 3. [從Google+上學到的經驗教訓](http://jianshu.io/p/b9d6ec4d4477)
 4. [如何培養社區文化？](http://jianshu.io/p/79433916d23c)
 5. [.NET技术+25台服务器怎样支撑世界第54大网站](http://www.csdn.net/article/2014-07-22/2820774-stackoverflow-update-560m-pageviews-a-month-25-servers)
@@ -164,9 +164,7 @@ Others
 ==
 
 1. [马伯庸: 诺亚的烦恼](http://blog.sina.com.cn/s/blog_561ee47501000bcv.html)
-2. [我的Starwood之路](http://topic.yingjiesheng.com/starwoodhotels/jingyan/0F92163592009.html)
 3. [切肤之爱](http://bbs.tianya.cn/post-16-611101-1.shtml)
-4. [梁启超的感慨与金融危机](http://blog.ifeng.com/article/1821073.html)
 5. [@fouber：前端工程](https://github.com/fouber/blog/issues)
 6. [深度解读当代前端架构进化史，下一个趋势在哪？](https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247492611&idx=1&sn=1cb8a1e8815bbc25710fef4a0959680f)
 7. [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
@@ -179,3 +177,13 @@ Others
 2. [微服务架构下的统一身份认证和授权](https://www.jianshu.com/p/2571f6a4e192)
 3. [浅聊Kubernetes的各种认证策略以及适用场景](http://dockone.io/article/9561)
 4. [蚂蚁前端研发最佳实践](https://github.com/sorrycc/blog/issues/90)
+
+Problems
+==
+
+1. [LeetCode](https://leetcode.com/)
+2. [Which Way Did the Bicycle Go 趣题选（上）](http://www.matrix67.com/blog/archives/3113)
+3. [Which Way Did the Bicycle Go 趣题选（中）](http://www.matrix67.com/blog/archives/3172)
+4. [Which Way Did the Bicycle Go 趣题选（下）](http://www.matrix67.com/blog/archives/3243)
+5. [140个Google面试问题](http://www.cnblogs.com/hanyulcf/archive/2010/12/03/1895934.html)
+6. [Project Euler](https://projecteuler.net/archives)

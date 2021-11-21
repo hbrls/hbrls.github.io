@@ -1,63 +1,67 @@
 Fedora CoreOS
 ==
 
-    $ brew install fcct
+```bash
+$ brew install fcct
     
-    # vultr.fcc
-    variant: fcos
-    version: 1.0.0
-    passwd:
-      users:
-        - name: core
-          ssh_authorized_keys:
-            - "ssh-rsa AAAAB..."
-      groups: [ sudo, docker ]
-    
-    $ fcct -o vultr.ign vultr.fcc
+# vultr.fcc
+variant: fcos
+version: 1.0.0
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - "ssh-rsa AAAAB..."
+  groups: [ sudo, docker ]
+
+$ fcct -o vultr.ign vultr.fcc
+```
 
 CoreOS
 ==
 
-    $ sudo hostnamectl set-hostname {hostname}
-    $ cat /etc/coreos/update.conf
-    $ cat /etc/os-release
+```bash
+$ sudo hostnamectl set-hostname {hostname}
+$ cat /etc/coreos/update.conf
+$ cat /etc/os-release
 
-    $ echo 'ssh-rsa AAAAB3Nza.......  key@host' | update-ssh-keys -a {name}
-    $ update-ssh-keys -d {name}
+$ echo 'ssh-rsa AAAAB3Nza.......  key@host' | update-ssh-keys -a {name}
+$ update-ssh-keys -d {name}
+
+$ sudo systemctl start docker.service
+$ sudo systemctl enable docker.service
+
+# https://github.com/coreos/coreos-vagrant/issues/36
+$ sudo systemctl restart ntpd
+
+# /etc/systemd/system/backup_postgres.service
+[Unit]
+Description=Backup of Postgres
+
+[Service]
+ExecStart=/usr/bin/docker exec postgres /var/backups/scripts/dump_db.sh
+
+[Install]
+WantedBy=local.target
+
+# /etc/systemd/system/backup_postgres.timer
+[Unit]
+Description=Runs Postgres backup every 1 hour
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=true
+
+[Install]
+WantedBy=local.target
     
-    $ sudo systemctl start docker.service
-    $ sudo systemctl enable docker.service
-
-    # https://github.com/coreos/coreos-vagrant/issues/36
-    $ sudo systemctl restart ntpd
-    
-    # /etc/systemd/system/backup_postgres.service
-    [Unit]
-    Description=Backup of Postgres
-
-    [Service]
-    ExecStart=/usr/bin/docker exec postgres /var/backups/scripts/dump_db.sh
-
-    [Install]
-    WantedBy=local.target
-
-    # /etc/systemd/system/backup_postgres.timer
-    [Unit]
-    Description=Runs Postgres backup every 1 hour
-
-    [Timer]
-    OnCalendar=*-*-* *:00:00
-    Persistent=true
-
-    [Install]
-    WantedBy=local.target
-    
-    $ sudo systemctl enable backup_postgres.service
-    $ sudo systemctl enable backup_postgres.timer
-    $ sudo systemctl start backup_postgres.timer
-    $ journalctl -f -u backup_postgres.service
-    
-    $ sudo systemctl reset-failed
+$ sudo systemctl enable backup_postgres.service
+$ sudo systemctl enable backup_postgres.timer
+$ sudo systemctl start backup_postgres.timer
+$ journalctl -f -u backup_postgres.service
+   
+$ sudo systemctl reset-failed
+```
 
 Docker Compose
 ==
@@ -130,9 +134,11 @@ $ ClientAliveInterval 120
 $ ClientAliveCountMax 5
 
 # /etc/cloud/templates/hosts.debian.tmpl
+
+$ sudo apt-get update --allow-releaseinfo-change
 ```
 
-[Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+[Oh-My-Zsh](https://ohmyz.sh/#install)
 
 ```bash
 $ vim ~/.oh-my-zsh/themes/robbyrussell.withhost.zsh-theme
@@ -170,6 +176,11 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 $ sudo usermod -aG docker core
 ```
 
+```bash
+$ curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/debian/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/debian $(lsb_release -cs) stable"
+```
+
 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 ```bash
@@ -196,6 +207,10 @@ MySQL
 $ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
+```bash
+$ echo $(export LC_CTYPE=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+```
+
 ```mysql
 > CREATE DATABASE {database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 >
@@ -206,6 +221,7 @@ $ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 
 ```
 > SET PASSWORD FOR '{username}'@'localhost' = PASSWORD("{newpassword}");
+> ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password BY '{newpassword}';
 ```
 
 ```mysql
@@ -216,6 +232,43 @@ $ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 > set character_set_database=utf8;
 > ALTER TABLE {tableaname} CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
+
+PostgreSQL
+==
+
+[PostgreSQL Apt Repository](https://www.postgresql.org/download/linux/debian/)
+
+```bash
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+$ sudo apt-get install postgresql-client-12
+```
+
+[CREATE DATABASE](https://www.postgresqltutorial.com/postgresql-create-database/)
+
+```bash
+$ psql -h 127.0.0.1 -U postgres
+
+=# \l                       # 列表所有数据库，不管你当前在哪个数据库
+=# \du                      # 列表所有用户
+=# select * from pg_roles;  # 列表所有角色，不管你当前在哪
+
+postgres=#\c {database}     # 切换数据库
+{database}=#
+
+=# select current_database();
+=# select current_user;
+=# \conninfo                # 当前链接信息
+
+=# \dt                      # 列举表
+=# \d {table}               # 查看表结构
+=# \di                      # 查看索引
+
+=# \q                       # 退出 psql
+
+=# grant all privileges on database {database} to {username};
+```
+
 RabbitMQ
 ==
 
