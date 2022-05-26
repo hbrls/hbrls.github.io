@@ -1,0 +1,61 @@
+body {
+  font-family: "Source Code Pro", Consolas, "Liberation Mono", Courier, monospace;
+  background-image: url(/rsrc/img/bg-mosaic.jpg);
+}
+
+.Nav {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.Nav .navbar-nav > li > a {
+  cursor: pointer;
+}
+
+.Nav .navbar-nav > .active > a {
+  background-color: transparent;
+  box-shadow: 0px 1px 0px 0px #233;
+}
+
+.Nav-github > span {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.Menu {
+  padding-right: 0;
+}
+
+.Menu .nav-pills > li > a {
+  color: #77c9d4;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.Menu .nav-pills > li > a:hover {
+  background-color: #fff;
+}
+
+
+.Menu .nav-pills > li.active > a {
+  border: 1px solid #58acb7;
+  background-image: linear-gradient(to bottom, #77c9d4, #77c9d4);
+  color: #fff;
+}
+
+.Menu .nav-pills > li.disabled > a {
+  font-size: 12px;
+  color: #a59a96;
+  cursor: default;
+}
+
+.Menu .nav-pills > li.disabled > a:hover {
+  background-color: transparent;
+}
+
+.Footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 12px;
+}
