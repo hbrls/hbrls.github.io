@@ -2,6 +2,12 @@ fav:
   - id: Pocket
     url: https://getpocket.com/developer/docs/v3/retrieve
     icon: api
+  - id: Jira
+    url: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/
+    icon: api
+  - id: Jira Agile
+    url: https://docs.atlassian.com/jira-software/REST/7.3.1/
+    icon: api
 watch:
   - id: CockroachDB
     url: https://cockroachlabs.cloud/clusters

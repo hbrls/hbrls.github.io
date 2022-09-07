@@ -17,3 +17,6 @@
 - id: 百度统计-浏览器
   url: http://tongji.baidu.com/data/browser
   label: short
+- id: 友盟
+  url: https://www.umeng.com/
+  label: short

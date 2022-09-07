@@ -1,13 +1,15 @@
 fav:
-  - id: "bootstrap"
-    url: "http://getbootstrap.com/components/"
-    icon: "bootstrap"
+  - id: Bootstrap
+    url: http://getbootstrap.com/components/
+    icon: bootstrap
   - id: "material-ui"
     url: "http://www.material-ui.com/#/components/app-bar"
     icon: "material-ui"
   - id: Backbone
     url: http://backbonejs.org/
     icon: language-javascript
+  - id: Vant 小程序
+    url: https://vant-contrib.gitee.io/vant-weapp/
   - id: "no-jquery"
     url: "http://youmightnotneedjquery.com/"
   - id: "no-underscore"
@@ -62,24 +64,21 @@ fav:
     url: "http://crontab.guru/"
 
 watch:
+  - id: Bulma
+    url: https://bulma.io/
+    icon: bootstrap
+  - id: Fluent UI
+    url: https://developer.microsoft.com/en-us/fluentui#/
+  - id: Next UI
+    url: https://nextui.org/docs/components/avatar
   - id: "微信测试号"
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
-
-  - id: "qq-mta"
-    url: "http://mta.qq.com/mta/"
-  - id: "baidu-tongji"
-    url: "http://tongji.baidu.com/web/welcome/login"
-  - id: "cnzz"
-    url: "https://tongji.cnzz.com/main.php?c=site&a=show"
-
   - id: "device-atlas"
     url: "https://deviceatlas.com/device-data/explorer"
   - id: "screen-sizes"
     url: "http://screensiz.es/phone"
   - id: "umindex"
     url: "http://www.umindex.com/"
-
-# resources:
   - id: "404 Repo"
     url: "http://404repo.com/"
   - id: "FourZeroFour"
