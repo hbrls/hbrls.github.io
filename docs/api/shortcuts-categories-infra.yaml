@@ -1,0 +1,19 @@
+- id: ES6 兼容
+  url: https://kangax.github.io/compat-table/es6/
+  label: fav
+  icon: chart-bar-stacked
+- id: Render
+  url: https://render.com/
+  label: watch
+  icon: lan-connect
+- id: Gitpod
+  url: https://www.gitpod.io/
+  label: watch
+  icon: lan-connect
+- id: 机智云
+  url: https://www.gizwits.com/
+  label: watch
+  icon: robot-outline
+- id: 百度统计-浏览器
+  url: http://tongji.baidu.com/data/browser
+  label: short

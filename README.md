@@ -16,33 +16,6 @@
 
 5. 等待一切生效，参考 [How GitHub Pages sites use custom domains](https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#how-github-pages-sites-use-custom-domains)
 
-# Let's Encrypt
-
-1. run 
-
-        ``bash
-        $ docker pull certbot/certbot:v0.29.1
-        $ docker run -it --rm -v /home/core/github/workspace/vt.lisite.de/nginx/cert/:/etc/letsencrypt --entrypoint /bin/sh certbot/certbot:v0.29.1
-        $ (in container) certbot --server https://acme-v02.api.letsencrypt.org/directory -d "lisite.de,*.lisite.de" --manual --preferred-challenges dns-01 certonly
-        # follow the instructions, !!! TXT DNS TTL -> 60 second 
-        ```
-2. will generate
-
-        ```bash
-        ...    
-        ./live/lisite.de/cert.pem
-        ./live/lisite.de/chain.pem
-        ./live/lisite.de/fullchain.pem
-        ./live/lisite.de/privkey.pem
-        ```
-
-3. nginx.conf
-
-        ```bash
-        ssl_certificate     /etc/nginx/cert/live/lisite.de/fullchain.pem;
-        ssl_certificate_key /etc/nginx/cert/live/lisite.de/privkey.pem;
-        ```
-
 # Jekyll
 
 ```bash
