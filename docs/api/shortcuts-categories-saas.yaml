@@ -1,0 +1,18 @@
+fav:
+  - id: Pocket
+    url: https://getpocket.com/developer/docs/v3/retrieve
+    icon: api
+watch:
+  - id: CockroachDB
+    url: https://cockroachlabs.cloud/clusters
+    icon: database
+  - id: Miro
+    url: https://miro.com/
+    icon: panorama-variant-outline
+short:
+  - id: One APM
+    url: https://www.oneapm.com/index.html
+    icon: gauge
+  - id: mmTrix
+    url: http://www.mmtrix.com/index
+    icon: gauge

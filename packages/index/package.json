@@ -1,0 +1,30 @@
+{
+  "name": "index",
+  "version": "0.1.0",
+  "description": "GitHub Pages Custom Domain",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production browserify src/index.js -o dist/index.js -t envify -g yo-yoify -g unassertify -g es2020 -g uglifyify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbrls/hbrls.github.io.git"
+  },
+  "author": "shuaizhexu@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbrls/hbrls.github.io/issues"
+  },
+  "homepage": "https://github.com/hbrls/hbrls.github.io",
+  "dependencies": {
+    "choo": "5.6.2"
+  },
+  "devDependencies": {
+    "browserify": "14.4.0",
+    "envify": "4.0.0",
+    "es2020": "1.1.9",
+    "uglifyify": "4.0.2",
+    "unassertify": "2.0.4",
+    "yo-yoify": "3.7.3"
+  }
+}

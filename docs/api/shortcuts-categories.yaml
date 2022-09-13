@@ -1,0 +1,10 @@
+- id: tech
+  name: 技术
+- id: tools
+  name: 工具
+- id: saas
+  name: 平台
+- id: courses
+  name: 课程
+- id: infra
+  name: 基建
