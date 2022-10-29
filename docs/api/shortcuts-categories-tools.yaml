@@ -64,3 +64,6 @@
 - id: Muse
   url: https://museapp.com/
   label: watch
+- id: Nodes
+  url: https://nodes.io/
+  label: watch
