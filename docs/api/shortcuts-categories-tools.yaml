@@ -67,3 +67,6 @@
 - id: Nodes
   url: https://nodes.io/
   label: watch
+- id: Rapid Api
+  url: https://rapidapi.com/products/hub/
+  label: watch
