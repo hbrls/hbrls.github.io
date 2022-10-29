@@ -6,6 +6,9 @@
   url: https://console.guance.com/scene/dashboard/list
   label: fav
   icon: lan-connect
+- id: Checkly
+  url: https://www.checklyhq.com/
+  label: fav
 - id: 腾讯云
   url: https://console.cloud.tencent.com/
   label: watch
