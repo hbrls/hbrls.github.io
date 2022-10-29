@@ -31,3 +31,6 @@
 - id: Tracup
   url: https://www.tracup.com/product
   label: watch
+- id: Simba Cloud
+  url: https://www.cloudfit.ai/#/
+  label: watch
