@@ -77,6 +77,9 @@
 - id: Tita OKR
   url: https://www.tita.com/
   label: watch
+- id: Atlassian Forge
+  url: https://developer.atlassian.com/platform/forge/
+  label: watch
 - id: Obsidian
   url: https://obsidian.md/
   label: short
