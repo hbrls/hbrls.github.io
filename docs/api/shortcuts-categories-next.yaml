@@ -1,0 +1,16 @@
+- id: Vercel
+  url: https://vercel.com/dashboard
+  label: fav
+  icon: lan-connect
+- id: 观测云
+  url: https://console.guance.com/scene/dashboard/list
+  label: fav
+  icon: lan-connect
+- id: 腾讯云
+  url: https://console.cloud.tencent.com/
+  label: watch
+  icon: lan-connect
+- id: Planet Scale
+  url: https://planetscale.com/
+  label: watch
+  icon: lan-connect  

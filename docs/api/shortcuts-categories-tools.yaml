@@ -1,6 +1,66 @@
+- id: IT Tools
+  url: https://it-tools.tech/
+  label: fav
+- id: Shields
+  url: https://shields.io/category/coverage
+  label: fav
+- id: 字节 Icon
+  url: https://iconpark.oceanengine.com/home
+  label: watch
+- id: Loading
+  url: https://loading.io/
+  label: watch
+- id: ExcaliDraw
+  url: https://excalidraw.com/
+  label: watch
+- id: Ledge
+  url: https://devops.phodal.com/home
+  label: watch
+- id: Polar
+  url: https://getpolarized.io/
+  label: watch
+- id: TimeStripe
+  url: https://timestripe.com/
+  label: watch
+- id: InVision
+  url: https://www.invisionapp.com/
+  label: watch
+- id: Cal
+  url: https://cal.com/blog
+  label: watch
 - id: 职级对标
   url: https://duibiao.info/
   label: watch
-- id: 字节 Icon
-  url: https://iconpark.oceanengine.com/home
+- id: 3D Mall Map
+  url: https://tympanus.net/Development/Interactive3DMallMap/
+  label: watch
+- id: 腾讯网址安全中心
+  url: https://urlsec.qq.com/
+  label: watch
+- id: Dynobase
+  url: https://dynobase.dev/
+  label: watch
+- id: SVG Wave
+  url: https://svgwave.in/
+  label: watch
+- id: Thinking Frameworks
+  url: https://untools.co/
+  label: watch
+- id: 迅捷画图
+  url: https://www.liuchengtu.com/
+  label: watch
+- id: Apizza
+  url: https://www.apizza.net/
+  label: watch
+- id: Viezly
+  url: https://viezly.com/
+  label: watch
+- id: PAG
+  url: https://pag.art/
+  label: watch
+- id: Planet
+  url: https://planet.ink/product
+  label: watch
+- id: Muse
+  url: https://museapp.com/
   label: watch
