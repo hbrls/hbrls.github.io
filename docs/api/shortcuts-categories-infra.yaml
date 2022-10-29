@@ -52,6 +52,9 @@
 - id: LeanCloud
   url: https://www.leancloud.cn/
   label: watch
+- id: M3O
+  url: https://m3o.com/
+  label: watch
 - id: 百度统计-浏览器
   url: http://tongji.baidu.com/data/browser
   label: short
