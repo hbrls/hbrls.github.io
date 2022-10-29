@@ -101,6 +101,9 @@
 - id: Zotero
   url: https://www.zotero.org/
   label: short
+- id: Timeline
+  url: https://time.graphics/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
