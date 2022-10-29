@@ -92,6 +92,9 @@
 - id: Linear
   url: https://linear.app/
   label: watch
+- id: ReadMe
+  url: https://readme.com/
+  label: watch
 - id: Obsidian
   url: https://obsidian.md/
   label: short
