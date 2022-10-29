@@ -96,6 +96,12 @@ watch:
     url: https://www.radix-ui.com/
   - id: Retool
     url: https://retool.com/
+  - id: 用友 Design
+    url: https://yondesign.yonyou.com/homepage/#/
+  - id: Terminus Design
+    url: https://nusi.terminus.io/
+  - id: Quasar
+    url: https://quasar.dev/layout-builder
 
 short:
   - id: "Angular API"
