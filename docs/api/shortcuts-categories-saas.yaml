@@ -80,6 +80,12 @@
 - id: Atlassian Forge
   url: https://developer.atlassian.com/platform/forge/
   label: watch
+- id: SlashApi
+  url: https://slashapi.com/
+  label: watch
+- id: Marketing Desk
+  url: https://www.marketingdesk.cn/
+  label: watch
 - id: Obsidian
   url: https://obsidian.md/
   label: short
@@ -89,6 +95,3 @@
 - id: Worktile
   url: https://worktile.com/
   label: short
-- id: SlashApi
-  url: https://slashapi.com/
-  label: watch
