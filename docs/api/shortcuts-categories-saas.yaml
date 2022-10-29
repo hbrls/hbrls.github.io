@@ -89,6 +89,9 @@
 - id: 秒影工厂
   url: https://www.clipworks.com/
   label: watch
+- id: Linear
+  url: https://linear.app/
+  label: watch
 - id: Obsidian
   url: https://obsidian.md/
   label: short
