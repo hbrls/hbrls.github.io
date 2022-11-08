@@ -1,7 +1,14 @@
-- id: ES6 兼容
-  url: https://kangax.github.io/compat-table/es6/
+- id: Browser Version
+  url: https://gs.statcounter.com/browser-version-market-share/all/china
   label: fav
   icon: chart-bar-stacked
+- id: ES6 兼容
+  url: https://kangax.github.io/compat-table/es6/
+  label: watch
+  icon: chart-bar-stacked
+- id: Cloud Kafka
+  url: https://www.cloudkarafka.com/
+  label: watch
 - id: Render
   url: https://render.com/
   label: watch
@@ -10,10 +17,53 @@
   url: https://www.gitpod.io/
   label: watch
   icon: lan-connect
+- id: NorthFlank
+  url: https://northflank.com/
+  label: watch
+  icon: lan-connect
+- id: 云霁 CloudIaC
+  url: https://www.idcos.com/
+  label: watch
+  icon: lan-connect
 - id: 机智云
   url: https://www.gizwits.com/
   label: watch
   icon: robot-outline
+- id: DeepStream
+  url: https://deepstream.io/
+  label: watch
+  icon: lan-connect
+- id: GetStream
+  url: https://getstream.io/
+  label: watch
+  icon: lab-connect
+- id: Postgres Svrless
+  url: https://neon.tech/
+  label: watch
+- id: 网易云信
+  url: https://yunxin.163.com/
+  label: watch
+- id: Sequin
+  url: https://sequin.io/
+  label: watch
+- id: 蓝墙地产云
+  url: https://www.bluewall.com.cn/
+  label: watch
+- id: LeanCloud
+  url: https://www.leancloud.cn/
+  label: watch
+- id: M3O
+  url: https://m3o.com/
+  label: watch
 - id: 百度统计-浏览器
   url: http://tongji.baidu.com/data/browser
   label: short
+- id: 友盟
+  url: https://www.umeng.com/
+  label: short
+- id: Cloud AMQP
+  url: https://www.cloudamqp.com/tour.html
+  label: watch
+- id: Cloud Redis
+  url: https://redis.com/redis-enterprise-cloud/overview/
+  label: watch

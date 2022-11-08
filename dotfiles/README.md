@@ -20,6 +20,13 @@ Reality
 1. 对于项目经理来说，所谓reusable指的是在项目内，跨项目的通用代码反而是负担
 2. bugs不是错误，而是缺乏master plan；但是mp意味着做了过多的serious decisions，即过早优化
 
+Zen
+==
+
+1. [The Zen of Erlang: Let it crash](https://ferd.ca/the-zen-of-erlang.html)
+2. [PEP 20: The Zen of Python by Example](http://artifex.org/~hblanks/talks/2011/pep20_by_example.py.txt)
+3. [GitLab Communication Guidelines](https://about.gitlab.com/handbook/communication/)
+
 API
 ==
 
@@ -91,7 +98,6 @@ Python
 3. [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
 4. [Code Like a Pythonista: Idiomatic Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
 5. [Python Tips, Tricks, and Hacks](http://www.siafoo.net/article/52)
-6. [PEP 20 (The Zen of Python) by example](http://artifex.org/~hblanks/talks/2011/pep20_by_example.py.txt)
 7. [Unicode In Python, Completely Demystified](http://farmdev.com/talks/unicode/)
 8. [Logging Levels](https://docs.python.org/2/howto/logging.html#when-to-use-logging), [LogRecord](https://docs.python.org/2/library/logging.html#logrecord-objects)
 9. [Why I hate virtualenv and pip](https://pythonrants.wordpress.com/2013/12/06/why-i-hate-virtualenv-and-pip/)
