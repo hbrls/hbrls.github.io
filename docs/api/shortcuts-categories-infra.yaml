@@ -67,3 +67,6 @@
 - id: Cloud Redis
   url: https://redis.com/redis-enterprise-cloud/overview/
   label: watch
+- id: Clarity
+  url: https://clarity.microsoft.com/
+  label: watch
