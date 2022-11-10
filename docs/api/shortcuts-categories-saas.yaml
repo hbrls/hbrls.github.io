@@ -97,6 +97,9 @@
 - id: Observable
   url: https://observablehq.com/
   label: watch
+- id: Mailing
+  url: https://www.mailing.run/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
