@@ -1,7 +1,3 @@
-- id: Pocket
-  url: https://getpocket.com/developer/docs/v3/retrieve
-  label: fav
-  icon: api
 - id: Jira
   url: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/
   label: fav
@@ -95,12 +91,6 @@
 - id: ReadMe
   url: https://readme.com/
   label: watch
-- id: Obsidian
-  url: https://obsidian.md/
-  label: short
-- id: Zotero
-  url: https://www.zotero.org/
-  label: short
 - id: Timeline
   url: https://time.graphics/
   label: watch
