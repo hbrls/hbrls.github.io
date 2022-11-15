@@ -100,6 +100,9 @@
 - id: Mailing
   url: https://www.mailing.run/
   label: watch
+- id: Cypress
+  url: https://www.cypress.io/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
