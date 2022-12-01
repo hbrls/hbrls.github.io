@@ -4,6 +4,9 @@
 - id: Shields
   url: https://shields.io/category/coverage
   label: fav
+- id: Open Source Insights
+  url: https://deps.dev/
+  label: fav
 - id: 字节 Icon
   url: https://iconpark.oceanengine.com/home
   label: watch
