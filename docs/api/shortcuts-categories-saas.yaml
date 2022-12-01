@@ -109,6 +109,9 @@
 - id: Surge
   url: https://surge.sh/
   label: watch
+- id: Linc
+  url: https://linc.sh/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
