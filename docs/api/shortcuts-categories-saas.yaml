@@ -103,6 +103,9 @@
 - id: Cypress
   url: https://www.cypress.io/
   label: watch
+- id: Synk
+  url: https://snyk.io/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
