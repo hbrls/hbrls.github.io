@@ -106,6 +106,9 @@
 - id: Synk
   url: https://snyk.io/
   label: watch
+- id: Surge
+  url: https://surge.sh/
+  label: watch
 - id: Worktile
   url: https://worktile.com/
   label: short
