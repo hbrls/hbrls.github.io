@@ -1,3 +1,8 @@
+- id: Crunch Base
+  url: https://www.crunchbase.com/
+  label: fav
+  icon: panorama-variant-outline
+
 - id: Crossplane
   url: https://crossplane.io/
   label: watch
