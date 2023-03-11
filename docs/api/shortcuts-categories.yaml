@@ -1,10 +1,18 @@
+- id: next
+  name: Next
 - id: tech
   name: 技术
-- id: tools
-  name: 工具
 - id: saas
   name: 平台
-- id: courses
-  name: 课程
+- id: ops
+  name: 运营
 - id: infra
   name: 基建
+- id: tools
+  name: 工具
+- id: courses
+  name: 课程
+- id: lang
+  name: 语言
+- id: web3
+  name: Web3

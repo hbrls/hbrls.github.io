@@ -1,0 +1,10 @@
+- id: OPA
+  url: https://www.openpolicyagent.org/docs/latest/policy-reference/
+  label: fav
+
+- id: Elm
+  url: https://elm-lang.org/
+  label: watch
+- id: JSON Schema
+  url: https://json-schema.org/learn/getting-started-step-by-step
+  label: watch

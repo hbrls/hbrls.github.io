@@ -1,13 +1,30 @@
 fav:
-  - id: "bootstrap"
-    url: "http://getbootstrap.com/components/"
-    icon: "bootstrap"
+  - id: Bootstrap
+    url: http://getbootstrap.com/components/
+    icon: bootstrap
   - id: "material-ui"
     url: "http://www.material-ui.com/#/components/app-bar"
     icon: "material-ui"
   - id: Backbone
     url: http://backbonejs.org/
     icon: language-javascript
+  - id: Vant 小程序
+    url: https://vant-contrib.gitee.io/vant-weapp/
+  - id: Tailwind
+    url: https://tailwind.build/classes
+    icon: code-braces
+  - id: Daisy UI
+    url: https://daisyui.com/docs/layout-and-typography/
+    icon: code-braces
+  - id: Element UI
+    url: https://element.eleme.io/#/zh-CN/component/installation
+    icon: code-braces
+  - id: Antv G6
+    url: https://antv-g6.gitee.io/zh/docs/manual/introduction
+    icon: code-braces
+  - id: BPMN 2.0
+    url: https://www.flowable.com/open-source/docs/bpmn/ch07b-BPMN-Constructs
+    icon: api
   - id: "no-jquery"
     url: "http://youmightnotneedjquery.com/"
   - id: "no-underscore"
@@ -62,29 +79,44 @@ fav:
     url: "http://crontab.guru/"
 
 watch:
+  - id: Bulma
+    url: https://bulma.io/
+    icon: code-braces
+  - id: Fluent UI
+    url: https://developer.microsoft.com/en-us/fluentui#/
+    icon: code-braces
+  - id: Next UI
+    url: https://nextui.org/docs/components/avatar
+    icon: code-braces
   - id: "微信测试号"
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
-
-  - id: "qq-mta"
-    url: "http://mta.qq.com/mta/"
-  - id: "baidu-tongji"
-    url: "http://tongji.baidu.com/web/welcome/login"
-  - id: "cnzz"
-    url: "https://tongji.cnzz.com/main.php?c=site&a=show"
-
   - id: "device-atlas"
     url: "https://deviceatlas.com/device-data/explorer"
   - id: "screen-sizes"
     url: "http://screensiz.es/phone"
   - id: "umindex"
     url: "http://www.umindex.com/"
-
-# resources:
   - id: "404 Repo"
     url: "http://404repo.com/"
   - id: "FourZeroFour"
     url: "http://four-zero-four.com/"
-    nologo: tru
+  - id: Cloudscape Design System
+    url: https://cloudscape.design/
+    icon: code-braces
+  - id: Radix UI
+    url: https://www.radix-ui.com/
+    icon: code-braces
+  - id: Retool
+    url: https://retool.com/
+  - id: 用友 Design
+    url: https://yondesign.yonyou.com/homepage/#/
+    icon: code-braces
+  - id: Terminus Design
+    url: https://nusi.terminus.io/
+    icon: code-braces
+  - id: Quasar
+    url: https://quasar.dev/layout-builder
+    icon: code-braces
 
 short:
   - id: "Angular API"
