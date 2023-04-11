@@ -2,8 +2,8 @@ import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import terser from '@rollup/plugin-terser';
 import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -47,7 +47,7 @@ export default {
 			}
 		}),
 
-		css({ output: 'shortcuts-hash.css' }),
+		css({ output: 'shortcuts-[hash].css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

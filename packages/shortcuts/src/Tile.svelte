@@ -7,7 +7,7 @@
 <div class="col-md-2 Tile Tile-{id}">
   <div class="Tile-outer">
     <div class="Tile-inner">
-      <a class="" href="{url}" target="_blank">
+      <a class="" href="{url}" target="_blank" rel="noreferrer">
         <span><i class="mdi mdi-{icon}"></i>{id}</span>
       </a>
     </div>
