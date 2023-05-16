@@ -1,3 +1,9 @@
 - id: BeanCount
   url: https://beancount.io/wallet/
   label: watch
+- id: Newbies Guide
+  url: https://helpthisbook.com/sunny/the-newbies-guide-to-crypto
+  label: watch
+- id: CS251
+  url: https://cs251.stanford.edu/syllabus.html
+  label: watch

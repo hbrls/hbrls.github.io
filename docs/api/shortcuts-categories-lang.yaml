@@ -8,3 +8,6 @@
 - id: JSON Schema
   url: https://json-schema.org/learn/getting-started-step-by-step
   label: watch
+- id: WasmEdge
+  url: https://wasmedge.org/book/en/index.html
+  label: watch

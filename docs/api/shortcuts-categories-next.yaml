@@ -2,6 +2,10 @@
   url: https://vercel.com/dashboard
   label: fav
   icon: lan-connect
+- id: MongoDB
+  url: https://www.mongodb.com/cloud
+  label: fav
+  icon: database-marker
 - id: Supabase
   url: https://supabase.com/
   label: fav
@@ -9,7 +13,9 @@
 - id: 观测云
   url: https://console.guance.com/scene/dashboard/list
   label: fav
-  icon: lan-connect
+- id: Authing
+  url: https://www.authing.cn/
+  label: fav
 - id: Checkly
   url: https://www.checklyhq.com/
   label: fav
