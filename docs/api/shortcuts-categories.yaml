@@ -1,5 +1,7 @@
 - id: next
   name: Next
+- id: comp
+  name: 组件
 - id: tech
   name: 技术
 - id: saas
@@ -8,9 +10,9 @@
   name: 运营
 - id: infra
   name: 基建
-- id: tools
+- id: tool
   name: 工具
-- id: courses
+- id: course
   name: 课程
 - id: lang
   name: 语言

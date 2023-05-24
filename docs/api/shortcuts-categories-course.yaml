@@ -6,9 +6,11 @@
 - id: Obsidian
   url: https://obsidian.md/
   label: watch
+  icon: book-open-variant
 - id: Heptabase
   url: https://heptabase.com/
   label: watch
+  icon: book-open-variant
 
 - id: Zotero
   url: https://www.zotero.org/
