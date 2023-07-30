@@ -30,6 +30,7 @@ $ brew install --cask squirrel
 $ brew install --cask keka
 $ brew install --cask jd-gui
 $ brew install --cask mpv
+$ brew install --cask ppduck
 # $ brew install --cask marta
 # $ brew cask install xquartz
 # $ brew cask install cmd-eikana
