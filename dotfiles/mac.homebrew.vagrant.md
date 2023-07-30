@@ -58,9 +58,10 @@ install
 3. [Visual Studio Code](https://code.visualstudio.com/)
 4. [Sublime Text](https://www.sublimetext.com/)
 5. [IntelliJ Toolbox](https://www.jetbrains.com/toolbox-app/)
-6. [Insomnia](https://insomnia.rest/)
-7. [Gitnuro](https://gitnuro.jetpackduba.com/)
-8. [迅雷](https://www.xunlei.com/)
+6. [TablePlus](https://tableplus.com/)
+7. [Insomnia](https://insomnia.rest/)
+8. [Gitnuro](https://gitnuro.jetpackduba.com/)
+9. [迅雷](https://www.xunlei.com/)
 
 .bashrc
 ==
