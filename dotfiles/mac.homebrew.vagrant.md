@@ -60,8 +60,9 @@ install
 5. [IntelliJ Toolbox](https://www.jetbrains.com/toolbox-app/)
 6. [TablePlus](https://tableplus.com/)
 7. [Insomnia](https://insomnia.rest/)
-8. [Gitnuro](https://gitnuro.jetpackduba.com/)
-9. [迅雷](https://www.xunlei.com/)
+8. [Mockoon](https://mockoon.com/)
+9. [Gitnuro](https://gitnuro.jetpackduba.com/)
+10. [迅雷](https://www.xunlei.com/)
 
 .bashrc
 ==
