@@ -13,12 +13,13 @@
   <title>Shortcuts</title>
 
   <script>
-  /* @head.js/head.js-init 0.1.1 */
-  !function(_,e){var n=window.head||{};n.env={},n.env.mode="production",n.env.profile="prd",
-  n.env.version="855441bb",n.env.agent="{{ __agent__ }}",n.env.context="/shortcuts",window.head=n
-  }(window,document);
-  /* @head.js/head.js-profile 0.1.0 */
-  !function(o,d){var i=window.head||{};i.profile={},window.head=i}(window,document);
+  /* @head.js/snippet-init 0.4.0 */
+  var head=function(){"use strict";return{}}();
+  /* @head.js/snippet-env 0.4.0 */
+  this.head=this.head||{},this.head.env=function(){"use strict";var _={mode:"{{ __mode__ }}",profile:"{{ __profile__ }}",
+  version:"{{ __version__ }}",agent:"{{ __agent__ }}",context:"{{ __context__ }}"};return _}();
+  /* @head.js/snippet-profile 0.4.0 */
+  this.head=this.head||{},this.head.profile=function(){"use strict";return"{{ __profile_vars__ }}"}();
   </script>
 
   <script src="https://www.googletagmanager.com/gtag/js?id=G-NZN2F708PM" async></script>
@@ -33,7 +34,7 @@
   <link rel="stylesheet" href="/rsrc/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="/rsrc/dist/shortcuts-global.css" />
   <!-- <link rel="stylesheet" href="http://0.0.0.0:3001/rsrc/dist/shortcuts-hash.css" /> -->
-  <link rel="stylesheet" href="/rsrc/dist/shortcuts-855441bb.css" />
+  <link rel="stylesheet" href="/rsrc/dist/shortcuts-bb142f2c.css" />
 </head>
 <body>
   <nav class="navbar navbar-default Nav">
@@ -77,7 +78,7 @@
   </footer>
 
   <script>
-  /* @head.js/head.js-emitter 0.0.2 */
+  /* @head.js/snippet-emitter 0.4.0 */
   this.head=this.head||{},this.head.emitter=function(){"use strict";function t(t,n){n=n||0
   ;for(var e=t.length-n,r=new Array(e);e--;)r[e]=t[e+n];return r}function n(){return this._events=Object.create(null),this
   }n.prototype.$on=function(t,n){var e=this;return(e._events[t]||(e._events[t]=[])).push(n),e},
@@ -87,9 +88,7 @@
   ;for(var o=i.length;o--;)if((r=i[o])===n||r.fn===n){i.splice(o,1);break}return e},n.prototype.$emit=function(n){
   var e=this,r=e._events[n];if(r){r=r.length>1?t(r):r;for(var i=t(arguments,1),o=0,f=r.length;o<f;o+=1)r[o].apply(e,i)}
   return e};var e=new n;return e.on=e.$on.bind(e),e.once=e.$once.bind(e),e.off=e.$off.bind(e),e.emit=e.$emit.bind(e),e}();
-  </script>
-  <script>
-  /* @head.js/head.js-require 0.0.2 */
+  /* @head.js/snippet-require 0.4.0 */
   this.head=this.head||{},this.head.require=function(){"use strict";var e={};function t(t,r){if(e[t])e[t].push(r);else{
   for(var n,o,i,a=document.getElementsByTagName("script"),l=0;l<a.length;l+=1){var u=a[l];if(u.getAttribute("src")===t){
   n=u;break}}if(!r)return n;n||(o=!0,(n=document.createElement("script")).timeout=30,n.src=t,n.async=!0),e[t]=[r],
@@ -105,23 +104,61 @@
   n.onload=d.bind(null,n.onload)):d(void 0,{type:"load",target:n}),o&&document.head.appendChild(n),n}
   var o=new RegExp("\\.css");return function(e,r,i){var a,l=0,u=0;function d(e){0===(l-=1)&&0===u&&r()}function c(e){u-=1,
   0===l&&0===u&&r()}for(var s=0;s<e.length;s+=1)a=e[s],o.test(a)?(l+=1,n(a,d)):(u+=1,t(a,c))}}();
+  /* @head.js/snippet-bridge 0.4.2 */
+  this.head=this.head||{},this.head.bridge=function(){"use strict";function i(i,e){return function(i){
+  if(Array.isArray(i))return i}(i)||function(i,t){
+  var e=null==i?null:"undefined"!=typeof Symbol&&i[Symbol.iterator]||i["@@iterator"];if(null!=e){
+  var r,n,s,o,a=[],l=!0,h=!1;try{if(s=(e=e.call(i)).next,0===t){if(Object(e)!==e)return;l=!1
+  }else for(;!(l=(r=s.call(e)).done)&&(a.push(r.value),a.length!==t);l=!0);}catch(i){h=!0,n=i}finally{try{
+  if(!l&&null!=e.return&&(o=e.return(),Object(o)!==o))return}finally{if(h)throw n}}return a}}(i,e)||function(i,e){
+  if(!i)return;if("string"==typeof i)return t(i,e);var r=Object.prototype.toString.call(i).slice(8,-1)
+  ;"Object"===r&&i.constructor&&(r=i.constructor.name);if("Map"===r||"Set"===r)return Array.from(i)
+  ;if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return t(i,e)}(i,e)||function(){
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+  }()}function t(i,t){(null==t||t>i.length)&&(t=i.length);for(var e=0,r=new Array(t);e<t;e++)r[e]=i[e];return r}
+  function e(){this.registered={},this.initialized={},this.resolved={}}return e.prototype._resolve=function(t){
+  for(var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n,o=this.initialized[r][s],a=this.resolved[r].shift();a;)a(o),
+  a=this.resolved[r].shift()},e.prototype.register=function(t,e){var r=i(t.split("@"),2),n=r[0],s=r[1],o=void 0===s?"_":s
+  ;this.registered[n]?this.registered[n][o]||console.warn("".concat(n,"@").concat(Object.keys(this.registered[n]).join(",")," detected. @").concat(o," will not register.")):(this.registered[n]=this.registered[n]||{},
+  this.registered[n][o]=this.registered[n][o]||[],this.initialized[n]=this.initialized[n]||{},this.initialized[n][o]=null,
+  this.resolved[n]=this.resolved[n]||[],e((i=>{i.then?(this.initialized[n][o]={__promis3r3fhack__:i},
+  "_"!==o&&(this.initialized[n]._={__promis3r3fhack__:i})):(this.initialized[n][o]=i,"_"!==o&&(this.initialized[n]._=i)),
+  this._resolve(t)})))},e.prototype._initialize=function(t){var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n
+  ;return this.resolved[r]=this.resolved[r]||[],new Promise(((i,t)=>{if(this.initialized[r]){var e=this.initialized[r][s]
+  ;if(e)i(e);else{var n=this.initialized[r]._
+  ;n?(console.warn("only the 1st ".concat(r,"@").concat(Object.keys(this.initialized[r]).join(",")," will register and resolve.")),
+  i(n)):this.resolved[r].push(i)}}else this.resolved[r].push(i)}))},e.prototype.initialize=function(i){
+  for(var t=[],e=0;e<i.length;e+=1)t.push(this._initialize(i[e]));return Promise.all(t).then((i=>{
+  for(var t=[],e=0;e<i.length;e+=1){var r=i[e];r.__promis3r3fhack__?t.push(r.__promis3r3fhack__):t.push(r)}
+  return Promise.resolve(t)}))},e.prototype.ready=function(t){var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n
+  ;if(this.initialized[r]){var o=this.initialized[r][s];if(o)return o;var a=this.initialized[r]._
+  ;if(a)return console.warn("only the 1st ".concat(r,"@").concat(Object.keys(this.initialized[r]).join(",")," will register and resolve.")),
+  a;throw new Error("check docs about `await bridge.initialize`")}
+  throw new Error("check docs about `await bridge.initialize`")},e.prototype.require=function(i,t,e){var r=window.head
+  ;this.register(i,(i=>{r.require(t,(()=>{e(i)}))}))},new e}();
   </script>
   <script>
-  /* @head.js/head.js-bridge 0.0.1 */
-  this.head=this.head||{},this.head.bridge=function(){"use strict";function i(){this.registered={},this.initialized={},
-  this.resolved={}}return i.prototype._resolve=function(i){
-  for(var e=this.initialized[i],t=this.resolved[i].shift();t;)t(e),t=this.resolved[i].shift()},
-  i.prototype.register=function(i,e){var t=this;this.initialized[i]||this.registered[i]||(this.registered[i]=e,
-  this.initialized[i]=null,this.resolved[i]=this.resolved[i]||[],e((function(e){e.then?t.initialized[i]={
-  __promis3r3fhack__:e}:t.initialized[i]=e,t._resolve(i)})))},i.prototype._ready=function(i){var e=this
-  ;return new Promise((function(t,r){var s=e.initialized[i];s?t(s):e.resolved[i].push(t)}))},
-  i.prototype.ready=function(i){for(var e=[],t=0;t<i.length;t+=1)e.push(this._ready(i[t]))
-  ;return Promise.all(e).then((function(i){for(var e=[],t=0;t<i.length;t+=1){var r=i[t]
-  ;r.__promis3r3fhack__?e.push(r.__promis3r3fhack__):e.push(r)}return Promise.resolve(e)}))},new i}();
+  /* @head.js/container-snippet 0.0.1 */
+  this.head=this.head||{},this.head.container=function(){"use strict";function t(t,r){var e=Object.keys(t)
+  ;if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){
+  return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function r(r){
+  for(var n=1;n<arguments.length;n++){var i=null!=arguments[n]?arguments[n]:{};n%2?t(Object(i),!0).forEach((function(t){
+  e(r,t,i[t])
+  })):Object.getOwnPropertyDescriptors?Object.defineProperties(r,Object.getOwnPropertyDescriptors(i)):t(Object(i)).forEach((function(t){
+  Object.defineProperty(r,t,Object.getOwnPropertyDescriptor(i,t))}))}return r}function e(t,r,e){return(r=function(t){
+  var r=function(t,r){if("object"!=typeof t||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){
+  var n=e.call(t,r||"default");if("object"!=typeof n)return n
+  ;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===r?String:Number)(t)}(t,"string")
+  ;return"symbol"==typeof r?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,
+  writable:!0}):t[r]=e,t}function n(t){var r=t.id,e=t.desc,n=t.$;return this.id=r,this.desc=e,this.$=n,this}function i(){
+  this.$={},this.$fn={}}return n.prototype.fn=function(t){return this.$.fn.call(this.$,this.id,t)},
+  i.prototype.create=function(t){var e=new n(r(r({},t),{},{$:this}));return this.$[t.id]=e,e},i.prototype.id=function(t){
+  return this.$[t]},i.prototype.script=function(t,r,e){var n="".concat(t,"/").concat(r);this.$fn[n]=e},
+  i.prototype.fn=function(t,r){var e="".concat(t,"/").concat(r);return this.$fn[e]},new i}();
   </script>
 
   <!-- <script src="http://0.0.0.0:3001/rsrc/dist/shortcuts-hash.js"></script> -->
-  <script src="/rsrc/dist/shortcuts-855441bb.js"></script>
+  <script src="/rsrc/dist/shortcuts-bb142f2c.js"></script>
 
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </body>

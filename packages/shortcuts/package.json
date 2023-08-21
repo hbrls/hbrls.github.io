@@ -8,16 +8,18 @@
     "build": "rollup --config"
   },
   "dependencies": {
+    "@head.js/snippet": "0.4.2",
+    "@head/container": "0.0.2",
     "@head/edge": "0.1.1",
-    "@head/http": "0.4.2",
+    "@head/http": "0.5.1",
+    "@tanstack/svelte-query": "4.29.24",
     "axios": "0.27.2",
     "js-yaml": "4.1.0",
     "page": "1.11.6",
-    "svelte": "3.55.1",
-    "vanilla.js": "0.2.8"
+    "svelte": "4.1.2",
+    "vanilla.js": "0.2.9"
   },
   "devDependencies": {
-    "@head.js/lib": "0.2.0",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.0.3",
     "@rollup/plugin-eslint": "8.0.1",
@@ -28,7 +30,7 @@
     "rollup": "2.74.1",
     "rollup-plugin-css-only": "3.1.0",
     "rollup-plugin-livereload": "2.0.5",
-    "rollup-plugin-svelte": "7.1.0",
+    "rollup-plugin-svelte": "7.1.6",
     "sirv-cli": "2.0.2"
   }
 }

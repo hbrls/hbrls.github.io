@@ -1,34 +1,27 @@
 <script>
   import page from 'page';
   import { onMount } from 'svelte';
+  import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query';
   import Category from './Category.svelte';
-  import TileGroup from './TileGroup.svelte';
-  import { categories, active, fav, watch, short } from './stores';
-  import * as services from './services';
+  import Board from './Board.svelte';
+  import { categories, active } from './store';
+  import * as rpc from './rpc';
+
+
+  const queryClient = new QueryClient();
 
 
   page('/shortcuts', function(){
-    services.init().then((data) => {
+    rpc.init().then((data) => {
       // console.log(data);
       categories.set(data);
       const defaultCategory = data[0].id;
       active.set(defaultCategory);
-
-      services.load(defaultCategory).then((data) => {
-        fav.set(data.fav);
-        watch.set(data.watch);
-        short.set(data.short);
-      });
     });
   });
 
   page('/shortcuts/public/:category', function ({ params: { category } }) {
-    services.load(category).then((data) => {
-        fav.set(data.fav);
-        watch.set(data.watch);
-        short.set(data.short);
-        active.set(category);
-      });
+    active.set(category);
   });
 
   onMount(async () => {
@@ -47,10 +40,8 @@
         {#each $categories as c}<Category {...c} active="{$active}" />{/each}
       </ul>
     </div>
-    <div class="col-md-10">
-      <TileGroup title="Fav" dataSource="{$fav}" />
-      <TileGroup title="Watch" dataSource="{$watch}" />
-      <TileGroup title="Short" dataSource="{$short}" />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Board category={$active} />
+    </QueryClientProvider>
   </div>
 </div>

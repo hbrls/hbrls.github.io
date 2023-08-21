@@ -47,7 +47,9 @@ export default {
 			}
 		}),
 
-		css({ output: 'shortcuts-[hash].css' }),
+		css({
+			output: production ? 'shortcuts-[hash].css' : 'shortcuts-hash.css',
+		}),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
