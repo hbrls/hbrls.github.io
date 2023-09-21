@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@head.js/snippet": "0.4.2",
-    "@head/container": "0.0.2",
+    "@head/container": "0.1.0",
     "@head/edge": "0.1.1",
     "@head/http": "0.5.1",
     "@tanstack/svelte-query": "4.29.24",

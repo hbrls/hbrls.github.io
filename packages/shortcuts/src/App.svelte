@@ -5,14 +5,14 @@
   import Category from './Category.svelte';
   import Board from './Board.svelte';
   import { categories, active } from './store';
-  import * as rpc from './rpc';
+  import * as service from './service';
 
 
   const queryClient = new QueryClient();
 
 
   page('/shortcuts', function(){
-    rpc.init().then((data) => {
+    service.init().then((data) => {
       // console.log(data);
       categories.set(data);
       const defaultCategory = data[0].id;
