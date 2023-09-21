@@ -1,14 +1,14 @@
 <script>
 import { createQuery } from '@tanstack/svelte-query';
 import TileGroup from './TileGroup.svelte';
-import * as rpc from './rpc';
+import * as service from './service';
 
 export let category;
 // console.log(category);
 
 $: query = createQuery({
   queryKey: [ 'collections', category ],
-  queryFn: () => rpc.load(category),
+  queryFn: () => service.load(category),
   enabled: category != 'none',
   staleTime: Infinity,
 });
