@@ -1,7 +1,11 @@
 - id: next
   name: Next
+- id: play
+  name: Play
 - id: comp
   name: 组件
+- id: wiki
+  name: Wiki
 - id: tech
   name: 技术
 - id: saas

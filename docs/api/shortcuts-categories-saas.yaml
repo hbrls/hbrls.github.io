@@ -125,3 +125,6 @@
 - id: Worktile
   url: https://worktile.com/
   label: short
+- id: Linear
+  url: https://linear.app/
+  label: short

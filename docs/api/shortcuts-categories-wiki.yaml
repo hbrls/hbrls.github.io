@@ -1,0 +1,16 @@
+- id: Html Tags
+  url: https://htmldog.com/references/html/tags/
+  label: fav
+  icon: order-alphabetical-ascending
+- id: Emoji
+  url: https://emojis.wiki/symbols-category/
+  label: fav
+  icon: order-alphabetical-ascending
+- id: Screen Size
+  url: https://screensiz.es/
+  label: fav
+  icon: order-alphabetical-ascending
+- id: HTTP Status
+  url: http://httpstatus.es/
+  label: fav
+  icon: order-alphabetical-ascending

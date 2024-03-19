@@ -1,7 +1,4 @@
 fav:
-  - id: BPMN 2.0
-    url: https://www.flowable.com/open-source/docs/bpmn/ch07b-BPMN-Constructs
-    icon: api
   - id: "no-jquery"
     url: "http://youmightnotneedjquery.com/"
   - id: "no-underscore"
@@ -24,26 +21,18 @@ fav:
     url: "http://jasmine.github.io/2.0/introduction.html"
   - id: "Chai/BDD"
     url: "http://chaijs.com/api/bdd/"
-  - id: "Html Dog"
-    url: "http://htmldog.com/reference/htmltags/"
   - id: "character to code"
     url: "http://www.character-code.com/"
   - id: "Android Design"
     url: "http://developer.android.com/design/index.html"
   - id: "Unicode Characters"
     url: "http://unicode-table.com/en/"
-  - id: "Screen Size"
-    url: "http://screensiz.es/phone/"
   - id: "Sequelize"
     url: "http://sequelizejs.com/docs/latest/usage"
   - id: "CSS3 Transitions"
     url: "http://coding.smashingmagazine.com/2013/04/26/css3-transitions-thank-god-specification/"
   - id: "Evil Icons"
     url: "http://evil-icons.io/"
-  - id: "HTTP Status Codes"
-    url: "http://www.restapitutorial.com/httpstatuscodes.html"
-  - id: "HTTP Statuses"
-    url: "http://httpstatus.es/"
 
 # tools:
   - id: "regexper"
@@ -58,8 +47,6 @@ watch:
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
   - id: "device-atlas"
     url: "https://deviceatlas.com/device-data/explorer"
-  - id: "screen-sizes"
-    url: "http://screensiz.es/phone"
   - id: "umindex"
     url: "http://www.umindex.com/"
   - id: "404 Repo"

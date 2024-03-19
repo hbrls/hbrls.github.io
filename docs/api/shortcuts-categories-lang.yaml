@@ -11,3 +11,7 @@
 - id: WasmEdge
   url: https://wasmedge.org/book/en/index.html
   label: watch
+- id: BPMN 2.0
+  url: https://www.flowable.com/open-source/docs/bpmn/ch07b-BPMN-Constructs
+  label: watch
+  icon: api

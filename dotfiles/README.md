@@ -73,12 +73,6 @@ JavaScript
 5. [Stop Being Cute and Clever](http://lucumr.pocoo.org/2013/12/9/stop-being-clever/)
 6. [Comparing escape(), encodeURI(), and encodeURIComponent()](http://xkr.us/articles/javascript/encode-compare/)
 
-React
-==
-
-1. [Mixins Considered Harmful](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html)
-2. [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
-
 Security
 ==
 
@@ -139,21 +133,10 @@ Design
 11. https://l-ui.com/pure/about.design.html
 12. https://pro.iviewui.com/pro/introduce
 
-Animation
-==
-
-1. [动画的十二原则](http://www.jianshu.com/p/1858a8733ba3)
-2. [前端技术与可视化](http://pissang.github.io/slides/topics/jsconf2015_2/?tip#0~-1)
-
 Stats
 ==
 
 1. [期望、方差、协方差及相关系数的基本运算](http://blog.codinglabs.org/articles/basic-statistics-calculate.html)
-
-雷达
-==
-
-1. [2019 前端技术发展回顾](https://zhuanlan.zhihu.com/p/101517039)
 
 创业
 ==
