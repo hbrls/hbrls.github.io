@@ -41,8 +41,6 @@ fav:
 watch:
   - id: "微信测试号"
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
-  - id: Retool
-    url: https://retool.com/
 
 short:
   - id: "Angular API"
