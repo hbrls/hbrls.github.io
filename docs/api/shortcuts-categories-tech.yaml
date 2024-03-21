@@ -41,14 +41,6 @@ fav:
 watch:
   - id: "微信测试号"
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
-  - id: "device-atlas"
-    url: "https://deviceatlas.com/device-data/explorer"
-  - id: "umindex"
-    url: "http://www.umindex.com/"
-  - id: "404 Repo"
-    url: "http://404repo.com/"
-  - id: "FourZeroFour"
-    url: "http://four-zero-four.com/"
   - id: Retool
     url: https://retool.com/
 
