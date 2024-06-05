@@ -94,3 +94,9 @@
 - id: Semantic UI
   url: http://semantic-ui.com/
   label: short
+- id: Hammer.js
+  url: https://github.com/EightMedia/hammer.js
+  label: short
+- id: Benchmark.js
+  url: https://github.com/bestiejs/benchmark.js
+  label: short

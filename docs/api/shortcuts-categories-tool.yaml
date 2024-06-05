@@ -17,9 +17,6 @@
 - id: Loading
   url: https://loading.io/
   label: watch
-- id: ExcaliDraw
-  url: https://excalidraw.com/
-  label: watch
 - id: Ledge
   url: https://devops.phodal.com/home
   label: watch

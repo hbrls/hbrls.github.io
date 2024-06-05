@@ -1,0 +1,34 @@
+- id: Mermaid
+  url: https://mermaid.live/
+  label: fav
+  icon: sony-playstation
+
+- id: Excali Draw
+  url: https://excalidraw.com/
+  label: fav
+  icon: sony-playstation
+
+- id: Excali 中文
+  url: https://handraw.top/
+  label: fav
+  icon: sony-playstation
+
+- id: Draw.io
+  url: https://app.diagrams.net/
+  label: fav
+  icon: sony-playstation
+
+- id: Code Sandbox
+  url: https://codesandbox.io/dashboard/sandboxes
+  label: fav
+  icon: sony-playstation
+
+- id: TLDraw
+  url: https://www.tldraw.com/
+  label: watch
+  icon: sony-playstation
+
+- id: ReveZone
+  url: https://revezone.com/index.html
+  label: watch
+  icon: sony-playstation

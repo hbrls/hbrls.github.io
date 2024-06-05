@@ -103,7 +103,8 @@ $ docker system prune
 1. https://github.com/coreos/bugs/issues/2340
 
     ```bash
-    $ vim /run/systemd/system/docker.service  # 注释掉 #Environment=DOCKER_SELINUX=--selinux-enabled=true
+    $ vim /run/systemd/system/docker.service
+      → 注释掉这一行 # Environment=DOCKER_SELINUX=--selinux-enabled=true
     $ systemctl daemon-reload  # 然后reload一下配置文件
     $ systemctl restart docker  # 重启docker 即可
     ```
@@ -187,11 +188,14 @@ $ sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
-[youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
-```bash
-$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-$ sudo chmod a+rx /usr/local/bin/youtube-dl
+Kubectl
+==
+
+```
+$ kubectl exec -it {pod} --container {container} -- /bin/sh
+
+$ docker stats --all --no-stream --format "table {{.Name}}:\t{{.MemUsage}}"
 ```
 
 MySQL

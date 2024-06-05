@@ -3,6 +3,7 @@ brew/cask
 
 ```bash
 $ xcode-select --install
+$ xcodebuild -license
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://ohmyz.sh
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # http://brew.sh
 $ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile

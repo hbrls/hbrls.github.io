@@ -3,7 +3,7 @@
   label: fav
   icon: chart-bar-stacked
 - id: ES6 兼容
-  url: https://kangax.github.io/compat-table/es6/
+  url: http://compat-table.github.io/compat-table/es6/
   label: watch
   icon: chart-bar-stacked
 - id: Cloud Kafka

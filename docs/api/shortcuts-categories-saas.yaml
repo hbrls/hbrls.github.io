@@ -6,6 +6,10 @@
   url: https://docs.atlassian.com/jira-software/REST/7.3.1/
   label: fav
   icon: api
+- id: 飞书开放平台
+  url: https://open.feishu.cn/
+  label: fav
+  icon: api
 - id: CockroachDB
   url: https://cockroachlabs.cloud/clusters
   label: watch
@@ -124,4 +128,7 @@
 
 - id: Worktile
   url: https://worktile.com/
+  label: short
+- id: Linear
+  url: https://linear.app/
   label: short

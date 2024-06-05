@@ -1,7 +1,4 @@
 fav:
-  - id: BPMN 2.0
-    url: https://www.flowable.com/open-source/docs/bpmn/ch07b-BPMN-Constructs
-    icon: api
   - id: "no-jquery"
     url: "http://youmightnotneedjquery.com/"
   - id: "no-underscore"
@@ -14,36 +11,24 @@ fav:
     url: "http://api.jquery.com/"
   - id: "lodash"
     url: "http://lodash.com/docs"
-  - id: "validate-js"
-    url: "http://validatejs.org/"
-  - id: "immutable-js"
-    url: "http://facebook.github.io/immutable-js/docs/#/"
   - id: "weixin-js-sdk"
     url: "http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html"
   - id: "Jasmine"
     url: "http://jasmine.github.io/2.0/introduction.html"
   - id: "Chai/BDD"
     url: "http://chaijs.com/api/bdd/"
-  - id: "Html Dog"
-    url: "http://htmldog.com/reference/htmltags/"
   - id: "character to code"
     url: "http://www.character-code.com/"
   - id: "Android Design"
     url: "http://developer.android.com/design/index.html"
   - id: "Unicode Characters"
     url: "http://unicode-table.com/en/"
-  - id: "Screen Size"
-    url: "http://screensiz.es/phone/"
   - id: "Sequelize"
     url: "http://sequelizejs.com/docs/latest/usage"
   - id: "CSS3 Transitions"
     url: "http://coding.smashingmagazine.com/2013/04/26/css3-transitions-thank-god-specification/"
   - id: "Evil Icons"
     url: "http://evil-icons.io/"
-  - id: "HTTP Status Codes"
-    url: "http://www.restapitutorial.com/httpstatuscodes.html"
-  - id: "HTTP Statuses"
-    url: "http://httpstatus.es/"
 
 # tools:
   - id: "regexper"
@@ -56,18 +41,6 @@ fav:
 watch:
   - id: "微信测试号"
     url: "http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index"
-  - id: "device-atlas"
-    url: "https://deviceatlas.com/device-data/explorer"
-  - id: "screen-sizes"
-    url: "http://screensiz.es/phone"
-  - id: "umindex"
-    url: "http://www.umindex.com/"
-  - id: "404 Repo"
-    url: "http://404repo.com/"
-  - id: "FourZeroFour"
-    url: "http://four-zero-four.com/"
-  - id: Retool
-    url: https://retool.com/
 
 short:
   - id: "Angular API"
