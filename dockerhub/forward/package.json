@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "cors": "2.8.5",
-    "express": "4.17.1",
+    "express": "4.19.2",
     "http-proxy": "1.18.1",
     "http-proxy-middleware": "1.0.6",
     "vanilla.js": "0.2.3"
