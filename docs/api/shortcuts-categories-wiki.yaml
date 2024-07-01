@@ -14,3 +14,7 @@
   url: http://httpstatus.es/
   label: fav
   icon: order-alphabetical-ascending
+- id: Ajv JSON-Schema
+  url: https://ajv.js.org/json-schema.html
+  label: fav
+  icon: order-alphabetical-ascending
