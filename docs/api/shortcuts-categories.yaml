@@ -6,19 +6,13 @@
   name: 组件
 - id: wiki
   name: Wiki
-- id: tech
-  name: 技术
 - id: saas
   name: 平台
-- id: ops
-  name: 运营
-- id: infra
-  name: 基建
-- id: tool
-  name: 工具
 - id: course
   name: 课程
 - id: lang
   name: 语言
 - id: web3
   name: Web3
+- id: tech
+  name: 遗留

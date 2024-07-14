@@ -51,6 +51,10 @@
   url: https://yondesign.yonyou.com/homepage/#/
   label: watch
   icon: code-braces
+- id: 小米 Design
+  url: https://xiaomi.github.io/hiui/components/overview/
+  label: watch
+  icon: code-braces
 - id: Terminus Design
   url: https://nusi.terminus.io/
   label: watch
@@ -63,6 +67,20 @@
   url: https://cloudscape.design/
   label: watch
   icon: code-braces
+- id: Dev Icon
+  url: https://devicon.dev/
+  label: watch
+  icon: panorama-variant-outline
+- id: 字节 Icon
+  url: https://iconpark.oceanengine.com/home
+  label: watch
+  icon: panorama-variant-outline
+- id: Shields
+  url: https://shields.io/category/coverage
+  label: watch
+- id: Loading
+  url: https://loading.io/
+  label: watch
 
 - id: Moment
   url: http://momentjs.com/docs/
