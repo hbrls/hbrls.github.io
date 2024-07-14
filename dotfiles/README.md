@@ -133,17 +133,10 @@ Design
 11. https://l-ui.com/pure/about.design.html
 12. https://pro.iviewui.com/pro/introduce
 
-Stats
-==
-
-1. [期望、方差、协方差及相关系数的基本运算](http://blog.codinglabs.org/articles/basic-statistics-calculate.html)
-
-
 Others
 ==
 
-1. [@fouber：前端工程](https://github.com/fouber/blog/issues)
-2. [REFRAGMENTATION](http://paulgraham.com/re.html)，[再分化](https://zhuanlan.zhihu.com/p/20891826)
+1. [REFRAGMENTATION](http://paulgraham.com/re.html)，[再分化](https://zhuanlan.zhihu.com/p/20891826)
 
 未分类
 ==
