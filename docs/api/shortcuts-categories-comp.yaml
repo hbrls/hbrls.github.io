@@ -18,12 +18,16 @@
   url: https://daisyui.com/docs/layout-and-typography/
   label: fav
   icon: code-braces
+- id: Ant Design
+  url: https://4x.ant.design/components/overview/
+  label: fav
+  icon: code-braces
 - id: Element UI
   url: https://element.eleme.io/#/zh-CN/component/installation
   label: fav
   icon: code-braces
 - id: Antv G6
-  url: https://antv-g6.gitee.io/zh/docs/manual/introduction
+  url: https://g6.antv.antgroup.com/manual/introduction
   label: fav
   icon: code-braces
 
