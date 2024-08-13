@@ -26,6 +26,7 @@ Zen
 1. [The Zen of Erlang: Let it crash](https://ferd.ca/the-zen-of-erlang.html)
 2. [PEP 20: The Zen of Python by Example](http://artifex.org/~hblanks/talks/2011/pep20_by_example.py.txt)
 3. [GitLab Communication Guidelines](https://about.gitlab.com/handbook/communication/)
+4. [The Rise of Worse is Better](https://www.dreamsongs.com/RiseOfWorseIsBetter.html)
 
 API
 ==
