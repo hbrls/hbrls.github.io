@@ -13,7 +13,7 @@
     "axios": "0.26.1",
     "js-yaml": "4.1.0",
     "page": "1.11.6",
-    "svelte": "3.48.0",
+    "svelte": "4.2.19",
     "vanilla.js": "0.2.5"
   },
   "devDependencies": {
