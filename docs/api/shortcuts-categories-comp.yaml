@@ -7,7 +7,7 @@
   label: fav
   icon: language-javascript
 - id: Vant 小程序
-  url: https://vant-contrib.gitee.io/vant-weapp/
+  url: https://vant.pro/vant-weapp
   label: fav
   icon: code-braces
 - id: Tailwind
