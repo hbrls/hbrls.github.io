@@ -203,6 +203,15 @@ VSCode - settings.json
 }
 ```
 
+Android Studio
+==
+
+1. https://developer.android.com/studio
+
+```bash
+$ brew install gradle@7
+```
+
 Vagrant
 ==
 
