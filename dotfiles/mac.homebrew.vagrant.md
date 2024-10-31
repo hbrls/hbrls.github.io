@@ -203,6 +203,11 @@ VSCode - settings.json
 }
 ```
 
+JetBrains
+==
+
+1. [Grep Console](https://plugins.jetbrains.com/plugin/7125-grep-console)
+
 Android Studio
 ==
 
