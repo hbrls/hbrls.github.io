@@ -1,14 +1,31 @@
+[清华大学开源软件镜像站](https://mirror.tuna.tsinghua.edu.cn/)
+
+Oh My Zsh
+==
+
+```bash
+REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://ohmyz.sh
+```
+
+Homebrew
+==
+
+```bash
+# ~/.zprofile
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+
+$ xcode-select --install
+$ xcodebuild -license
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # http://brew.sh
+```
+
 brew/cask
 ==
 
 ```bash
-$ xcode-select --install
-$ xcodebuild -license
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://ohmyz.sh
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # http://brew.sh
-$ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-$ brew tap homebrew/cask-fonts
-
 $ brew install --cask iterm2
 $ brew install coreutils
 $ brew install gnu-sed
@@ -25,6 +42,7 @@ $ brew install tig
 # $ git config --global core.ignorecase false
 # $ git config --global push.default simple
 # $ git config --global pull.rebase true
+# $ git config --global rerere.enabled true
 
 $ brew install font-source-code-pro
 $ brew install --cask squirrel
@@ -40,7 +58,7 @@ $ brew install --cask ppduck
 # $ brew cask install seil
 # $ brew cask install nally
 
-$ brew install node@16
+$ brew install node@18
 $ brew install python@3.11
 # $ brew install go
 # $ brew cask install java
@@ -65,6 +83,14 @@ install
 9. [Gitnuro](https://gitnuro.jetpackduba.com/)
 10. [迅雷](https://www.xunlei.com/)
 11. [Itsycal](https://www.mowglii.com/itsycal/)
+
+.zshrc
+==
+
+```bash
+unsetopt share_history
+source ~/.bashrc
+```
 
 .bashrc
 ==
@@ -155,14 +181,6 @@ set encoding=utf-8
 set fileformats=unix
 ```
 
-.zshrc
-==
-
-```bash
-unsetopt share_history
-source ~/.bashrc
-```
-
 .npmrc
 ==
 
@@ -201,6 +219,20 @@ VSCode - settings.json
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true
 }
+```
+
+JetBrains
+==
+
+1. [Grep Console](https://plugins.jetbrains.com/plugin/7125-grep-console)
+
+Android Studio
+==
+
+1. https://developer.android.com/studio
+
+```bash
+$ brew install gradle@7
 ```
 
 Vagrant
