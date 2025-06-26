@@ -75,6 +75,10 @@ $ git config --global core.ignorecase false
 $ git config --global push.default simple
 $ git config --global pull.rebase true
 $ git config --global rerere.enabled true
+
+$ gpg --list-secret-keys --keyid-format=long
+$ gpg --keyserver hkps://keyserver.ubuntu.com --send-keys A543C7C8BC9BA904
+$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys A543C7C8BC9BA904
 ```
 
 install
