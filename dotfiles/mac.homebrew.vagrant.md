@@ -35,14 +35,6 @@ $ brew install trash
 
 $ brew install git
 $ brew install tig
-# $ git config --global user.name hbrls
-# $ git config --global user.email shuaizhexu@gmail.com
-# $ git config --global core.editor "vim"
-# $ git config --global color.ui true
-# $ git config --global core.ignorecase false
-# $ git config --global push.default simple
-# $ git config --global pull.rebase true
-# $ git config --global rerere.enabled true
 
 $ brew install font-source-code-pro
 $ brew install --cask squirrel
@@ -67,6 +59,22 @@ $ brew install python@3.11
 
 $ brew outdated
 $ brew cleanup
+```
+
+Git
+==
+
+1. [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+
+```bash
+$ git config --global user.name hbrls
+$ git config --global user.email shuaizhexu@gmail.com
+$ git config --global core.editor "vim"
+$ git config --global color.ui true
+$ git config --global core.ignorecase false
+$ git config --global push.default simple
+$ git config --global pull.rebase true
+$ git config --global rerere.enabled true
 ```
 
 install
