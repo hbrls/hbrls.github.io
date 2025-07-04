@@ -80,6 +80,10 @@ $ git config --global rerere.enabled true
 $ gpg --list-secret-keys --keyid-format=long
 $ gpg --keyserver hkps://keyserver.ubuntu.com --send-keys A543C7C8BC9BA904
 $ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys A543C7C8BC9BA904
+$ brew install pinentry-mac
+
+# ~/.gnupg/gpg-agent.conf
+pinentry-program /opt/homebrew/bin/pinentry-mac
 ```
 
 install
