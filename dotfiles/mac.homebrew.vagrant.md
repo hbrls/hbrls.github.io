@@ -121,6 +121,8 @@ export ARCHFLAGS="-arch x86_64"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+export GPG_TTY=$(tty)
+
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
