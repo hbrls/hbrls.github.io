@@ -95,6 +95,7 @@ install
 9. [Gitnuro](https://gitnuro.jetpackduba.com/)
 10. [迅雷](https://www.xunlei.com/)
 11. [Itsycal](https://www.mowglii.com/itsycal/)
+12. [V2rayU](https://github.com/yanue/V2rayU/releases/tag/v3.9.0)
 
 .zshrc
 ==
