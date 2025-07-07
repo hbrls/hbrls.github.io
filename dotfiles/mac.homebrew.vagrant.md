@@ -64,8 +64,9 @@ $ brew cleanup
 Git
 ==
 
-1. [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
-2. [GnuPG Howto](https://help.ubuntu.com/community/GnuPrivacyGuardHowto)
+1. [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+2. [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+3. [GnuPG Howto](https://help.ubuntu.com/community/GnuPrivacyGuardHowto)
 
 ```bash
 $ git config --global user.name hbrls
