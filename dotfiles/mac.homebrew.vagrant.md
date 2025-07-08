@@ -52,8 +52,8 @@ $ brew install --cask ppduck
 
 $ brew install node@18
 $ brew install python@3.11
+$ brew install openjdk@11
 # $ brew install go
-# $ brew cask install java
 # $ brew install maven
 # $ brew install tomcat
 
