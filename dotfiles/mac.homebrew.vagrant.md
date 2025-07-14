@@ -211,8 +211,11 @@ registry=https://registry.npmmirror.com/
 save-exact=true
 package-lock=false
 sass_binary_site="https://registry.npmmirror.com/binary.html?path=node-sass/"
+sass_binary_site="https://registry.npmmirror.com/binary.html?path=node-sass/"
+electron_mirror="https://npmmirror.com/mirrors/electron/"
+sharp_binary_host = https://npmmirror.com/mirrors/sharp
+sharp_libvips_binary_host = https://npmmirror.com/mirrors/sharp-libvips
 sharp_dist_base_url="https://registry.npmmirror.com/binary.html?path=sharp/"
-# phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
 ```
 
 .pip/pip.conf
