@@ -246,6 +246,12 @@ VSCode - settings.json
 }
 ```
 
+1. [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+2. [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+3. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+4. [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+5. [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
 JetBrains
 ==
 
