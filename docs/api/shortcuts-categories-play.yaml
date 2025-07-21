@@ -23,6 +23,16 @@
   label: fav
   icon: sony-playstation
 
+- id: IT Tools
+  url: https://it-tools.tech/
+  label: fav
+  icon: sony-playstation
+
+- id: JWT
+  url: https://jwt.io/
+  label: fav
+  icon: sony-playstation
+
 - id: TLDraw
   url: https://www.tldraw.com/
   label: watch
@@ -30,5 +40,10 @@
 
 - id: ReveZone
   url: https://revezone.com/index.html
+  label: watch
+  icon: sony-playstation
+
+- id: SVG Wave
+  url: https://svgwave.in/
   label: watch
   icon: sony-playstation
