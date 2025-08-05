@@ -13,3 +13,6 @@
 13. [awesome-wpo](https://github.com/davidsonfellipe/awesome-wpo)
 14. [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
 15. [awesome-handshake](https://github.com/namebasehq/awesome-handshake)
+16. [awesome-iot](https://github.com/phodal/awesome-iot)
+17. [awesome-oss-alternatives](https://github.com/RunaCapital/awesome-oss-alternatives)
+18. [awesome-dynamodb](https://github.com/alexdebrie/awesome-dynamodb)
