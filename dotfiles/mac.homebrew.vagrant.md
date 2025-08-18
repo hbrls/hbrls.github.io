@@ -1,14 +1,31 @@
+[清华大学开源软件镜像站](https://mirror.tuna.tsinghua.edu.cn/)
+
+Oh My Zsh
+==
+
+```bash
+REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://ohmyz.sh
+```
+
+Homebrew
+==
+
+```bash
+# ~/.zprofile
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+
+$ xcode-select --install
+$ xcodebuild -license
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # http://brew.sh
+```
+
 brew/cask
 ==
 
 ```bash
-$ xcode-select --install
-$ xcodebuild -license
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://ohmyz.sh
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # http://brew.sh
-$ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-$ brew tap homebrew/cask-fonts
-
 $ brew install --cask iterm2
 $ brew install coreutils
 $ brew install gnu-sed
@@ -18,13 +35,6 @@ $ brew install trash
 
 $ brew install git
 $ brew install tig
-# $ git config --global user.name hbrls
-# $ git config --global user.email shuaizhexu@gmail.com
-# $ git config --global core.editor "vim"
-# $ git config --global color.ui true
-# $ git config --global core.ignorecase false
-# $ git config --global push.default simple
-# $ git config --global pull.rebase true
 
 $ brew install font-source-code-pro
 $ brew install --cask squirrel
@@ -40,15 +50,42 @@ $ brew install --cask ppduck
 # $ brew cask install seil
 # $ brew cask install nally
 
-$ brew install node@16
+$ brew install node@18
+    $ corepack enable
 $ brew install python@3.11
+$ brew install openjdk@11
 # $ brew install go
-# $ brew cask install java
 # $ brew install maven
 # $ brew install tomcat
 
 $ brew outdated
 $ brew cleanup
+```
+
+Git
+==
+
+1. [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+2. [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+3. [GnuPG Howto](https://help.ubuntu.com/community/GnuPrivacyGuardHowto)
+
+```bash
+$ git config --global user.name hbrls
+$ git config --global user.email shuaizhexu@gmail.com
+$ git config --global core.editor "vim"
+$ git config --global color.ui true
+$ git config --global core.ignorecase false
+$ git config --global push.default simple
+$ git config --global pull.rebase true
+$ git config --global rerere.enabled true
+
+$ gpg --list-secret-keys --keyid-format=long
+$ gpg --keyserver hkps://keyserver.ubuntu.com --send-keys A543C7C8BC9BA904
+$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys A543C7C8BC9BA904
+$ brew install pinentry-mac
+
+# ~/.gnupg/gpg-agent.conf
+pinentry-program /opt/homebrew/bin/pinentry-mac
 ```
 
 install
@@ -65,6 +102,15 @@ install
 9. [Gitnuro](https://gitnuro.jetpackduba.com/)
 10. [迅雷](https://www.xunlei.com/)
 11. [Itsycal](https://www.mowglii.com/itsycal/)
+12. [V2rayU](https://github.com/yanue/V2rayU/releases/tag/v3.9.0)
+
+.zshrc
+==
+
+```bash
+unsetopt share_history
+source ~/.bashrc
+```
 
 .bashrc
 ==
@@ -76,6 +122,8 @@ export ARCHFLAGS="-arch x86_64"
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+export GPG_TTY=$(tty)
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
@@ -155,14 +203,6 @@ set encoding=utf-8
 set fileformats=unix
 ```
 
-.zshrc
-==
-
-```bash
-unsetopt share_history
-source ~/.bashrc
-```
-
 .npmrc
 ==
 
@@ -171,8 +211,11 @@ registry=https://registry.npmmirror.com/
 save-exact=true
 package-lock=false
 sass_binary_site="https://registry.npmmirror.com/binary.html?path=node-sass/"
+sass_binary_site="https://registry.npmmirror.com/binary.html?path=node-sass/"
+electron_mirror="https://npmmirror.com/mirrors/electron/"
+sharp_binary_host = https://npmmirror.com/mirrors/sharp
+sharp_libvips_binary_host = https://npmmirror.com/mirrors/sharp-libvips
 sharp_dist_base_url="https://registry.npmmirror.com/binary.html?path=sharp/"
-# phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
 ```
 
 .pip/pip.conf
@@ -201,6 +244,26 @@ VSCode - settings.json
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true
 }
+```
+
+1. [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+2. [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+3. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+4. [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+5. [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
+JetBrains
+==
+
+1. [Grep Console](https://plugins.jetbrains.com/plugin/7125-grep-console)
+
+Android Studio
+==
+
+1. https://developer.android.com/studio
+
+```bash
+$ brew install gradle@7
 ```
 
 Vagrant

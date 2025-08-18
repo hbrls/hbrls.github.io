@@ -29,6 +29,8 @@ fav:
     url: "http://coding.smashingmagazine.com/2013/04/26/css3-transitions-thank-god-specification/"
   - id: "Evil Icons"
     url: "http://evil-icons.io/"
+  - id: "Cheerio"
+    url: https://github.com/cheeriojs/cheerio/wiki/Chinese-README
 
 # tools:
   - id: "regexper"
