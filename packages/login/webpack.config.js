@@ -7,7 +7,7 @@ const config = new Config();
 config.mode('production');
 
 config.entry('umi')
-  .add('./src/index.js')
+  .add('./src/index.tsx')
   .end();
 
 config.output

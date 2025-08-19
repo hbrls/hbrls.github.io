@@ -4,6 +4,15 @@ import React, { Suspense, useRef, useEffect } from 'react';
 const AUTHING_WIDTH = { width: 456 };
 
 
+type AuthingSession = {
+  id: string;
+  arn: string;
+  token: string;
+  username?: string;
+  email?: string;
+};
+
+
 function AuthingContainer() {
   const didInitialise = useRef(false);
   
@@ -16,7 +25,7 @@ function AuthingContainer() {
     const head = window.head;
     head.bridge.initialize([ 'cn.authing.guard' ]).then(([ guard ]) => {
       guard.start('#js-authing-container');
-      guard.on('login', (session) => {
+      guard.on('login', (session: AuthingSession) => {
         const { id, arn, token, username, email } = session;
         localStorage.setItem('x-authn', token);
         window.location.href = '/workspace';
