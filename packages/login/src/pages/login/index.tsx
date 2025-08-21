@@ -26,7 +26,7 @@ function AuthingContainer() {
     head.bridge.initialize([ 'cn.authing.guard' ]).then(([ guard ]) => {
       guard.start('#js-authing-container');
       guard.on('login', (session: AuthingSession) => {
-        const { id, arn, token, username, email } = session;
+        const { id, arn, token, username, email } = session; // eslint-disable-line @typescript-eslint/no-unused-vars
         localStorage.setItem('x-authn', token);
         window.location.href = '/workspace';
       });

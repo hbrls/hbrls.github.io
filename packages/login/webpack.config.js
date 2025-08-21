@@ -1,5 +1,6 @@
 const path = require('path');
 const Config = require('webpack-chain');
+const ESLintPlugin = require('eslint-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const config = new Config();
@@ -74,6 +75,14 @@ config.optimization.set('splitChunks', {
 });
 
 config.optimization.set('minimize', true);
+
+config.plugin('eslint')
+  .use(ESLintPlugin, [{
+    extensions: ['js', 'jsx', 'ts', 'tsx'],
+    emitWarning: true,
+    emitError: true,
+    failOnError: false,
+  }]);
 
 // config.plugin('bundle-analyzer').use(BundleAnalyzerPlugin).init(Plugin => new Plugin());
 

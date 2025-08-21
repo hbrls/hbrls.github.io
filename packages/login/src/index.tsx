@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 
-const rootElement = document.getElementById('root')!;
+const rootElement = document.getElementById('root')!; // eslint-disable-line @typescript-eslint/no-non-null-assertion
 
 const root = createRoot(rootElement);
 
