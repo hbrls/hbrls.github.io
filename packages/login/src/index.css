@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --mainColor: #123456;
+  --main-color: #123456;
 }
 
 .App {
-  color: var(--mainColor);
+  color: var(--main-color);
   overflow-x: auto;
 }

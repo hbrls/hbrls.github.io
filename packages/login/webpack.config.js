@@ -1,7 +1,9 @@
 const path = require('path');
 const Config = require('webpack-chain');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 const config = new Config();
 
@@ -81,7 +83,15 @@ config.plugin('eslint')
     extensions: ['js', 'jsx', 'ts', 'tsx'],
     emitWarning: true,
     emitError: true,
-    failOnError: false,
+    failOnError: true,
+  }]);
+
+config.plugin('stylelint')
+  .use(StylelintPlugin, [{
+    files: ['**/*.css'],
+    emitWarning: true,
+    emitError: true,
+    failOnError: true,
   }]);
 
 // config.plugin('bundle-analyzer').use(BundleAnalyzerPlugin).init(Plugin => new Plugin());
