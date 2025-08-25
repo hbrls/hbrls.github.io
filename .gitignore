@@ -11,3 +11,6 @@ Thumbs.db
 node_modules/
 
 packages/shortcuts/public/rsrc/dist/
+
+.head-cli/
+package-lock.json
