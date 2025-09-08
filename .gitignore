@@ -14,3 +14,6 @@ packages/shortcuts/public/rsrc/dist/
 
 .head-cli/
 package-lock.json
+
+.dist/
+.env
