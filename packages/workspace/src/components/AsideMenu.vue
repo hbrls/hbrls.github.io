@@ -25,7 +25,7 @@
 </template>
 
 <script>
-const namespace = 'aside-menu';
+const namespace = 'aside-menu'; // eslint-disable-line no-unused-vars
 
 export default {
   name: 'AsideMenu',
