@@ -27,22 +27,19 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue']
+        extensions: [ '.js', '.jsx', '.ts', '.tsx', '.vue' ]
       }
     },
   },  
 
   extends: [
+    'eslint:recommended',
     'plugin:eslint-plugin-import/recommended',
-    'plugin:eslint-plugin-vue/essential',
+    'plugin:eslint-plugin-vue/recommended',
     'plugin:eslint-plugin-sonarjs/recommended',
   ],
 
   rules: {
-    'import/extensions': [ 'error', { 'js': 'never', 'vue': 'never', 'json': 'always' } ],
-    'no-console': 'off',
-    'no-multiple-empty-lines': [ 'error', { 'max': 2 } ],
-    'no-unused-vars': 'off',
-    'object-curly-newline': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
   },
 };

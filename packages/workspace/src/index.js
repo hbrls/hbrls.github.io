@@ -2,8 +2,9 @@ import { registerApplication, start } from 'single-spa';
 import { constructRoutes, constructApplications, constructLayoutEngine } from 'single-spa-layout';
 import Vue from 'vue';
 import router from './router';
+import 'element-ui/lib/theme-chalk/container.css';
+import './index.css';
 import AsideMenu from './components/AsideMenu';
-import 'element-ui/lib/theme-chalk/index.css';
 
 console.log('single-spa.app.start');
 
@@ -22,7 +23,7 @@ const applications = constructApplications({
 });
 
 
-const layoutEngine = constructLayoutEngine({ routes, applications });
+const layoutEngine = constructLayoutEngine({ routes, applications }); // eslint-disable-line no-unused-vars
 
 
 applications.forEach(registerApplication);

@@ -1,7 +1,15 @@
 module.exports = {
-  plugins: [ 'stylelint-scss' ],
+  plugins: [
+    'stylelint-scss',
+  ],
 
-  extends: [ 'stylelint-config-standard' ],
+  extends: [
+    'stylelint-config-standard',
+  ],
+
+  overrides: [
+    { files: [ '*.vue', '**/*.vue' ], customSyntax: 'postcss-html' },
+  ],
 
   rules: {
     'at-rule-no-unknown': [ true, { 'ignoreAtRules': [ 'tailwind' ] } ],

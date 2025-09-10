@@ -7,10 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <link rel="icon" type="image/png" href="<%= VUE_APP_CDN %>/img/favicon.png" />
   <title>Workspace</title>
+  <%= htmlWebpackPlugin.files.headScripts %>
   <% htmlWebpackPlugin.options.headScripts.forEach(function (script) { %>
     <%= script %>
   <% }); %>
-  <link rel="stylesheet" href="/workspace/rsrc/dist/umi-{hash}.css" />
+
+  <% htmlWebpackPlugin.files.css.forEach(function(css) {
+   %><link rel="stylesheet" href="<%= css %>" /><% }) %>  
 </head>
 
 <body>
@@ -21,8 +24,10 @@
     </section>
   </div>
 
-  <script src="/rsrc/systemjs/6.15.1/system.js"></script>
-  <script src="/rsrc/systemjs/6.15.1/extras/amd-esm.js"></script>
+  <%= htmlWebpackPlugin.files.bridgeScripts %>
+
+  <script src="<%= VUE_APP_CDN %>/systemjs/6.15.1/system.js"></script>
+  <script src="<%= VUE_APP_CDN %>/systemjs/6.15.1/extras/amd-esm.js"></script>
 
   <script>
     // app-*
@@ -33,8 +38,9 @@
       },
     });
     // entry
-    System.import('/workspace/rsrc/dist/vendors-vue-{hash}.js');
-    System.import('/workspace/rsrc/dist/umi-{hash}.js');
+    <% htmlWebpackPlugin.files.js.forEach(function(js) {
+    %>System.import('<%= js %>');
+    <% }) %>
   </script>
 </body>
 </html>
