@@ -10,13 +10,36 @@
     <title>Login</title>
 
     <script id="head-js">
-    /* @head.js/snippet-init 0.4.0 */
-    var head=function(){"use strict";return{}}();
-    /* @head.js/snippet-env 0.4.0 */
-    this.head=this.head||{},this.head.env=function(){"use strict";var _={mode:"{{ __mode__ }}",profile:"{{ __profile__ }}",
-    version:"{{ __version__ }}",agent:"{{ __agent__ }}",context:"{{ __context__ }}"};return _}();
-    /* @head.js/snippet-profile 0.4.0 */
-    this.head=this.head||{},this.head.profile=function(){"use strict";return"{{ __profile_vars__ }}"}();
+    /* @head.js/snippet-init 0.5.1 */
+    !function(){const n=window||__hlobal__;n.head=function(o,_,a){a||(a=_,_=o,o="head"),n[o][_]=a}}();
+    /* @head.js/snippet-env 0.5.1 */
+    !function(){const _={mode:"production",profile:"prd",version:"0.4.0",agent:{},context:"/login"};head("env",_)}();
+    /* @head.js/snippet-profile 0.5.1 */
+    head("profile",{});
+    </script>
+
+    <script id="head-js-analytics">
+    /* @head.js/analytics-snippet 0.0.3 */
+    !function(){
+      var e={"writeKey":"GW4vMpvTuG8m29dHAj1K1udTScVuDoAa",
+            "loader":"https://gitlab-hbrls.lisitede.com/web-starter/analytics.js",
+            "cdn":"https://gitlab-hbrls.lisitede.com/web-starter/"},
+          n={"providers":[{"name":"Guancecom","settings":{"id":"de","endpoint":"https://api.lisitede.com"}}],
+            "rum.denyResourceOrigins":["/v1/write/rum"]},
+    t={analyticsNextEnabled:!0,
+    integrations:{"Segment.io":{
+    apiKey:e.writeKey,unbundledIntegrations:[],addBundledMetadata:!0,maybeBundledConfigIds:{},versionSettings:{
+    componentTypes:["browser"],version:"4.4.7"}}},remotePlugins:n.providers,metrics:{sampleRate:1},plan:{track:{__default:{
+    enabled:!0,integrations:{}}},identify:{__default:{enabled:!0}},group:{__default:{enabled:!0}}},edgeFunction:{},
+    middlewareSettings:{},enabledMiddleware:{},legacyVideoPluginsEnabled:!0},i=window.analytics=window.analytics||[]
+    ;if(!i.initialize)if(i.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{
+    i.invoked=!0,i.methods=["identify","track","ready","page"],i.factory=function(e){return function(){
+    var n=Array.prototype.slice.call(arguments);return n.unshift(e),i.push(n),i}};for(var r=0;r<i.methods.length;r++){
+    var o=i.methods[r];i[o]=i.factory(o)}i.load=function(n,t){var i=document.createElement("script")
+    ;i.type="text/javascript",i.async=!0,i.src=e.loader;var r=document.getElementsByTagName("script")[0]
+    ;r.parentNode.insertBefore(i,r)},i.SNIPPET_VERSION="4.13.1";var a={cdnSettings:t,writeKey:e.writeKey,cdnURL:e.cdn,app:{
+    profile:head.env.profile,version:head.env.version},rum:{denyResourceOrigins:n["rum.denyResourceOrigins"]}},d={}
+    ;i._writeKey=e.writeKey,i._loadSettings=a,i._loadOptions=d,i.load(a,d),i.page()}}();
     </script>
   </head>
 
