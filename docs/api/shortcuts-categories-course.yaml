@@ -11,6 +11,13 @@
   url: https://heptabase.com/
   label: watch
   icon: book-open-variant
+- id: Use Panda
+  url: https://usepanda.com/
+  label: watch
+  icon: book-open-variant
+- id: Miro
+  url: https://miro.com/
+  label: watch
 
 - id: Zotero
   url: https://www.zotero.org/

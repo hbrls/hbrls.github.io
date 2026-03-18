@@ -1,12 +1,24 @@
 - id: OPA
   url: https://www.openpolicyagent.org/docs/latest/policy-reference/
   label: fav
+- id: Android
+  url: https://developer.android.com/guide/components/activities/activity-lifecycle
+  label: fav
+- id: iOS
+  url: https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle
+  label: fav
+- id: 鸿蒙
+  url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V13/arkui-overview-V13
+  label: fav
 
 - id: Elm
   url: https://elm-lang.org/
   label: watch
 - id: JSON Schema
   url: https://json-schema.org/learn/getting-started-step-by-step
+  label: watch
+- id: JSON API
+  url: https://jsonapi.org/
   label: watch
 - id: WasmEdge
   url: https://wasmedge.org/book/en/index.html

@@ -7,7 +7,7 @@
   label: fav
   icon: language-javascript
 - id: Vant 小程序
-  url: https://vant-contrib.gitee.io/vant-weapp/
+  url: https://vant.pro/vant-weapp
   label: fav
   icon: code-braces
 - id: Tailwind
@@ -18,12 +18,16 @@
   url: https://daisyui.com/docs/layout-and-typography/
   label: fav
   icon: code-braces
+- id: Ant Design
+  url: https://4x.ant.design/components/overview/
+  label: fav
+  icon: code-braces
 - id: Element UI
   url: https://element.eleme.io/#/zh-CN/component/installation
   label: fav
   icon: code-braces
 - id: Antv G6
-  url: https://antv-g6.gitee.io/zh/docs/manual/introduction
+  url: https://g6.antv.antgroup.com/manual/introduction
   label: fav
   icon: code-braces
 
@@ -51,6 +55,10 @@
   url: https://yondesign.yonyou.com/homepage/#/
   label: watch
   icon: code-braces
+- id: 小米 Design
+  url: https://xiaomi.github.io/hiui/components/overview/
+  label: watch
+  icon: code-braces
 - id: Terminus Design
   url: https://nusi.terminus.io/
   label: watch
@@ -63,6 +71,20 @@
   url: https://cloudscape.design/
   label: watch
   icon: code-braces
+- id: Dev Icon
+  url: https://devicon.dev/
+  label: watch
+  icon: panorama-variant-outline
+- id: 字节 Icon
+  url: https://iconpark.oceanengine.com/home
+  label: watch
+  icon: panorama-variant-outline
+- id: Shields
+  url: https://shields.io/category/coverage
+  label: watch
+- id: Loading
+  url: https://loading.io/
+  label: watch
 
 - id: Moment
   url: http://momentjs.com/docs/
