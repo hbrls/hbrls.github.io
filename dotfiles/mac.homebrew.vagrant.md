@@ -54,7 +54,8 @@ $ brew install node@18
     $ corepack enable
 $ brew install python@3.11
 $ brew install openjdk@11
-# $ brew install go
+$ brew install go
+    $ go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
 # $ brew install maven
 # $ brew install tomcat
 
