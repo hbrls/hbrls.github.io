@@ -7,60 +7,39 @@
   <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
   <!-- 屏蔽数字识自动别为电话号码 -->
   <meta name="format-detection" content="telephone=no" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <title>Shortcuts</title>
 
-  <script>
-  /* @head.js/snippet-init 0.4.0 */
-  var head=function(){"use strict";return{}}();
-  /* @head.js/snippet-env 0.4.0 */
-  this.head=this.head||{},this.head.env=function(){"use strict";var _={mode:"production",profile:"prd",
-  version:"20240621",agent:"{{ __agent__ }}",context:"/shortcuts"};return _}();
-  /* @head.js/snippet-profile 0.4.0 */
-  this.head=this.head||{},this.head.profile=function(){"use strict";return"{{ __profile_vars__ }}"}();
+  <script id="head-js">
+  /* @head.js/snippet-init 0.5.1 */
+  !function(){const n=window||__hlobal__;n.head=function(o,_,a){a||(a=_,_=o,o="head"),n[o][_]=a}}();
+  /* @head.js/snippet-env 0.5.1 */
+  !function(){const _={mode:"production",profile:"prd",version:"20260225",
+  context:"/shortcuts"};head("env",_)}();
+  /* @head.js/snippet-profile 0.5.1 */
+  head("profile","{{ __profile_vars__ }}");
   </script>
 
-  <script src="https://www.googletagmanager.com/gtag/js?id=G-NZN2F708PM" async></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NZN2F708PM');
-  </script>
-
-  <script>
-  /* @head.js/analytics-snippet 0.0.3 */
-  !function(){"use strict";
-    var e={"writeKey":"GW4vMpvTuG8m29dHAj1K1udTScVuDoAa",
-           "loader":"https://gitlab-hbrls.lisitede.com/web-starter/analytics.js",
-           "cdn":"https://gitlab-hbrls.lisitede.com/web-starter/"},
-        n={"providers":[{"name":"Sendbeacon","settings":{"endpoint":"https://open-api.bo7.co/collect/collect"}},
-                        {"name":"Guancecom","settings":{"id":"de","endpoint":"https://api.lisitede.com"}},
-                        {"name":"Segmentio","settings":{"endpoint":"https://api.segment.io/v1","token":"GW4vMpvTuG8m29dHAj1K1udTScVuDoAa"}}],
-           "rum.denyResourceOrigins":["/v1/write/rum"]},
-  t={analyticsNextEnabled:!0,
-  integrations:{"Actions Google Analytic 4":{versionSettings:{componentTypes:["browser"],version:""}},"Segment.io":{
-  apiKey:e.writeKey,unbundledIntegrations:[],addBundledMetadata:!0,maybeBundledConfigIds:{},versionSettings:{
-  componentTypes:["browser"],version:"4.4.7"}}},remotePlugins:n.providers,metrics:{sampleRate:1},plan:{track:{__default:{
-  enabled:!0,integrations:{}}},identify:{__default:{enabled:!0}},group:{__default:{enabled:!0}}},edgeFunction:{},
-  middlewareSettings:{},enabledMiddleware:{},legacyVideoPluginsEnabled:!0},i=window.analytics=window.analytics||[]
-  ;if(!i.initialize)if(i.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{
-  i.invoked=!0,i.methods=["identify","track","ready","page"],i.factory=function(e){return function(){
-  var n=Array.prototype.slice.call(arguments);return n.unshift(e),i.push(n),i}};for(var r=0;r<i.methods.length;r++){
-  var o=i.methods[r];i[o]=i.factory(o)}i.load=function(n,t){var i=document.createElement("script")
-  ;i.type="text/javascript",i.async=!0,i.src=e.loader;var r=document.getElementsByTagName("script")[0]
-  ;r.parentNode.insertBefore(i,r)},i.SNIPPET_VERSION="4.13.1";var a={cdnSettings:t,writeKey:e.writeKey,cdnURL:e.cdn,app:{
-  profile:head.env.profile,version:head.env.version},rum:{denyResourceOrigins:n["rum.denyResourceOrigins"]}},d={}
-  ;i._writeKey=e.writeKey,i._loadSettings=a,i._loadOptions=d,i.load(a,d),i.page()}}();
+  <script id="guancecom-load-from-cdn">
+  /* @head.js/snippet-guancecom 3.2.24-10 load-from-cdn */
+  !function(){var e,t,n,r;!function(e,t,n,r,a){var o=e[a]=e[a]||{q:[]
+  },i=["onReady","init","addAction","addError","setGlobalContext","setGlobalContextProperty","setUser"]
+  ;o.factory=function(t){return function(){
+  var n=Array.prototype.slice.call(arguments),r=0===t.indexOf("set")?"unshift":"push";return o.q[r]((function(){var r=e[a]
+  ;r[t].apply(r,n)})),o}};for(var c=0;c<i.length;c+=1){var s=i[c];o[s]=o.factory(s)}var d=t.createElement(n);d.async=1,
+  d.src="https://lisitede.com/unpkg/@head.js/guancecom-browser-rum-slim@3.2.24-10/guancecom-browser-rum-slim.js";var f=t.getElementsByTagName(n)[0];f.parentNode.insertBefore(d,f)
+  }(window,document,"script",0,"DATAFLUX_RUM"),e=window,n=e[t="DATAFLUX_RUM"],r=(new Date).getTime(),
+  n.onReady((function(){var a=(new Date).getTime();(n=e[t]).addAction("PRE_START",{action_message:"cost:"+(a-r)+"ms"})}))
+  }();
   </script>
 
   <link rel="stylesheet" href="/rsrc/css/bootstrap-short-30b627e7de.css" />
   <link rel="stylesheet" href="/rsrc/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="/rsrc/dist/shortcuts-global.css" />
-  <!-- <link rel="stylesheet" href="http://0.0.0.0:3001/rsrc/dist/shortcuts-hash.css" /> -->
-  <link rel="stylesheet" href="/rsrc/dist/shortcuts-66c495d9.css" />
+  <!-- <link rel="stylesheet" href="http://127.0.0.1:3001/rsrc/dist/shortcuts-hash.css" /> -->
+  <link rel="stylesheet" href="/rsrc/dist/shortcuts-e663ed07.css" />
 </head>
 <body>
   <nav class="navbar navbar-default Nav">
@@ -85,67 +64,120 @@
 
   <footer class="container Footer"></footer>
 
-  <script>
-  /* @head.js/snippet-emitter 0.4.0 */
-  this.head=this.head||{},this.head.emitter=function(){"use strict";function t(t,n){n=n||0
-  ;for(var e=t.length-n,r=new Array(e);e--;)r[e]=t[e+n];return r}function n(){return this._events=Object.create(null),this
-  }n.prototype.$on=function(t,n){var e=this;return(e._events[t]||(e._events[t]=[])).push(n),e},
-  n.prototype.$once=function(t,n){var e=this;function r(){e.$off(t,r),n.apply(e,arguments)}return r.fn=n,e.$on(t,r),e},
-  n.prototype.$off=function(t,n){var e=this;if(!arguments.length)return e._events=Object.create(null),e
-  ;var r,i=e._events[t];if(!i)return e;if(!n)return e._events[t]=null,e
-  ;for(var o=i.length;o--;)if((r=i[o])===n||r.fn===n){i.splice(o,1);break}return e},n.prototype.$emit=function(n){
-  var e=this,r=e._events[n];if(r){r=r.length>1?t(r):r;for(var i=t(arguments,1),o=0,f=r.length;o<f;o+=1)r[o].apply(e,i)}
-  return e};var e=new n;return e.on=e.$on.bind(e),e.once=e.$once.bind(e),e.off=e.$off.bind(e),e.emit=e.$emit.bind(e),e}();
-  /* @head.js/snippet-require 0.4.0 */
-  this.head=this.head||{},this.head.require=function(){"use strict";var e={};function t(t,r){if(e[t])e[t].push(r);else{
-  for(var n,o,i,a=document.getElementsByTagName("script"),l=0;l<a.length;l+=1){var u=a[l];if(u.getAttribute("src")===t){
-  n=u;break}}if(!r)return n;n||(o=!0,(n=document.createElement("script")).timeout=30,n.src=t,n.async=!0),e[t]=[r],
-  i=setTimeout(d.bind(null,void 0,{type:"timeout",target:n}),3e4),n.onerror=d.bind(null,n.onerror),
-  n.onload=d.bind(null,n.onload),o&&document.head.appendChild(n)}function d(r,o){n.onerror=n.onload=null,clearTimeout(i)
-  ;var a=e[t];if(delete e[t],o&&"load"!==o.type&&n.parentNode&&n.parentNode.removeChild(n),a&&a.forEach((e=>e(o))),
-  r)return r(o)}}var r="data-head-require-loading";function n(e,t){
-  for(var n,o,i,a=document.getElementsByTagName("link"),l=0;l<a.length;l+=1){var u=a[l]
-  ;if("stylesheet"===u.rel&&(u.href===e||u.getAttribute("href")===e)){n=u;break}}if(!t)return n;function d(e,o){
-  if(n.onerror=n.onload=null,n.removeAttribute(r),clearTimeout(i),o&&"load"!==o.type&&n.parentNode.removeChild(n),t(o),
-  e)return e(o)}return n||(o=!0,(n=document.createElement("link")).setAttribute(r,1),n.rel="stylesheet",n.href=e),
-  n.getAttribute(r)?(i=setTimeout(d.bind(null,void 0,{type:"timeout",target:n}),3e4),n.onerror=d.bind(null,n.onerror),
-  n.onload=d.bind(null,n.onload)):d(void 0,{type:"load",target:n}),o&&document.head.appendChild(n),n}
-  var o=new RegExp("\\.css");return function(e,r,i){var a,l=0,u=0;function d(e){0===(l-=1)&&0===u&&r()}function c(e){u-=1,
-  0===l&&0===u&&r()}for(var s=0;s<e.length;s+=1)a=e[s],o.test(a)?(l+=1,n(a,d)):(u+=1,t(a,c))}}();
-  /* @head.js/snippet-bridge 0.4.2 */
-  this.head=this.head||{},this.head.bridge=function(){"use strict";function i(i,e){return function(i){
-  if(Array.isArray(i))return i}(i)||function(i,t){
-  var e=null==i?null:"undefined"!=typeof Symbol&&i[Symbol.iterator]||i["@@iterator"];if(null!=e){
-  var r,n,s,o,a=[],l=!0,h=!1;try{if(s=(e=e.call(i)).next,0===t){if(Object(e)!==e)return;l=!1
-  }else for(;!(l=(r=s.call(e)).done)&&(a.push(r.value),a.length!==t);l=!0);}catch(i){h=!0,n=i}finally{try{
-  if(!l&&null!=e.return&&(o=e.return(),Object(o)!==o))return}finally{if(h)throw n}}return a}}(i,e)||function(i,e){
-  if(!i)return;if("string"==typeof i)return t(i,e);var r=Object.prototype.toString.call(i).slice(8,-1)
-  ;"Object"===r&&i.constructor&&(r=i.constructor.name);if("Map"===r||"Set"===r)return Array.from(i)
-  ;if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return t(i,e)}(i,e)||function(){
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-  }()}function t(i,t){(null==t||t>i.length)&&(t=i.length);for(var e=0,r=new Array(t);e<t;e++)r[e]=i[e];return r}
-  function e(){this.registered={},this.initialized={},this.resolved={}}return e.prototype._resolve=function(t){
-  for(var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n,o=this.initialized[r][s],a=this.resolved[r].shift();a;)a(o),
-  a=this.resolved[r].shift()},e.prototype.register=function(t,e){var r=i(t.split("@"),2),n=r[0],s=r[1],o=void 0===s?"_":s
-  ;this.registered[n]?this.registered[n][o]||console.warn("".concat(n,"@").concat(Object.keys(this.registered[n]).join(",")," detected. @").concat(o," will not register.")):(this.registered[n]=this.registered[n]||{},
-  this.registered[n][o]=this.registered[n][o]||[],this.initialized[n]=this.initialized[n]||{},this.initialized[n][o]=null,
-  this.resolved[n]=this.resolved[n]||[],e((i=>{i.then?(this.initialized[n][o]={__promis3r3fhack__:i},
-  "_"!==o&&(this.initialized[n]._={__promis3r3fhack__:i})):(this.initialized[n][o]=i,"_"!==o&&(this.initialized[n]._=i)),
-  this._resolve(t)})))},e.prototype._initialize=function(t){var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n
-  ;return this.resolved[r]=this.resolved[r]||[],new Promise(((i,t)=>{if(this.initialized[r]){var e=this.initialized[r][s]
-  ;if(e)i(e);else{var n=this.initialized[r]._
-  ;n?(console.warn("only the 1st ".concat(r,"@").concat(Object.keys(this.initialized[r]).join(",")," will register and resolve.")),
-  i(n)):this.resolved[r].push(i)}}else this.resolved[r].push(i)}))},e.prototype.initialize=function(i){
-  for(var t=[],e=0;e<i.length;e+=1)t.push(this._initialize(i[e]));return Promise.all(t).then((i=>{
-  for(var t=[],e=0;e<i.length;e+=1){var r=i[e];r.__promis3r3fhack__?t.push(r.__promis3r3fhack__):t.push(r)}
-  return Promise.resolve(t)}))},e.prototype.ready=function(t){var e=i(t.split("@"),2),r=e[0],n=e[1],s=void 0===n?"_":n
-  ;if(this.initialized[r]){var o=this.initialized[r][s];if(o)return o;var a=this.initialized[r]._
-  ;if(a)return console.warn("only the 1st ".concat(r,"@").concat(Object.keys(this.initialized[r]).join(",")," will register and resolve.")),
-  a;throw new Error("check docs about `await bridge.initialize`")}
-  throw new Error("check docs about `await bridge.initialize`")},e.prototype.require=function(i,t,e){var r=window.head
-  ;this.register(i,(i=>{r.require(t,(()=>{e(i)}))}))},new e}();
+  <script id="head-js-agent">
+  /* @head.js/snippet-agent 2.0.6-1 */
+  !function(){
+  var i="user-agent",e="?",o="function",r="object",a="string",t="undefined",n="browser",s="device",w="engine",b="os",d="result",l="name",c="type",u="vendor",h="version",p="model",m="mobile",g="tablet",f="desktop",v="smarttv",k="inapp",x="Amazon",y="Apple",_="ASUS",S="BlackBerry",q="Google",z="Huawei",O="Lenovo",C="Honor",j="Microsoft",M="Motorola",A="OPPO",T="Samsung",F="Sony",U="Xiaomi",B="Zebra",P="Chromecast",L="Opera",E=typeof window!==t&&window.navigator?window.navigator:void 0,I=E&&E.userAgentData?E.userAgentData:void 0,R=function(i,e){
+  if(typeof i===r&&i.length>0){for(var o in i)if(V(e)==V(i[o]))return!0;return!1}return!!N(i)&&V(e)==V(i)
+  },D=function(i,e){for(var o in i)return/^(browser|cpu|device|engine|os)$/.test(o)||!!e&&D(i[o])},N=function(i){
+  return typeof i===a},V=function(i){return N(i)?i.toLowerCase():i},G=function(i){
+  return N(i)?H(/[^\d\.]/g,i).split(".")[0]:void 0},$=function(i){for(var e in i)if(i.hasOwnProperty(e)){var o=i[e]
+  ;typeof o==r&&2==o.length?this[o[0]]=o[1]:this[o]=void 0}return this},H=function(i,e){return N(e)?e.replace(i,""):e
+  },W=function(i,e){if(i&&e)for(var a,t,n,s,w,b,d=0;d<e.length&&!w;){var l=e[d],c=e[d+1]
+  ;for(a=t=0;a<l.length&&!w&&l[a];)if(w=l[a++].exec(i))for(n=0;n<c.length;n++)b=w[++t],
+  typeof(s=c[n])===r&&s.length>0?2===s.length?typeof s[1]==o?this[s[0]]=s[1].call(this,b):this[s[0]]=s[1]:s.length>=3&&(typeof s[1]!==o||s[1].exec&&s[1].test?3==s.length?this[s[0]]=b?b.replace(s[1],s[2]):void 0:4==s.length?this[s[0]]=b?s[3].call(this,b.replace(s[1],s[2])):void 0:s.length>4&&(this[s[0]]=b?s[3].apply(this,[b.replace(s[1],s[2])].concat(s.slice(4))):void 0):s.length>3?this[s[0]]=b?s[1].apply(this,s.slice(2)):void 0:this[s[0]]=b?s[1].call(this,b,s[2]):void 0):this[s]=b||void 0
+  ;d+=2}},X=function(i,o){for(var a in o)if(typeof o[a]===r&&o[a].length>0){
+  for(var t=0;t<o[a].length;t++)if(R(o[a][t],i))return a===e?void 0:a}else if(R(o[a],i))return a===e?void 0:a
+  ;return o.hasOwnProperty("*")?o["*"]:i},Z={ME:"4.90","NT 3.51":"3.51","NT 4.0":"4.0",2e3:["5.0","5.01"],
+  XP:["5.1","5.2"],Vista:"6.0",7:"6.1",8:"6.2",8.1:"6.3",10:["6.4","10.0"],NT:""},K={
+  browser:[[/\b(?:crmo|crios)\/([\w\.]+)/i],[h,[l,"Mobile Chrome"]],[/webview.+edge\/([\w\.]+)/i],[h,[l,"Edge WebView"]],[/edg(?:e|ios|a)?\/([\w\.]+)/i],[h,[l,"Edge"]],[/(opera mini)\/([-\w\.]+)/i,/(opera [mobiletab]{3,6})\b.+version\/([-\w\.]+)/i,/(opera)(?:.+version\/|[\/ ]+)([\w\.]+)/i],[l,h],[/opios[\/ ]+([\w\.]+)/i],[h,[l,"Opera Mini"]],[/\bop(?:rg)?x\/([\w\.]+)/i],[h,[l,"Opera GX"]],[/\bopr\/([\w\.]+)/i],[h,[l,L]],[/\bb[ai]*d(?:uhd|[ub]*[aekoprswx]{5,6})[\/ ]?([\w\.]+)/i],[h,[l,"Baidu"]],[/\b(?:mxbrowser|mxios|myie2)\/?([-\w\.]*)\b/i],[h,[l,"Maxthon"]],[/(kindle)\/([\w\.]+)/i,/(lunascape|maxthon|netfront|jasmine|blazer|sleipnir)[\/ ]?([\w\.]*)/i,/(avant|iemobile|slim(?:browser|boat|jet))[\/ ]?([\d\.]*)/i,/(?:ms|\()(ie) ([\w\.]+)/i,/(flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|qupzilla|falkon|rekonq|puffin|brave|whale(?!.+naver)|qqbrowserlite|duckduckgo|klar|helio|(?=comodo_)?dragon|otter|dooble|(?:lg |qute)browser|palemoon)\/([-\w\.]+)/i,/(heytap|ovi|115|surf|qwant)browser\/([\d\.]+)/i,/(qwant)(?:ios|mobile)\/([\d\.]+)/i,/(ecosia|weibo)(?:__| \w+@)([\d\.]+)/i],[l,h],[/quark(?:pc)?\/([-\w\.]+)/i],[h,[l,"Quark"]],[/\bddg\/([\w\.]+)/i],[h,[l,"DuckDuckGo"]],[/(?:\buc? ?browser|(?:juc.+)ucweb)[\/ ]?([\w\.]+)/i],[h,[l,"UCBrowser"]],[/microm.+\bqbcore\/([\w\.]+)/i,/\bqbcore\/([\w\.]+).+microm/i,/micromessenger\/([\w\.]+)/i],[h,[l,"WeChat"]],[/konqueror\/([\w\.]+)/i],[h,[l,"Konqueror"]],[/trident.+rv[: ]([\w\.]{1,9})\b.+like gecko/i],[h,[l,"IE"]],[/ya(?:search)?browser\/([\w\.]+)/i],[h,[l,"Yandex"]],[/slbrowser\/([\w\.]+)/i],[h,[l,"Smart Lenovo Browser"]],[/(avast|avg)\/([\w\.]+)/i],[[l,/(.+)/,"$1 Secure Browser"],h],[/\bfocus\/([\w\.]+)/i],[h,[l,"Firefox Focus"]],[/\bopt\/([\w\.]+)/i],[h,[l,"Opera Touch"]],[/coc_coc\w+\/([\w\.]+)/i],[h,[l,"Coc Coc"]],[/dolfin\/([\w\.]+)/i],[h,[l,"Dolphin"]],[/coast\/([\w\.]+)/i],[h,[l,"Opera Coast"]],[/miuibrowser\/([\w\.]+)/i],[h,[l,"MIUI Browser"]],[/fxios\/([\w\.-]+)/i],[h,[l,"Mobile Firefox"]],[/\bqihoobrowser\/?([\w\.]*)/i],[h,[l,"360"]],[/\b(qq)\/([\w\.]+)/i],[[l,/(.+)/,"$1Browser"],h],[/(oculus|sailfish|huawei|vivo|pico)browser\/([\w\.]+)/i],[[l,/(.+)/,"$1 Browser"],h],[/samsungbrowser\/([\w\.]+)/i],[h,[l,"Samsung Internet"]],[/metasr[\/ ]?([\d\.]+)/i],[h,[l,"Sogou Explorer"]],[/(sogou)mo\w+\/([\d\.]+)/i],[[l,"Sogou Mobile"],h],[/(electron)\/([\w\.]+) safari/i,/(tesla)(?: qtcarbrowser|\/(20\d\d\.[-\w\.]+))/i,/m?(qqbrowser|2345(?=browser|chrome|explorer))\w*[\/ ]?v?([\w\.]+)/i],[l,h],[/(lbbrowser|rekonq)/i],[l],[/ome\/([\w\.]+) \w* ?(iron) saf/i,/ome\/([\w\.]+).+qihu (360)[es]e/i],[h,l],[/((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i],[[l,"Facebook"],h,[c,k]],[/(kakao(?:talk|story))[\/ ]([\w\.]+)/i,/(naver)\(.*?(\d+\.[\w\.]+).*\)/i,/(daum)apps[\/ ]([\w\.]+)/i,/safari (line)\/([\w\.]+)/i,/\b(line)\/([\w\.]+)\/iab/i,/(alipay)client\/([\w\.]+)/i,/(twitter)(?:and| f.+e\/([\w\.]+))/i,/(bing)(?:web|sapphire)\/([\w\.]+)/i,/(instagram|snapchat|klarna)[\/ ]([-\w\.]+)/i],[l,h,[c,k]],[/\bgsa\/([\w\.]+) .*safari\//i],[h,[l,"GSA"],[c,k]],[/musical_ly(?:.+app_?version\/|_)([\w\.]+)/i],[h,[l,"TikTok"],[c,k]],[/\[(linkedin)app\]/i],[l,[c,k]],[/(zalo(?:app)?)[\/\sa-z]*([\w\.-]+)/i],[[l,/(.+)/,"Zalo"],h,[c,k]],[/(chromium)[\/ ]([-\w\.]+)/i],[l,h],[/headlesschrome(?:\/([\w\.]+)| )/i],[h,[l,"Chrome Headless"]],[/wv\).+chrome\/([\w\.]+).+edgw\//i],[h,[l,"Edge WebView2"]],[/ wv\).+(chrome)\/([\w\.]+)/i],[[l,"Chrome WebView"],h],[/droid.+ version\/([\w\.]+)\b.+(?:mobile safari|safari)/i],[h,[l,"Android Browser"]],[/chrome\/([\w\.]+) mobile/i],[h,[l,"Mobile Chrome"]],[/(chrome|omniweb|arora|[tizenoka]{5} ?browser)\/v?([\w\.]+)/i],[l,h],[/version\/([\w\.\,]+) .*mobile(?:\/\w+ | ?)safari/i],[h,[l,"Mobile Safari"]],[/iphone .*mobile(?:\/\w+ | ?)safari/i],[[l,"Mobile Safari"]],[/version\/([\w\.\,]+) .*(safari)/i],[h,l],[/webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i],[l,[h,"1"]],[/(webkit|khtml)\/([\w\.]+)/i],[l,h],[/(?:mobile|tablet);.*(firefox)\/([\w\.-]+)/i],[[l,"Mobile Firefox"],h],[/(navigator|netscape\d?)\/([-\w\.]+)/i],[[l,"Netscape"],h],[/(wolvic|librewolf)\/([\w\.]+)/i],[l,h],[/mobile vr; rv:([\w\.]+)\).+firefox/i],[h,[l,"Firefox Reality"]],[/ekiohf.+(flow)\/([\w\.]+)/i,/(swiftfox)/i,/(icedragon|iceweasel|camino|chimera|fennec|maemo browser|minimo|conkeror)[\/ ]?([\w\.\+]+)/i,/(seamonkey|k-meleon|icecat|iceape|firebird|phoenix|basilisk|waterfox)\/([-\w\.]+)$/i,/(firefox)\/([\w\.]+)/i,/(mozilla)\/([\w\.]+(?= .+rv\:.+gecko\/\d+)|[0-4][\w\.]+(?!.+compatible))/i,/(amaya|dillo|doris|icab|ladybird|lynx|mosaic|netsurf|obigo|polaris|w3m|(?:go|ice|up)[\. ]?browser)[-\/ ]?v?([\w\.]+)/i,/\b(links) \(([\w\.]+)/i],[l,[h,/_/g,"."]],[/(cobalt)\/([\w\.]+)/i],[l,[h,/[^\d\.]+./,""]]],
+  device:[[/\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],[p,[u,T],[c,g]],[/\b((?:s[cgp]h|gt|sm)-(?![lr])\w+|sc[g-]?[\d]+a?|galaxy nexus)/i,/samsung[- ]((?!sm-[lr]|browser)[-\w]+)/i,/sec-(sgh\w+)/i],[p,[u,T],[c,m]],[/(?:\/|\()(ip(?:hone|od)[\w, ]*)[\/\);]/i],[p,[u,y],[c,m]],[/\b(?:ios|apple\w+)\/.+[\(\/](ipad)/i,/\b(ipad)[\d,]*[;\] ].+(mac |i(pad)?)os/i],[p,[u,y],[c,g]],[/(macintosh);/i],[p,[u,y],[c,f]],[/\b(sh-?[altvz]?\d\d[a-ekm]?)/i],[p,[u,"Sharp"],[c,m]],[/\b((?:brt|eln|hey2?|gdi|jdn)-a?[lnw]09|(?:ag[rm]3?|jdn2|kob2)-a?[lw]0[09]hn)(?: bui|\)|;)/i],[p,[u,C],[c,g]],[/honor([-\w ]+)[;\)]/i],[p,[u,C],[c,m]],[/\b((?:ag[rs][2356]?k?|bah[234]?|bg[2o]|bt[kv]|cmr|cpn|db[ry]2?|jdn2|got|kob2?k?|mon|pce|scm|sht?|[tw]gr|vrd)-[ad]?[lw][0125][09]b?|605hw|bg2-u03|(?:gem|fdr|m2|ple|t1)-[7a]0[1-4][lu]|t1-a2[13][lw]|mediapad[\w\. ]*(?= bui|\)))\b(?!.+d\/s)/i],[p,[u,z],[c,g]],[/(?:huawei) ?([-\w ]+)[;\)]/i,/\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][\dc][adnt]?)\b(?!.+d\/s)/i],[p,[u,z],[c,m]],[/oid[^\)]+; (2[\dbc]{4}(182|283|rp\w{2})[cgl]|m2105k81a?c)(?: bui|\))/i,/\b(?:xiao)?((?:red)?mi[-_ ]?pad[\w- ]*)(?: bui|\))/i],[[p,/_/g," "],[u,U],[c,g]],[/\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i,/\b; (\w+) build\/hm\1/i,/\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i,/\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i,/oid[^\)]+; (m?[12][0-389][01]\w{3,6}[c-y])( bui|; wv|\))/i,/\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note|max|cc)?[_ ]?(?:\d{0,2}\w?)[_ ]?(?:plus|se|lite|pro)?( 5g|lte)?)(?: bui|\))/i,/ ([\w ]+) miui\/v?\d/i],[[p,/_/g," "],[u,U],[c,m]],[/droid.+; (cph2[3-6]\d[13579]|((gm|hd)19|(ac|be|in|kb)20|(d[en]|eb|le|mt)21|ne22)[0-2]\d|p[g-k]\w[1m]10)\b/i,/(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i],[p,[u,"OnePlus"],[c,m]],[/; (\w+) bui.+ oppo/i,/\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i],[p,[u,A],[c,m]],[/\b(opd2(\d{3}a?))(?: bui|\))/i],[p,[u,X,{
+  OnePlus:["203","304","403","404","413","415"],"*":A
+  }],[c,g]],[/(vivo (5r?|6|8l?|go|one|s|x[il]?[2-4]?)[\w\+ ]*)(?: bui|\))/i],[p,[u,"BLU"],[c,m]],[/; vivo (\w+)(?: bui|\))/i,/\b(v[12]\d{3}\w?[at])(?: bui|;)/i],[p,[u,"Vivo"],[c,m]],[/\b(rmx[1-3]\d{3})(?: bui|;|\))/i],[p,[u,"Realme"],[c,m]],[/(ideatab[-\w ]+|602lv|d-42a|a101lv|a2109a|a3500-hv|s[56]000|pb-6505[my]|tb-?x?\d{3,4}(?:f[cu]|xu|[av])|yt\d?-[jx]?\d+[lfmx])( bui|;|\)|\/)/i,/lenovo ?(b[68]0[08]0-?[hf]?|tab(?:[\w- ]+?)|tb[\w-]{6,7})( bui|;|\)|\/)/i],[p,[u,O],[c,g]],[/lenovo[-_ ]?([-\w ]+?)(?: bui|\)|\/)/i],[p,[u,O],[c,m]],[/\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,/\bmot(?:orola)?[- ]([\w\s]+)(\)| bui)/i,/((?:moto(?! 360)[-\w\(\) ]+|xt\d{3,4}[cgkosw\+]?[-\d]*|nexus 6)(?= bui|\)))/i],[p,[u,M],[c,m]],[/\b(mz60\d|xoom[2 ]{0,2}) build\//i],[p,[u,M],[c,g]],[/((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i],[p,[u,"LG"],[c,g]],[/(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i,/\blg[-e;\/ ]+(?!.*(?:browser|netcast|android tv|watch|webos))(\w+)/i,/\blg-?([\d\w]+) bui/i],[p,[u,"LG"],[c,m]],[/(nokia) (t[12][01])/i],[u,p,[c,g]],[/(?:maemo|nokia).*(n900|lumia \d+|rm-\d+)/i,/nokia[-_ ]?(([-\w\. ]*?))( bui|\)|;|\/)/i],[[p,/_/g," "],[c,m],[u,"Nokia"]],[/(pixel (c|tablet))\b/i],[p,[u,q],[c,g]],[/droid.+;(?: google)? (g(01[13]a|020[aem]|025[jn]|1b60|1f8f|2ybb|4s1m|576d|5nz6|8hhn|8vou|a02099|c15s|d1yq|e2ae|ec77|gh2x|kv4x|p4bc|pj41|r83y|tt9q|ur25|wvk6)|pixel[\d ]*a?( pro)?( xl)?( fold)?( \(5g\))?)( bui|\))/i],[p,[u,q],[c,m]],[/(google) (pixelbook( go)?)/i],[u,p],[/droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-\w\w\d\d)(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],[p,[u,F],[c,m]],[/sony tablet [ps]/i,/\b(?:sony)?sgp\w+(?: bui|\))/i],[[p,"Xperia Tablet"],[u,F],[c,g]],[/(alexa)webm/i,/(kf[a-z]{2}wi|aeo(?!bc)\w\w)( bui|\))/i,/(kf[a-z]+)( bui|\)).+silk\//i],[p,[u,x],[c,g]],[/((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i],[[p,/(.+)/g,"Fire Phone $1"],[u,x],[c,m]],[/(playbook);[-\w\),; ]+(rim)/i],[p,u,[c,g]],[/\b((?:bb[a-f]|st[hv])100-\d)/i,/(?:blackberry|\(bb10;) (\w+)/i],[p,[u,S],[c,m]],[/(?:\b|asus_)(transfo[prime ]{4,10} \w+|eeepc|slider \w+|nexus 7|padfone|p00[cj])/i],[p,[u,_],[c,g]],[/ (z[bes]6[027][012][km][ls]|zenfone \d\w?)\b/i],[p,[u,_],[c,m]],[/(nexus 9)/i],[p,[u,"HTC"],[c,g]],[/(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i,/(zte)[- ]([\w ]+?)(?: bui|\/|\))/i,/(alcatel|geeksphone|nexian|panasonic(?!(?:;|\.))|sony(?!-bra))[-_ ]?([-\w]*)/i],[u,[p,/_/g," "],[c,m]],[/tcl (xess p17aa)/i,/droid [\w\.]+; ((?:8[14]9[16]|9(?:0(?:48|60|8[01])|1(?:3[27]|66)|2(?:6[69]|9[56])|466))[gqswx])(_\w(\w|\w\w))?(\)| bui)/i],[p,[u,"TCL"],[c,g]],[/droid [\w\.]+; (418(?:7d|8v)|5087z|5102l|61(?:02[dh]|25[adfh]|27[ai]|56[dh]|59k|65[ah])|a509dl|t(?:43(?:0w|1[adepqu])|50(?:6d|7[adju])|6(?:09dl|10k|12b|71[efho]|76[hjk])|7(?:66[ahju]|67[hw]|7[045][bh]|71[hk]|73o|76[ho]|79w|81[hks]?|82h|90[bhsy]|99b)|810[hs]))(_\w(\w|\w\w))?(\)| bui)/i],[p,[u,"TCL"],[c,m]],[/(itel) ((\w+))/i],[[u,V],p,[c,X,{
+  tablet:["p10001l","w7001"],"*":"mobile"
+  }]],[/droid.+; ([ab][1-7]-?[0178a]\d\d?)/i],[p,[u,"Acer"],[c,g]],[/droid.+; (m[1-5] note) bui/i,/\bmz-([-\w]{2,})/i],[p,[u,"Meizu"],[c,m]],[/; ((?:power )?armor(?:[\w ]{0,8}))(?: bui|\))/i],[p,[u,"Ulefone"],[c,m]],[/; (energy ?\w+)(?: bui|\))/i,/; energizer ([\w ]+)(?: bui|\))/i],[p,[u,"Energizer"],[c,m]],[/; cat (b35);/i,/; (b15q?|s22 flip|s48c|s62 pro)(?: bui|\))/i],[p,[u,"Cat"],[c,m]],[/((?:new )?andromax[\w- ]+)(?: bui|\))/i],[p,[u,"Smartfren"],[c,m]],[/droid.+; (a(in)?(0(15|59|6[35])|142)p?)/i],[p,[u,"Nothing"],[c,m]],[/; (x67 5g|tikeasy \w+|ac[1789]\d\w+)( b|\))/i,/archos ?(5|gamepad2?|([\w ]*[t1789]|hello) ?\d+[\w ]*)( b|\))/i],[p,[u,"Archos"],[c,g]],[/archos ([\w ]+)( b|\))/i,/; (ac[3-6]\d\w{2,8})( b|\))/i],[p,[u,"Archos"],[c,m]],[/; (n159v)/i],[p,[u,"HMD"],[c,m]],[/(imo) (tab \w+)/i,/(infinix|tecno) (x1101b?|p904|dp(7c|8d|10a)( pro)?|p70[1-3]a?|p904|t1101)/i],[u,p,[c,g]],[/(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus(?! zenw)|dell|jolla|meizu|motorola|polytron|tecno|micromax|advan)[-_ ]?([-\w]*)/i,/; (blu|hmd|imo|infinix|lava|oneplus|tcl|wiko)[_ ]([\w\+ ]+?)(?: bui|\)|; r)/i,/(hp) ([\w ]+\w)/i,/(microsoft); (lumia[\w ]+)/i,/(oppo) ?([\w ]+) bui/i,/(hisense) ([ehv][\w ]+)\)/i,/droid[^;]+; (philips)[_ ]([sv-x][\d]{3,4}[xz]?)/i],[u,p,[c,m]],[/(kobo)\s(ereader|touch)/i,/(hp).+(touchpad(?!.+tablet)|tablet)/i,/(kindle)\/([\w\.]+)/i],[u,p,[c,g]],[/(surface duo)/i],[p,[u,j],[c,g]],[/droid [\d\.]+; (fp\du?)(?: b|\))/i],[p,[u,"Fairphone"],[c,m]],[/((?:tegranote|shield t(?!.+d tv))[\w- ]*?)(?: b|\))/i],[p,[u,"Nvidia"],[c,g]],[/(sprint) (\w+)/i],[u,p,[c,m]],[/(kin\.[onetw]{3})/i],[[p,/\./g," "],[u,j],[c,m]],[/droid.+; ([c6]+|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],[p,[u,B],[c,g]],[/droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i],[p,[u,B],[c,m]],[/droid.+; ([\w- ]+) (4k|android|smart|google)[- ]?tv/i],[p,[c,v]],[/\b((4k|android|smart|opera)[- ]?tv|tv; rv:|large screen[\w ]+safari)\b/i],[[c,v]],[/droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew|; hmsc).+?(mobile|vr|\d) safari/i],[p,[c,X,{
+  mobile:"Mobile",xr:"VR","*":g
+  }]],[/\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i],[[c,g]],[/(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i],[[c,m]],[/droid .+?; ([\w\. -]+)( bui|\))/i],[p,[u,"Generic"]],[/(windows)/i],[p,[u,e],[c,f]],[/(linux|x11|ubuntu|freebsd|debian)/i],[p,[u,e],[c,f]]],
+  engine:[[/windows.+ edge\/([\w\.]+)/i],[h,[l,"EdgeHTML"]],[/(arkweb)\/([\w\.]+)/i],[l,h],[/webkit\/537\.36.+chrome\/(?!27)([\w\.]+)/i],[h,[l,"Blink"]],[/(presto)\/([\w\.]+)/i,/(webkit|trident|netfront|netsurf|amaya|lynx|w3m|goanna|servo)\/([\w\.]+)/i,/ekioh(flow)\/([\w\.]+)/i,/(khtml|tasman|links)[\/ ]\(?([\w\.]+)/i,/(icab)[\/ ]([23]\.[\d\.]+)/i,/\b(libweb)/i],[l,h],[/ladybird\//i],[[l,"LibWeb"]],[/rv\:([\w\.]{1,9})\b.+(gecko)/i],[h,l]],
+  os:[[/(windows nt) (6\.[23]); arm/i],[[l,/N/,"R"],[h,X,Z]],[/(windows (?:phone|mobile|iot))(?: os)?[\/ ]?([\d\.]*( se)?)/i,/(windows)[\/ ](1[01]|2000|3\.1|7|8(\.1)?|9[58]|me|server 20\d\d( r2)?|vista|xp)/i],[l,h],[/windows nt ?([\d\.\)]*)(?!.+xbox)/i,/\bwin(?=3| ?9|n)(?:nt| 9x )?([\d\.;]*)/i],[[h,/(;|\))/g,"",X,Z],[l,"Windows"]],[/(windows ce)\/?([\d\.]*)/i],[l,h],[/[adehimnop]{4,7}\b(?:.*os ([\w]+) like mac|; opera)/i,/(?:ios;fbsv|ios(?=.+ip(?:ad|hone))|ip(?:ad|hone)(?: |.+i(?:pad)?)os)[\/ ]([\w\.]+)/i,/cfnetwork\/.+darwin/i],[[h,/_/g,"."],[l,"iOS"]],[/(mac os x) ?([\w\. ]*)/i,/(macintosh|mac_powerpc\b)(?!.+(haiku|morphos))/i],[[l,"macOS"],[h,/_/g,"."]],[/android ([\d\.]+).*crkey/i],[h,[l,"Chromecast Android"]],[/fuchsia.*crkey\/([\d\.]+)/i],[h,[l,"Chromecast Fuchsia"]],[/crkey\/([\d\.]+).*devicetype\/smartspeaker/i],[h,[l,"Chromecast SmartSpeaker"]],[/linux.*crkey\/([\d\.]+)/i],[h,[l,"Chromecast Linux"]],[/crkey\/([\d\.]+)/i],[h,[l,P]],[/droid ([\w\.]+)\b.+(android[- ]x86)/i],[h,l],[/(ubuntu) ([\w\.]+) like android/i],[[l,/(.+)/,"$1 Touch"],h],[/(harmonyos)[\/ ]?([\d\.]*)/i,/(android|bada|blackberry|kaios|maemo|meego|openharmony|qnx|rim tablet os|sailfish|series40|symbian|tizen)\w*[-\/\.; ]?([\d\.]*)/i],[l,h],[/\(bb(10);/i],[h,[l,S]],[/(?:symbian ?os|symbos|s60(?=;)|series ?60)[-\/ ]?([\w\.]*)/i],[h,[l,"Symbian"]],[/mozilla\/[\d\.]+ \((?:mobile|tablet|tv|mobile; [\w ]+); rv:.+ gecko\/([\w\.]+)/i],[h,[l,"Firefox OS"]],[/\b(?:hp)?wos(?:browser)?\/([\w\.]+)/i,/webos(?:[ \/]?|\.tv-20(?=2[2-9]))(\d[\d\.]*)/i],[h,[l,"webOS"]],[/web0s;.+?(?:chr[o0]me|safari)\/(\d+)/i],[[h,X,{
+  25:"120",24:"108",23:"94",22:"87",6:"79",5:"68",4:"53",3:"38",2:"538",1:"537","*":"TV"
+  }],[l,"webOS"]],[/watch(?: ?os[,\/]|\d,\d\/)([\d\.]+)/i],[h,[l,"watchOS"]],[/(cros) [\w]+(?:\)| ([\w\.]+)\b)/i],[[l,"Chrome OS"],h],[/panasonic;(viera)/i,/(netrange)mmh/i,/(nettv)\/(\d+\.[\w\.]+)/i,/(nintendo|playstation) (\w+)/i,/(xbox); +xbox ([^\);]+)/i,/(pico) .+os([\w\.]+)/i,/\b(joli|palm)\b ?(?:os)?\/?([\w\.]*)/i,/linux.+(mint)[\/\(\) ]?([\w\.]*)/i,/(mageia|vectorlinux|fuchsia|arcaos|arch(?= ?linux))[;l ]([\d\.]*)/i,/([kxln]?ubuntu|debian|suse|opensuse|gentoo|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire|knoppix)(?: gnu[\/ ]linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i,/((?:open)?solaris)[-\/ ]?([\w\.]*)/i,/\b(aix)[; ]([1-9\.]{0,4})/i,/(hurd|linux|morphos)(?: (?:arm|x86|ppc)\w*| ?)([\w\.]*)/i,/(gnu) ?([\w\.]*)/i,/\b([-frentopcghs]{0,5}bsd|dragonfly)[\/ ]?(?!amd|[ix346]{1,2}86)([\w\.]*)/i,/(haiku) ?(r\d)?/i],[l,h],[/(sunos) ?([\d\.]*)/i],[[l,"Solaris"],h],[/\b(beos|os\/2|amigaos|openvms|hp-ux|serenityos)/i,/(unix) ?([\w\.]*)/i],[l,h]]
+  },Q={init:{},isIgnore:{},isIgnoreRgx:{},toString:{}},Y=function(i,e){
+  var o=Q.init[e],r=Q.isIgnore[e]||0,a=Q.isIgnoreRgx[e]||0,n=Q.toString[e]||0;function s(){$.call(this,o)}
+  return s.prototype.getItem=function(){return i},s.prototype.withFeatureCheck=function(){return i.detectFeature().get()},
+  e!=d&&(s.prototype.is=function(i){var e=!1
+  ;for(var o in this)if(this.hasOwnProperty(o)&&!R(r,o)&&V(a?H(a,this[o]):this[o])==V(a?H(a,i):i)){if(e=!0,i!=t)break
+  }else if(i==t&&e){e=!e;break}return e},s.prototype.toString=function(){var i=""
+  ;for(var e in n)typeof this[n[e]]!==t&&(i+=(i?" ":"")+this[n[e]]);return i||t}),new s};function J(i,e,r,a){
+  return this.get=function(i){return i?this.data.hasOwnProperty(i)?this.data[i]:void 0:this.data},this.set=function(i,e){
+  return this.data[i]=e,this},this.detectFeature=function(){if(E&&E.userAgent==this.ua)switch(this.itemType){case n:
+  E.brave&&typeof E.brave.isBrave==o&&this.set(l,"Brave");break;case s:!this.get(c)&&I&&I.mobile&&this.set(c,m),
+  "Macintosh"==this.get(p)&&E&&typeof E.standalone!==t&&E.maxTouchPoints&&E.maxTouchPoints>2&&this.set(p,"iPad").set(c,g)
+  ;break;case b:!this.get(l)&&I&&I[PLATFORM]&&this.set(l,I[PLATFORM]);break;case d:var i=this.data,e=function(e){
+  return i[e].getItem().detectFeature().get()};this.set(n,e(n)).set(s,e(s)).set(w,e(w)).set(b,e(b))}return this},
+  this.parseUA=function(){switch(this.itemType!=d&&W.call(this.data,this.ua,this.rgxMap),this.itemType){case n:
+  this.set("major",G(this.get(h)));break;case b:if("iOS"==this.get(l)&&"18.6"==this.get(h)){
+  var i=/\) Version\/([\d\.]+)/.exec(this.ua);i&&parseInt(i[1].substring(0,2),10)>=26&&this.set(h,i[1])}}return this},
+  $.call(this,[["itemType",i],["ua",e],["rgxMap",r],["data",Y(this,i)]]),this}var ii=function e(l,c,u){
+  if(typeof l===r?(D(l,!0)?(typeof c===r&&(u=c),c=l):(u=l,c=void 0),l=void 0):typeof l!==a||D(c,!0)||(u=c,c=void 0),
+  u)if(typeof u.append===o){var h={};u.forEach((function(i,e){h[String(e).toLowerCase()]=i})),u=h}else{var p={}
+  ;for(var m in u)u.hasOwnProperty(m)&&(p[String(m).toLowerCase()]=u[m]);u=p}
+  if(!(this instanceof e))return new e(l,c,u).getResult()
+  ;var g=typeof l===a?l:u&&u[i]?u[i]:E&&E.userAgent?E.userAgent:"",f=c?function(i,e){var o={},r=e
+  ;if(!D(e))for(var a in r={},e)for(var t in e[a])r[t]=e[a][t].concat(r[t]?r[t]:[])
+  ;for(var n in i)o[n]=r[n]&&r[n].length%2==0?r[n].concat(i[n]):i[n];return o}(K,c):K,v=function(i){
+  return i==d?function(){
+  return new J(i,g,f).set("ua",g).set(n,this.getBrowser()).set(s,this.getDevice()).set(w,this.getEngine()).set(b,this.getOS()).get()
+  }:function(){return new J(i,g,f[i]).parseUA().get()}}
+  ;return $.call(this,[["getBrowser",v(n)],["getDevice",v(s)],["getEngine",v(w)],["getOS",v(b)],["getResult",v(d)],["getUA",function(){
+  return g}],["setUA",function(i){var e,o;return N(i)&&(e=i,o=500,e=H(/^\s\s*/,String(e)),
+  g=typeof o===t?e:e.substring(0,o)),this}]]).setUA(g),this}().withFeatureCheck(),ei={name:ii.engine.name||"Unknown",
+  version:ii.engine.version||"",major:G(ii.engine.version)||""},oi={name:ii.browser.name||"Unknown",
+  version:ii.browser.version||"",major:G(ii.browser.version)||""},ri={device:{
+  type:(ii.device.type||"Unknown").toUpperCase(),vendor:ii.device.vendor||"Unknown",model:ii.device.model||"Unknown"},os:{
+  name:ii.os.name||"Unknown",version:ii.os.version||"",major:G(ii.os.version)||""},browser:ei,b2owser:oi};head("agent",ri)
+  }();
   </script>
-  <script>
+  <script id="head-js-bridge">
+  /* @head.js/snippet-emitter 0.5.0 */
+  this.head=this.head||{},this.head.emitter=function(){function t(t,n){n=n||0;let e=t.length-n;const o=new Array(e)
+  ;for(;e--;)o[e]=t[e+n];return o}function n(){return this._events=Object.create(null),this}n.prototype.$on=function(t,n){
+  const e=this;return(e._events[t]||(e._events[t]=[])).push(n),e},n.prototype.$once=function(t,n){const e=this
+  ;function o(){e.$off(t,o),n.apply(e,arguments)}return o.fn=n,e.$on(t,o),e},n.prototype.$off=function(t,n){const e=this
+  ;if(!arguments.length)return e._events=Object.create(null),e;const o=e._events[t];if(!o)return e
+  ;if(!n)return e._events[t]=null,e;let r,i=o.length;for(;i--;)if(r=o[i],r===n||r.fn===n){o.splice(i,1);break}return e},
+  n.prototype.$emit=function(n){const e=this;let o=e._events[n];if(o){o=o.length>1?t(o):o;const n=t(arguments,1)
+  ;for(let t=0,r=o.length;t<r;t+=1)o[t].apply(e,n)}return e};const e=new n;return e.on=e.$on.bind(e),
+  e.once=e.$once.bind(e),e.off=e.$off.bind(e),e.emit=e.$emit.bind(e),e}();
+  /* @head.js/snippet-require 0.5.0 */
+  this.head=this.head||{},this.head.require=function(){const e={};function t(t,n){if(e[t])return void e[t].push(n);let o,r
+  ;const l=document.getElementsByTagName("script");for(let e=0;e<l.length;e+=1){const n=l[e]
+  ;if(n.getAttribute("src")===t){o=n;break}}if(!n)return o;let i;function u(n,r){o.onerror=o.onload=null,clearTimeout(i)
+  ;const l=e[t];if(delete e[t],r&&"load"!==r.type&&o.parentNode&&o.parentNode.removeChild(o),l&&l.forEach((e=>e(r))),
+  n)return n(r)}o||(r=!0,o=document.createElement("script"),o.timeout=30,o.src=t,o.async=!0),e[t]=[n],
+  i=setTimeout(u.bind(null,void 0,{type:"timeout",target:o}),3e4),o.onerror=u.bind(null,o.onerror),
+  o.onload=u.bind(null,o.onload),r&&document.head.appendChild(o)}const n="data-head-require-loading";function o(e,t){
+  let o,r;const l=document.getElementsByTagName("link");for(let t=0;t<l.length;t+=1){const n=l[t]
+  ;if("stylesheet"===n.rel&&(n.href===e||n.getAttribute("href")===e)){o=n;break}}if(!t)return o;let i;function u(e,r){
+  if(o.onerror=o.onload=null,o.removeAttribute(n),clearTimeout(i),r&&"load"!==r.type&&o.parentNode.removeChild(o),t(r),
+  e)return e(r)}return o||(r=!0,o=document.createElement("link"),o.setAttribute(n,1),o.rel="stylesheet",o.href=e),
+  o.getAttribute(n)?(i=setTimeout(u.bind(null,void 0,{type:"timeout",target:o}),3e4),o.onerror=u.bind(null,o.onerror),
+  o.onload=u.bind(null,o.onload)):u(void 0,{type:"load",target:o}),r&&document.head.appendChild(o),o}
+  const r=new RegExp("\\.css");return function(e,n,l){let i,u=0,d=0;function a(e){u-=1,0===u&&0===d&&n()}function c(e){
+  d-=1,0===u&&0===d&&n()}for(let n=0;n<e.length;n+=1)i=e[n],r.test(i)?(u+=1,o(i,a)):(d+=1,t(i,c))}}();
+  /* @head.js/snippet-bridge 0.5.0 */
+  this.head=this.head||{},this.head.bridge=function(){function i(){this.registered={},this.initialized={},this.resolved={}
+  }i.prototype._resolve=function(i){const[t,e="_"]=i.split("@"),s=this.initialized[t][e];let r=this.resolved[t].shift()
+  ;for(;r;)r(s),r=this.resolved[t].shift()},i.prototype.register=function(i,t){const[e,s="_"]=i.split("@")
+  ;this.registered[e]?this.registered[e][s]||console.warn("".concat(e,"@").concat(Object.keys(this.registered[e]).join(",")," detected. @").concat(s," will not register.")):(this.registered[e]=this.registered[e]||{},
+  this.registered[e][s]=this.registered[e][s]||[],this.initialized[e]=this.initialized[e]||{},this.initialized[e][s]=null,
+  this.resolved[e]=this.resolved[e]||[],t((t=>{t.then?(this.initialized[e][s]={__promis3r3fhack__:t},
+  "_"!==s&&(this.initialized[e]._={__promis3r3fhack__:t})):(this.initialized[e][s]=t,"_"!==s&&(this.initialized[e]._=t)),
+  this._resolve(i)})))},i.prototype._initialize=function(i){const[t,e="_"]=i.split("@")
+  ;return this.resolved[t]=this.resolved[t]||[],new Promise(((i,s)=>{if(this.initialized[t]){
+  const s=this.initialized[t][e];if(s)i(s);else{const e=this.initialized[t]._
+  ;e?(console.warn("only the 1st ".concat(t,"@").concat(Object.keys(this.initialized[t]).join(",")," will register and resolve.")),
+  i(e)):this.resolved[t].push(i)}}else this.resolved[t].push(i)}))},i.prototype.initialize=function(i){const t=[]
+  ;for(let e=0;e<i.length;e+=1)t.push(this._initialize(i[e]));return Promise.all(t).then((i=>{const t=[]
+  ;for(let e=0;e<i.length;e+=1){const s=i[e];s.__promis3r3fhack__?t.push(s.__promis3r3fhack__):t.push(s)}
+  return Promise.resolve(t)}))},i.prototype.ready=function(i){const[t,e="_"]=i.split("@");if(this.initialized[t]){
+  const i=this.initialized[t][e];if(i)return i;{const i=this.initialized[t]._
+  ;if(i)return console.warn("only the 1st ".concat(t,"@").concat(Object.keys(this.initialized[t]).join(",")," will register and resolve.")),
+  i;throw new Error("check docs about ~await bridge.initialize~")}}
+  throw new Error("check docs about ~await bridge.initialize~")},i.prototype.require=function(i,t,e){const{head:s}=window
+  ;this.register(i,(i=>{s.require(t,(()=>{e(i)}))}))};return new i}();
+  </script>
+  <script id="head-js-container">
   /* @head.js/container-snippet 0.1.1 */
   this.head=this.head||{},this.head.container=function(){"use strict";function t(t,r){var e=Object.keys(t)
   ;if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(t);r&&(i=i.filter((function(r){
@@ -168,8 +200,33 @@
   var n="".concat(t,"/").concat(r);this.$script[n]=e},new n}();
   </script>
 
-  <!-- <script src="http://0.0.0.0:3001/rsrc/dist/shortcuts-hash.js"></script> -->
-  <script src="/rsrc/dist/shortcuts-66c495d9.js"></script>
+  <!-- <script src="http://127.0.0.1:3001/rsrc/dist/shortcuts-hash.js"></script> -->
+  <script src="/rsrc/dist/shortcuts-e663ed07.js"></script>
+
+  <script id="guancecom-init">
+  /* @head.js/snippet-guancecom 3.2.24-10 init */
+  !function(){var e,o,r;e=window,o=e.DATAFLUX_RUM,r=e.head.agent,o.setGlobalContext({device:{device:r.device.type,
+  device_vendor:r.device.vendor,device_model:r.device.model,browser:r.browser.name,browser_version:r.browser.version,
+  browser_version_major:r.browser.major,b2owser:r.b2owser.name,b2owser_version:r.b2owser.version,
+  b2owser_version_major:r.b2owser.major,os:r.os.name,os_version:r.os.version,os_version_major:r.os.major}}),
+  "UNKNOWN"===r.device.type&&o.addAction("UNKNOW_DEVICE",{action_message:e.navigator.userAgent}),
+  window.DATAFLUX_RUM.init({
+    site: 'https://rum-openway.guance.com',
+    clientToken: '2OQwyC4AulthZZNx7lwSRLAZpOaqbyC26ATF0pYdC34y7MP31A',
+    applicationId: 'de',
+    version: head.env.version,
+    env: head.env.profile,
+    service: 'browser',
+    sessionSampleRate: 100,
+    sessionOnErrorSampleRate: 100,
+    sessionReplaySampleRate: 0,
+    sessionReplayOnErrorSampleRate: 0,
+    telemetrySampleRate: 0,
+    trackUserInteractions: false,
+    compressIntakeRequests: false,
+    remoteConfiguration: false,
+  })}();
+  </script>
 
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </body>
