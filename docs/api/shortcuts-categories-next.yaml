@@ -19,6 +19,17 @@
 - id: Checkly
   url: https://www.checklyhq.com/
   label: fav
+- id: ALY·ROS
+  url: https://ros.console.aliyun.com/cn-hangzhou/stacks
+  label: fav
+  icon: lan-connect
+- id: ALY·TableStore
+  url: https://otsnext.console.aliyun.com/cn-hangzhou/list
+  label: fav
+  icon: database-marker
+- id: ALY·Flow
+  url: https://flow.aliyun.com/my?page=1
+  label: fav
 
 - id: 腾讯云
   url: https://console.cloud.tencent.com/
@@ -27,7 +38,7 @@
 - id: Planet Scale
   url: https://planetscale.com/
   label: watch
-  icon: lan-connect  
+  icon: lan-connect
 - id: 腾讯 Webify
   url: https://webify.cloudbase.net/
   label: watch
